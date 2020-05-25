@@ -3,7 +3,7 @@
 <%= simple_form_for [@user, @user_ingredient] do |f| %>
 <%= f.association :ingredient %>
 <%= f.input :quantity %>
-<%= f.input :purchase_date %>
-<%= f.input :expiration_date %>
+<%= f.input :purchase_date, as: :string, required: false, input_html: {class: "datepicker"} %>
+<%= f.input :expiration_date, as: :string, required: false, input_html: {class: "datepicker"} %>
 <%= f.button :submit, class: "btn btn-primary" %>
 <% end %>
