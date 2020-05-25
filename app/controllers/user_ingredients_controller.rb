@@ -11,8 +11,7 @@ class UserIngredientsController < ApplicationController
 
   def create
     @user_ingredient = UserIngredient.new(user_ingredients_params)
-    @user = current_user.id
-    @user_ingredient.user = @user
+    @user_ingredient.user = current_user
     if @user_ingredient.save
       redirect_to user_ingredients_path
     else

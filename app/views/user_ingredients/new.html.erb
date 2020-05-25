@@ -1,1 +1,9 @@
-<h1>Ajoutez vos ingrédients !</h1>
+<h2>Ajoutez vos ingrédients !</h2>
+
+<%= simple_form_for [@user, @user_ingredient] do |f| %>
+<%= f.association :ingredient %>
+<%= f.input :quantity %>
+<%= f.input :purchase_date %>
+<%= f.input :expiration_date %>
+<%= f.button :submit, class: "btn btn-primary" %>
+<% end %>
