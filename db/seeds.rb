@@ -13,47 +13,58 @@ puts "Start to add Ingredients in our seed"
 
 ingredients = [
   {
-    name:       'Brocoli',
+    name:       "Brocoli",
+    category:   'Fruits et légumes',
     image:      'https://res.cloudinary.com/dubgqyx31/image/upload/w_64,h_48,c_scale/v1590415257/nomess/Brocoli_ywgssh.jpg'
   }
   {
-    name:       'Banane',
+    name:       "Banane",
+    category:   'Fruits et légumes',
     image:      'https://res.cloudinary.com/dubgqyx31/image/upload/w_64,h_48,c_scale/v1590416016/nomess/banane_DAC0XAQ_gpj5to.jpg'
   }
   {
-    name:       'Yaourt',
+    name:       "Yaourt",
+    category:   'Produits laitiers',
     image:      'https://res.cloudinary.com/dubgqyx31/image/upload/w_64,h_48,c_scale/v1590417815/nomess/yaourt_fkuzhq.jpg'
   }
   {
-    name:       'Parmesan',
+    name:       "Parmesan",
+    category:   'Produits laitiers',
     image:      'https://res.cloudinary.com/dubgqyx31/image/upload/w_64,h_48,c_scale/v1590417470/nomess/parmesan_bj155a.webp'
   }
   {
-    name:       'Riz',
+    name:       "Riz",
+    category:   'Féculents',
     image:      'https://res.cloudinary.com/dubgqyx31/image/upload/w_64,h_48,c_scale/v1590417749/nomess/riz_fisrkb.jpg'
   }
   {
-    name:       'Vin blanc',
+    name:       "Vin blanc",
+    category:   'Boissons',
     image:      'https://res.cloudinary.com/dubgqyx31/image/upload/w_64,h_48,c_scale/v1590416386/nomess/sauternes-2016-liquoreux_onhvoe.jpg'
   }
   {
-    name:       'Tomate',
+    name:       "Tomate",
+    category:   'Fruits et légumes',
     image:      'https://res.cloudinary.com/dubgqyx31/image/upload/w_64,h_48,c_scale/v1590416469/nomess/tomate_gfkr5j.jpg'
   }
   {
-    name:       'Saumon',
+    name:       "Saumon",
+    category:   'Protéines',
     image:      'https://res.cloudinary.com/dubgqyx31/image/upload/w_64,h_48,c_scale/v1590417300/nomess/saumon_unhydx.png'
   }
   {
-    name:       'pâtes',
+    name:       "Pâtes",
+    category:   'Féculents',
     image:      'https://res.cloudinary.com/dubgqyx31/image/upload/w_64,h_48,c_scale/v1590417589/nomess/pates_hzcsf2.png'
   }
   {
-    name:       'huile d'olive,
+    name:       "Huile d'olive",
+    category:   'Condiments'
     image:      'https://res.cloudinary.com/dubgqyx31/image/upload/w_64,h_48,c_scale/v1590416951/nomess/sticker-huile-d-olive_fqxh8w.jpg'
   }
   {
-    name:       'poivre',
+    name:       "Poivre",
+    category:   'Condiments'
     image:      'https://res.cloudinary.com/dubgqyx31/image/upload/w_64,h_48,c_scale/v1590417167/nomess/poivre_fkabwa.webp'
   }
 ]
