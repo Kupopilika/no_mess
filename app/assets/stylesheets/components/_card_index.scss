@@ -1,0 +1,46 @@
+.cards {
+
+}
+
+.card-ingredient {
+  display: flex;
+  justify-content: space-between;
+  width: 380px;
+}
+
+.index-card-img {
+    height: 15px;
+    width: 20px;
+    background-size: cover;
+    object-fit: cover;
+}
+
+.card-ingredient-first {
+  display: flex;
+  justify-content: start;
+}
+
+.card-ingredient-info-date {
+    padding-right: 10px;
+    font-size: 1rem;
+}
+
+.card-ingredient-info-name {
+    padding-left: 10px;
+    font-size: 1rem;
+}
+
+.card-ingredient-last {
+    display: flex;
+    justify-content: end;
+}
+
+.card-ingredient-last h2 {
+    font-size: 1rem;
+}
+
+#welcome {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}

@@ -1,0 +1,29 @@
+<h1 id="welcome">Welcome to No Mess</h1>
+<div class="container">
+  <div class="cards">
+    <% @user_ingredients.each do |ingredient| %>
+      <div class="card-ingredient">
+        <div class="card-ingredient-first">
+          <h2 class="card-ingredient-info-date"><%= ingredient.expiration_date %></h2>
+          <% result = Ingredient.find(ingredient.ingredient_id) %>
+          <img class="index-card-img" src="<%= result.image %>" alt="">
+          <h2 class="card-ingredient-info-name"><%= result.name %></h2>
+        </div>
+        <div class="card-ingredient-last">
+          <h2><%= ingredient.quantity %></h2>
+        </div>
+      </div>
+    <%end%>
+  </div>
+</div>
+
+<div class="container">
+  <%= link_to new_user_ingredient_path do %>
+    <div id="add"><i class="fas fa-plus spec"></i></div>
+  <% end %>
+</div>
+
+
+
+
+
