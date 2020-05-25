@@ -1,0 +1,39 @@
+.container-home {
+  display: flex;
+  flex-direction: column;
+/*  background-color: yellow;*/
+  padding: 10px;
+}
+
+.line-card {
+  display: flex;
+  flex-direction: row;
+/*  background-color: orange;*/
+  margin-bottom: 20px;
+}
+
+.img-home {
+  display: flex;
+  padding: 5px;
+  align-items: center;
+  justify-content: center;
+}
+
+.title-card {
+  font-size: 14px;
+  font-weight: bold;
+  margin: 10px;
+}
+
+.content-card {
+  font-size: 12px;
+  text-align: justify;
+  margin: 10px;
+}
+
+.button-line {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
