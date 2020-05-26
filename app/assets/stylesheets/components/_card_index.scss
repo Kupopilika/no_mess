@@ -13,6 +13,8 @@
     width: 20px;
     background-size: cover;
     object-fit: cover;
+    position: absolute;
+    margin-left: 35px;
 }
 
 .card-ingredient-first {
@@ -21,12 +23,12 @@
 }
 
 .card-ingredient-info-date {
-    padding-right: 10px;
     font-size: 1rem;
 }
 
 .card-ingredient-info-name {
-    padding-left: 10px;
+    position: absolute;
+    padding-left: 70px;
     font-size: 1rem;
 }
 
