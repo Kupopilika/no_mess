@@ -10,6 +10,17 @@
           <img class="index-card-img" src="<%= result.image %>" alt="">
           <h2 class="card-ingredient-info-name"><%= result.name %></h2>
         </div>
+          <div>
+            <%= link_to edit_user_ingredient_path(ingredient) do %>
+              <i class="far fa-edit"></i>
+            <% end %>
+          </div>
+          <div>
+           <%= link_to user_ingredient_path(ingredient), method: :delete,
+                data: { confirm: "Are you sure?" } do %>
+              <i class="fas fa-trash"></i>
+            <% end %>
+          </div>
         <div class="card-ingredient-last">
           <h2><%= ingredient.quantity %></h2>
         </div>
