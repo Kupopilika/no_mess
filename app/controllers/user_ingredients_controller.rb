@@ -2,7 +2,7 @@ class UserIngredientsController < ApplicationController
   skip_before_action :authenticate_user!, only: [ :index, :new ]
 
   def index
-    @user_ingredients = UserIngredient.all.order(expiration_date: :desc)
+    @user_ingredients = UserIngredient.all.order(:expiration_date)
     @ingredient = Ingredient.all
   end
 
