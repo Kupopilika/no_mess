@@ -49,7 +49,7 @@ ingredients = [
   },
   {
     name:       "Saumon",
-    category:   'Protéines',
+    category:   'Viandes et poissons',
     image:      'https://res.cloudinary.com/dubgqyx31/image/upload/v1590417300/nomess/saumon_unhydx.png'
   },
   {
@@ -67,6 +67,10 @@ ingredients = [
     category:   'Condiments',
     image:      'https://res.cloudinary.com/dubgqyx31/image/upload/v1590489505/nomess/poivre_fkabwa_c07q58.png'
   },
+   {
+    name:       "Concombre",
+    category:   'Fruits et légumes',
+    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590502209/cucumber_ucgtun.png'  },
 ]
 
 # user = User.create(email:"mess@gmail.com", password:"A12345", first_name: "master", last_name:"chief", address:"nintendoland", phone_number:"0123456789", avatar:"http://www.pngall.com/wp-content/uploads/2/Video-Game-PNG-Pic.png")
@@ -79,8 +83,12 @@ ingredients = [
 ingredients.each do |data|
   file = URI.open(data[:image])
   ingredient = Ingredient.new(name: data[:name], category: data[:category])
-  ingredient.photo.attach(io: file, filename: 'ingredient.png', content_type: 'image/png')
-  ingredient.save!
+  ingredient.photo.attach(io: file, filename: "#{ingredient.name}.png", content_type: 'image/png')
+  if ingredient.photo.attached?
+    ingredient.save!
+  else
+    puts "Pas de photo"
+  end
 end
 
 
