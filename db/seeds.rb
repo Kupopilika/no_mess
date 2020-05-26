@@ -81,5 +81,6 @@ ingredients.each do |data|
   ingredient.save!
 end
 
-
+recipe = Recipe.new(name: "Risotto aux brocolis", instructions: "Faire chauffer...", difficulty_level: "Très facile", preparation_time: "10 min", cooking_time: "20 min", image: "https://res.cloudinary.com/dubgqyx31/image/upload/v1590489505/nomess/poivre_fkabwa_c07q58.png")
+recipe.save!
 puts 'Finished!'
