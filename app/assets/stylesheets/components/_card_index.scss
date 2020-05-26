@@ -5,7 +5,7 @@
 .card-ingredient {
   display: flex;
   justify-content: space-between;
-  width: 340px;
+  width: 100%;
 }
 
 .index-card-img {
@@ -47,6 +47,7 @@
     padding-bottom: 10px;
 }
 
+
 .card-ingredient-delete {
     position: absolute;
     padding-left: 325px;
@@ -56,4 +57,5 @@
     position: absolute;
     padding-left: 300px;
 }
+
 
