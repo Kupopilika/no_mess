@@ -90,10 +90,8 @@ ActiveRecord::Schema.define(version: 2020_05_26_130452) do
   end
 
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
-  
   add_foreign_key "recipe_ingredients", "ingredients"
   add_foreign_key "recipe_ingredients", "recipes"
-
   add_foreign_key "user_ingredients", "ingredients"
   add_foreign_key "user_ingredients", "users"
 end

@@ -7,8 +7,6 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 require "open-uri"
 
-Ingredient.destroy_all
-
 puts "Start to add Ingredients in our seed"
 
 ingredients = [
