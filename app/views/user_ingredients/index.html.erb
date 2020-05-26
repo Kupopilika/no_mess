@@ -10,6 +10,17 @@
           <img class="index-card-img" src="<%= result.image %>" alt="">
           <h2 class="card-ingredient-info-name"><%= result.name %></h2>
         </div>
+        <div class="card-ingredient-edit">
+            <%= link_to edit_user_ingredient_path(ingredient) do %>
+              <i class="far fa-edit"></i>
+            <% end %>
+          </div>
+          <div class="card-ingredient-delete">
+           <%= link_to user_ingredient_path(ingredient), method: :delete,
+                data: { confirm: "Are you sure?" } do %>
+              <i class="fas fa-trash"></i>
+            <% end %>
+          </div>
         <div class="card-ingredient-last">
           <h2><%= ingredient.quantity %></h2>
         </div>
@@ -20,6 +31,7 @@
   <%= link_to new_user_ingredient_path do %>
       <%= image_tag "https://image.flaticon.com/icons/png/512/148/148764.png", :class => "button-add" %>
   <% end %>
+
 
 
 
