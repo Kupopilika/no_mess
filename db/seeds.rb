@@ -9,6 +9,8 @@ require "open-uri"
 
 puts "Start to add Ingredients in our seed"
 
+Ingredient.destroy_all
+
 ingredients = [
   {
     name:       "Brocoli",
