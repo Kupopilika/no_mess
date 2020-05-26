@@ -4,7 +4,8 @@
     <% @user_ingredients.each do |ingredient| %>
       <div class="card-ingredient">
         <div class="card-ingredient-first">
-          <h2 class="card-ingredient-info-date"><%= ingredient.expiration_date %></h2>
+          <% date = ingredient.expiration_date - Date.today %>
+          <h2 class="card-ingredient-info-date"><%= date.to_i %>J</h2>
           <% result = Ingredient.find(ingredient.ingredient_id) %>
           <img class="index-card-img" src="<%= result.image %>" alt="">
           <h2 class="card-ingredient-info-name"><%= result.name %></h2>
