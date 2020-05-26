@@ -15,37 +15,37 @@ ingredients = [
   {
     name:       "Brocoli",
     category:   'Fruits et légumes',
-    image:      'https://res.cloudinary.com/dubgqyx31/image/upload/v1590415257/nomess/Brocoli_ywgssh.jpg'
+    image:      'https://res.cloudinary.com/dubgqyx31/image/upload/v1590490322/nomess/Brocoli_ywgssh_tmkr1w.png'
   },
   {
     name:       "Banane",
     category:   'Fruits et légumes',
-    image:      'https://res.cloudinary.com/dubgqyx31/image/upload/v1590416016/nomess/banane_DAC0XAQ_gpj5to.jpg'
+    image:      'https://res.cloudinary.com/dubgqyx31/image/upload/v1590490222/nomess/banane_DAC0XAQ_gpj5to_yhisjf.png'
   },
   {
     name:       "Yaourt",
     category:   'Produits laitiers',
-    image:      'https://res.cloudinary.com/dubgqyx31/image/upload/v1590417815/nomess/yaourt_fkuzhq.jpg'
+    image:      'https://res.cloudinary.com/dubgqyx31/image/upload/v1590490128/nomess/yaourt_fkuzhq_pdruhw.png'
   },
   {
     name:       "Parmesan",
     category:   'Produits laitiers',
-    image:      'https://res.cloudinary.com/dubgqyx31/image/upload/v1590417470/nomess/parmesan_bj155a.webp'
+    image:      'https://res.cloudinary.com/dubgqyx31/image/upload/v1590490062/nomess/parmesan_bj155a_sf5gzl.png'
   },
   {
     name:       "Riz",
     category:   'Féculents',
-    image:      'https://res.cloudinary.com/dubgqyx31/image/upload/v1590417749/nomess/riz_fisrkb.jpg'
+    image:      'https://res.cloudinary.com/dubgqyx31/image/upload/v1590489968/nomess/riz_fisrkb_ev9c1q.png'
   },
   {
     name:       "Vin blanc",
     category:   'Boissons',
-    image:      'https://res.cloudinary.com/dubgqyx31/image/upload/v1590416386/nomess/sauternes-2016-liquoreux_onhvoe.jpg'
+    image:      'https://res.cloudinary.com/dubgqyx31/image/upload/v1590489799/nomess/sauternes-2016-liquoreux_onhvoe_kio3o5.png'
   },
   {
     name:       "Tomate",
     category:   'Fruits et légumes',
-    image:      'https://res.cloudinary.com/dubgqyx31/image/upload/v1590416469/nomess/tomate_gfkr5j.jpg'
+    image:      'https://res.cloudinary.com/dubgqyx31/image/upload/v1590489697/nomess/tomate_gfkr5j_dflgba.png'
   },
   {
     name:       "Saumon",
@@ -60,12 +60,12 @@ ingredients = [
   {
     name:       "Huile d'olive",
     category:   'Condiments',
-    image:      'https://res.cloudinary.com/dubgqyx31/image/upload/v1590416951/nomess/sticker-huile-d-olive_fqxh8w.jpg'
+    image:      'https://res.cloudinary.com/dubgqyx31/image/upload/v1590489610/nomess/sticker-huile-d-olive_fqxh8w_tjl0qe.png'
   },
   {
     name:       "Poivre",
     category:   'Condiments',
-    image:      'https://res.cloudinary.com/dubgqyx31/image/upload/v1590417167/nomess/poivre_fkabwa.webp'
+    image:      'https://res.cloudinary.com/dubgqyx31/image/upload/v1590489505/nomess/poivre_fkabwa_c07q58.png'
   },
 ]
 
