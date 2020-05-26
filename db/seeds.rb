@@ -15,57 +15,57 @@ ingredients = [
   {
     name:       "Brocoli",
     category:   'Fruits et légumes',
-    image:      'https://res.cloudinary.com/dubgqyx31/image/upload/w_64,h_48,c_scale/v1590415257/nomess/Brocoli_ywgssh.jpg'
+    image:      'https://res.cloudinary.com/dubgqyx31/image/upload/v1590415257/nomess/Brocoli_ywgssh.jpg'
   },
   {
     name:       "Banane",
     category:   'Fruits et légumes',
-    image:      'https://res.cloudinary.com/dubgqyx31/image/upload/w_64,h_48,c_scale/v1590416016/nomess/banane_DAC0XAQ_gpj5to.jpg'
+    image:      'https://res.cloudinary.com/dubgqyx31/image/upload/v1590416016/nomess/banane_DAC0XAQ_gpj5to.jpg'
   },
   {
     name:       "Yaourt",
     category:   'Produits laitiers',
-    image:      'https://res.cloudinary.com/dubgqyx31/image/upload/w_64,h_48,c_scale/v1590417815/nomess/yaourt_fkuzhq.jpg'
+    image:      'https://res.cloudinary.com/dubgqyx31/image/upload/v1590417815/nomess/yaourt_fkuzhq.jpg'
   },
   {
     name:       "Parmesan",
     category:   'Produits laitiers',
-    image:      'https://res.cloudinary.com/dubgqyx31/image/upload/w_64,h_48,c_scale/v1590417470/nomess/parmesan_bj155a.webp'
+    image:      'https://res.cloudinary.com/dubgqyx31/image/upload/v1590417470/nomess/parmesan_bj155a.webp'
   },
   {
     name:       "Riz",
     category:   'Féculents',
-    image:      'https://res.cloudinary.com/dubgqyx31/image/upload/w_64,h_48,c_scale/v1590417749/nomess/riz_fisrkb.jpg'
+    image:      'https://res.cloudinary.com/dubgqyx31/image/upload/v1590417749/nomess/riz_fisrkb.jpg'
   },
   {
     name:       "Vin blanc",
     category:   'Boissons',
-    image:      'https://res.cloudinary.com/dubgqyx31/image/upload/w_64,h_48,c_scale/v1590416386/nomess/sauternes-2016-liquoreux_onhvoe.jpg'
+    image:      'https://res.cloudinary.com/dubgqyx31/image/upload/v1590416386/nomess/sauternes-2016-liquoreux_onhvoe.jpg'
   },
   {
     name:       "Tomate",
     category:   'Fruits et légumes',
-    image:      'https://res.cloudinary.com/dubgqyx31/image/upload/w_64,h_48,c_scale/v1590416469/nomess/tomate_gfkr5j.jpg'
+    image:      'https://res.cloudinary.com/dubgqyx31/image/upload/v1590416469/nomess/tomate_gfkr5j.jpg'
   },
   {
     name:       "Saumon",
     category:   'Protéines',
-    image:      'https://res.cloudinary.com/dubgqyx31/image/upload/w_64,h_48,c_scale/v1590417300/nomess/saumon_unhydx.png'
+    image:      'https://res.cloudinary.com/dubgqyx31/image/upload/v1590417300/nomess/saumon_unhydx.png'
   },
   {
     name:       "Pâtes",
     category:   'Féculents',
-    image:      'https://res.cloudinary.com/dubgqyx31/image/upload/w_64,h_48,c_scale/v1590417589/nomess/pates_hzcsf2.png'
+    image:      'https://res.cloudinary.com/dubgqyx31/image/upload/v1590417589/nomess/pates_hzcsf2.png'
   },
   {
     name:       "Huile d'olive",
     category:   'Condiments',
-    image:      'https://res.cloudinary.com/dubgqyx31/image/upload/w_64,h_48,c_scale/v1590416951/nomess/sticker-huile-d-olive_fqxh8w.jpg'
+    image:      'https://res.cloudinary.com/dubgqyx31/image/upload/v1590416951/nomess/sticker-huile-d-olive_fqxh8w.jpg'
   },
   {
     name:       "Poivre",
     category:   'Condiments',
-    image:      'https://res.cloudinary.com/dubgqyx31/image/upload/w_64,h_48,c_scale/v1590417167/nomess/poivre_fkabwa.webp'
+    image:      'https://res.cloudinary.com/dubgqyx31/image/upload/v1590417167/nomess/poivre_fkabwa.webp'
   },
 ]
 
