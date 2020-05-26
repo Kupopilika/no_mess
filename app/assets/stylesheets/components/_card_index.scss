@@ -6,6 +6,7 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
+  align-items: center;
 }
 
 .index-card-img {
@@ -32,6 +33,11 @@
     font-size: 1rem;
 }
 
+.card-ingredient-first h2 {
+    font-size: 1rem;
+    margin-bottom: 0;
+}
+
 .card-ingredient-last {
     display: flex;
     justify-content: end;
@@ -39,6 +45,7 @@
 
 .card-ingredient-last h2 {
     font-size: 1rem;
+    margin-bottom: 0;
 }
 
 #welcome {
@@ -51,14 +58,17 @@
 .card-ingredient-delete {
     position: absolute;
     margin-left: 315px;
-    margin-top: -2px;
 }
 
 
 .card-ingredient-edit {
     position: absolute;
     margin-left: 290px;
-    margin-top: -2px;
+}
+
+#separation {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
 }
 
 
