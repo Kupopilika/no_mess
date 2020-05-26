@@ -13,19 +13,19 @@ Ingredient.destroy_all
 
 ingredients = [
   {
-    name:       "Brocoli",
+    name:       "Brocolis",
     category:   'Fruits et légumes',
-    image:      'https://res.cloudinary.com/dubgqyx31/image/upload/v1590490322/nomess/Brocoli_ywgssh_tmkr1w.png'
+    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590508379/No%20Mess/broccoli_dal6im.png'
   },
   {
     name:       "Banane",
     category:   'Fruits et légumes',
-    image:      'https://res.cloudinary.com/dubgqyx31/image/upload/v1590490222/nomess/banane_DAC0XAQ_gpj5to_yhisjf.png'
+    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590508506/No%20Mess/banana_ighpwd.png'
   },
   {
     name:       "Yaourt",
     category:   'Produits laitiers',
-    image:      'https://res.cloudinary.com/dubgqyx31/image/upload/v1590490128/nomess/yaourt_fkuzhq_pdruhw.png'
+    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590508512/No%20Mess/yogurt_bnpfrp.png'
   },
   {
     name:       "Parmesan",
@@ -70,7 +70,7 @@ ingredients = [
    {
     name:       "Concombre",
     category:   'Fruits et légumes',
-    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590502209/cucumber_ucgtun.png'  },
+    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590508083/No%20Mess/cucumber_ucgtun_o3ccx9.png'  },
 ]
 
 # user = User.create(email:"mess@gmail.com", password:"A12345", first_name: "master", last_name:"chief", address:"nintendoland", phone_number:"0123456789", avatar:"http://www.pngall.com/wp-content/uploads/2/Video-Game-PNG-Pic.png")
