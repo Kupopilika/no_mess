@@ -1,5 +1,6 @@
 class UserIngredientsController < ApplicationController
   skip_before_action :authenticate_user!, only: [ :index, :new ]
+  before_action :set_user_ingredient, only: [:show, :edit, :update, :destroy]
 
   def index
     @user_ingredients = UserIngredient.all.order(:expiration_date)
@@ -27,12 +28,20 @@ class UserIngredientsController < ApplicationController
   end
 
   def update
+    @user_ingredient.update(user_ingredients_params)
+    redirect_to user_ingredients_path
   end
 
-  def delete
+  def destroy
+    @user_ingredient.destroy
+    redirect_to user_ingredients_path
   end
 
   private
+
+  def set_user_ingredient
+    @user_ingredient = UserIngredient.find(params[:id])
+  end
 
   def user_ingredients_params
     params.require(:user_ingredient).permit(:quantity, :purchase_date, :expiration_date, :ingredient_id, :user_id)
