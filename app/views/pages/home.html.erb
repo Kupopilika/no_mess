@@ -1,2 +1,48 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div class="container-home">
+
+  <div class="title-app"> No Mess </div>
+
+  <div class="line-card">
+    <div class="img-home"><%= image_tag "https://res.cloudinary.com/dc1jk4jut/image/upload/v1590418562/no_mess/vegetable_64_fyxldx.png" %></div>
+    <div>
+      <div class="title-card"> Remplis ton Garde-manger </div>
+      <div class="content-card">Saisis les ingrédients dans ton garde-manger.
+        En sélectionnant la catégorie ou la date limite de consommation,
+      nous pourrons te faire des rappels avant qu'il ne soit trop tard.</div>
+    </div>
+  </div>
+
+  <div class="line-card">
+    <div class="img-home"><%= image_tag "https://res.cloudinary.com/dc1jk4jut/image/upload/v1590418687/no_mess/recipe_1_qlgazn.png" %></div>
+    <div>
+      <div class="title-card"> Recettes </div>
+      <div class="content-card"> Nous pourrons ainsi te proposer des recettes pour cuisiner en priorité ce qui risque de périmer. </div>
+    </div>
+  </div>
+
+  <div class="line-card">
+    <div class="img-home"><%= image_tag "https://res.cloudinary.com/dc1jk4jut/image/upload/v1590418686/no_mess/cook_2_ecobni.png" %></div>
+    <div>
+      <div class="title-card"> Sur le feu </div>
+      <div class="content-card"> Il ne te restera plus qu'à choisir la recette à cuisiner.
+      En cliquant sur le bouton, ton garde-manger sera mis automatiquement à jour.</div>
+    </div>
+  </div>
+
+  <div class="button-line">
+    <div>
+      <%= link_to "Inscris-toi", new_user_registration_path, class: "btn btn-flat" %>
+    </div>
+    <div>
+      <%= link_to "Connecte-toi", new_user_session_path, class: "btn btn-flat" %>
+    </div>
+  </div>
+
+
+<!--    <#% if user_signed_in? %>
+          <%= link_to "Log out", destroy_user_session_path, method: :delete, class: "nav-link" %>
+    <#% else %>
+          <%= link_to "Login", user_session_path, class: "nav-link" %>
+    <#% end %> -->
+
+</div>

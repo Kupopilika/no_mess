@@ -13,9 +13,14 @@
   </head>
 
   <body>
-    <%= render 'shared/navbar' %>
-    <%= render 'shared/flashes' %>
+    <% if user_signed_in? %>
+      <%= render 'shared/navbar' %>
+    <% end %>
+<!--     <#%= render 'shared/flashes' %> -->
 
+  <div class="content-wrapper">
     <%= yield %>
+  </div>
+
   </body>
 </html>
