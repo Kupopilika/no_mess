@@ -73,4 +73,11 @@ user2 = User.create(email:"messa@gmail.com", password:"A12345", first_name: "yos
 user2.save!
 puts user
 
+ingredient = Ingredient.create()
+ingredient.save!
+
+
+
+
+
 puts 'Finished!'
