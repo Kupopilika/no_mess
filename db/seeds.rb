@@ -65,7 +65,7 @@ ingredients = [
   {
     name:       "Poivre",
     category:   'Condiments',
-    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590508083/No%20Mess/salt_mhnteo.png'
+    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590572409/No%20Mess/salt_bvwpix.png'
   },
    {
     name:       "Concombre",
@@ -84,11 +84,11 @@ ingredients.each do |data|
   file = URI.open(data[:image])
   ingredient = Ingredient.new(name: data[:name], category: data[:category])
   ingredient.photo.attach(io: file, filename: "#{ingredient.name}.png", content_type: 'image/png')
-  if ingredient.photo.attached?
+  # if ingredient.photo.attached?
     ingredient.save!
-  else
-    puts "Pas de photo"
-  end
+  # else
+  #   puts "Pas de photo"
+  # end
 end
 
 
