@@ -143,6 +143,56 @@ ingredients = [
     category:   '1',
     image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590574543/No%20Mess/harvest_jlu7ek.png'
   },
+    {
+    name:       "Pomme",
+    category:   '6',
+    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590574543/No%20Mess/harvest_jlu7ek.png'
+  },
+    {
+    name:       "Orange",
+    category:   '5',
+    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590574543/No%20Mess/harvest_jlu7ek.png'
+  },
+    {
+    name:       "Clémentine",
+    category:   '5',
+    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590574543/No%20Mess/harvest_jlu7ek.png'
+  },
+    {
+    name:       "Pêche",
+    category:   '3',
+    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590574543/No%20Mess/harvest_jlu7ek.png'
+  },
+    {
+    name:       "Poire",
+    category:   '4',
+    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590574543/No%20Mess/harvest_jlu7ek.png'
+  },
+    {
+    name:       "Raisin",
+    category:   '3',
+    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590574543/No%20Mess/harvest_jlu7ek.png'
+  },
+    {
+    name:       "Pamplemousse",
+    category:   '4',
+    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590574543/No%20Mess/harvest_jlu7ek.png'
+  },
+    {
+    name:       "Kiwi",
+    category:   '4',
+    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590574543/No%20Mess/harvest_jlu7ek.png'
+  },
+    {
+    name:       "Fraise",
+    category:   '2',
+    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590574543/No%20Mess/harvest_jlu7ek.png'
+  },
+    {
+    name:       "Artichaut",
+    category:   '1',
+    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590574543/No%20Mess/harvest_jlu7ek.png'
+  },
 ]
 
 # user = User.create(email:"mess@gmail.com", password:"A12345", first_name: "master", last_name:"chief", address:"nintendoland", phone_number:"0123456789", avatar:"http://www.pngall.com/wp-content/uploads/2/Video-Game-PNG-Pic.png")
