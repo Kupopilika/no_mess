@@ -1,0 +1,10 @@
+.container-recipe {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.card-recipe-infos {
+  display: flex;
+  justify-content: space-between;
+}

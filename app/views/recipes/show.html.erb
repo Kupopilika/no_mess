@@ -1,20 +1,54 @@
-<div class="container">
+<div class="container-recipe">
   <div class="cards">
+    <div class="card-recipe">
+      <h6>Nom de la recette</h6>
+      <img src="https://res.cloudinary.com/dubgqyx31/image/upload/w_375,h_243,c_scale/v1590506082/nomess/charfraise_dzpblg.jpg" />
+        <div class="recipe-infos">
+          <div class="recipe-infos-total-time">
+            <span class="recipe-infos-time-titre">Temps</span>
+            <span class="recipe-infos-time-value">50 min</span>
+          </div>
+          <div class="recipe-info-quantity">
+            <span class="recipe-infos-quantity-titre">Personnes</span>
+            <span class="recipe-infos-quantity-value">8</span>
+          </div>
+          <div class="recipe-info-level">
+            <span class="recipe-infos-level-titre">Niveau moyen</span>
+            <span class="recipe-infos-level-value">3</span>
+          </div>
+        </div>
 
-  <div class="card-trip">
-    <img src="https://res.cloudinary.com/dubgqyx31/image/upload/w_166,c_scale/v1590506082/nomess/charfraise_dzpblg.jpg" />
-    <div class="card-trip-infos">
-      <div>
-        <h6>Nom de la recette</h6>
-        <p>Temps</p>
-        <p>Nombres de personne</p>
+        <div class="container-tab">
+          <button class="tablinks" onclick="openTabs(event, 'Ingrédients')">Ingrédients</button>
+          <button class="tablinks" onclick="openTabs(event, 'Préparation')">Préparation</button>
+        </div>
 
+        <div id="Ingrédients" class="tabcontent">
+          <p>100g de Fraise</p>
+        </div>
+
+        <div id="Préparation" class="tabcontent">
+          <p>Cuire les fraises pendant 1min</p>
+        </div>
+
+        <div class="button-line">
+          <%= link_to "Bon appétit", new_user_registration_path, class: "btn btn-flat" %>
+        </div>
       </div>
     </div>
-  </div>
 
-      <div class="button-line">
-        <%= link_to "Bon appétit", new_user_registration_path, class: "btn btn-flat" %>
-      </div>
-  </div>
-</div>
+<script>
+function openTabs(evt, tabsName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(tabsName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
