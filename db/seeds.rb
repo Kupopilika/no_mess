@@ -72,56 +72,55 @@ ingredients = [
     category:   '2',
     image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590508083/No%20Mess/cucumber_ucgtun_o3ccx9.png'
   },
-  # No image under
   {
     name:       "Carotte",
     category:   '5',
-    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590574543/No%20Mess/harvest_jlu7ek.png'
+    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590588555/No%20Mess/carrot_p21kbg.png'
   },
     {
     name:       "Melon",
     category:   '2',
-    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590574543/No%20Mess/harvest_jlu7ek.png'
+    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590588840/No%20Mess/melon_rrrh6n.png'
   },
     {
     name:       "Endive",
     category:   '2',
-    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590574543/No%20Mess/harvest_jlu7ek.png'
+    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590588982/No%20Mess/endive_zqf9sv.png'
   },
     {
     name:       "Salade",
     category:   '1',
-    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590574543/No%20Mess/harvest_jlu7ek.png'
+    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590589058/No%20Mess/lettuce_iahhor.png'
   },
     {
     name:       "Courgette",
     category:   '3',
-    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590574543/No%20Mess/harvest_jlu7ek.png'
+    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590589183/No%20Mess/zucchini_yg4otu.png'
   },
     {
     name:       "Oignons",
     category:   '6',
-    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590574543/No%20Mess/harvest_jlu7ek.png'
+    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590589448/No%20Mess/onion_qjgfzy.png'
   },
     {
     name:       "Ail",
     category:   '6',
-    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590574543/No%20Mess/harvest_jlu7ek.png'
+    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590589738/No%20Mess/garlic_vv0kld.png'
   },
     {
     name:       "Oeuf",
     category:   '6',
-    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590574543/No%20Mess/harvest_jlu7ek.png'
+    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590589791/No%20Mess/eggs_pspyoe.png'
   },
     {
     name:       "Poireau",
     category:   '6',
-    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590574543/No%20Mess/harvest_jlu7ek.png'
+    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590589856/No%20Mess/leek_f5foyp.png'
   },
     {
     name:       "Chou-fleur",
     category:   '2',
-    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590574543/No%20Mess/harvest_jlu7ek.png'
+    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590590074/No%20Mess/cauliflower_qwjutp.png'
   },
     {
     name:       "Pomme de terre",
