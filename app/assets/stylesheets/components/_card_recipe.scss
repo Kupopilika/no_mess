@@ -29,3 +29,34 @@
   justify-content: space-between;
   box-shadow: -1px 5px 8px 0 rgba(0,0,0,0.2);
 }
+.recipe-infos {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  flex-direction: row;
+}
+.recipe-infos-time-titre {
+  display: block;
+}
+.recipe-infos-quantity-titre {
+  display: block;
+}
+.recipe-infos-level-titre {
+  display: block;
+}
+.card-product {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+.card-product img {
+  height: 48px;
+  width: 64px;
+}
+.card-product p {
+  font-size: 12px;
+  line-height: 1.4;
+  opacity: .7;
+  margin-bottom: 0;
+  margin-top: 8px;
+}
