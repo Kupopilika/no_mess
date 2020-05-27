@@ -125,53 +125,54 @@ ingredients = [
     {
     name:       "Pomme de terre",
     category:   '7',
-    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590574543/No%20Mess/harvest_jlu7ek.png'
+    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590590633/No%20Mess/potatoes_q4v3dp.png'
   },
     {
     name:       "Patate douce",
     category:   '7',
-    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590574543/No%20Mess/harvest_jlu7ek.png'
+    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590591073/No%20Mess/potato_srckc5.png'
   },
     {
     name:       "Ciboulette",
     category:   '1',
-    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590574543/No%20Mess/harvest_jlu7ek.png'
+    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590591146/No%20Mess/chives_tl67p4.png'
   },
     {
     name:       "Persil",
     category:   '1',
-    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590574543/No%20Mess/harvest_jlu7ek.png'
+    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590591267/No%20Mess/parsley_tthu3x.png'
   },
     {
     name:       "Pomme",
     category:   '6',
-    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590574543/No%20Mess/harvest_jlu7ek.png'
+    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590591322/No%20Mess/apple_fnytpi.png'
   },
     {
     name:       "Orange",
     category:   '5',
-    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590574543/No%20Mess/harvest_jlu7ek.png'
+    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590591384/No%20Mess/orange_ekj95g.png'
   },
     {
     name:       "Clémentine",
     category:   '5',
-    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590574543/No%20Mess/harvest_jlu7ek.png'
+    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590591384/No%20Mess/orange_ekj95g.png'
   },
     {
     name:       "Pêche",
     category:   '3',
-    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590574543/No%20Mess/harvest_jlu7ek.png'
+    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590591520/No%20Mess/peach-2_bdlbwf.png'
   },
     {
     name:       "Poire",
     category:   '4',
-    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590574543/No%20Mess/harvest_jlu7ek.png'
+    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590591615/No%20Mess/pear_duotkp.png'
   },
     {
     name:       "Raisin",
     category:   '3',
-    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590574543/No%20Mess/harvest_jlu7ek.png'
+    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590591957/No%20Mess/grapes_jvuujr.png'
   },
+  # XXX
     {
     name:       "Pamplemousse",
     category:   '4',
@@ -386,7 +387,7 @@ ingredients = [
     {
     name:       "Nectarine",
     category:   '1',
-    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590574543/No%20Mess/harvest_jlu7ek.png'
+    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590591520/No%20Mess/peach_xxhxzb.png'
   },
     {
     name:       "Prune",
