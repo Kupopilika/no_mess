@@ -40,12 +40,12 @@ ingredients = [
   {
     name:       "Vin blanc",
     category:   'Boissons',
-    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590567441/No%20Mess/rice_orz34s.png'
+    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590570805/No%20Mess/white-wine_ab9gtu.png'
   },
   {
     name:       "Tomate",
     category:   'Fruits et légumes',
-    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590567947/No%20Mess/olive-oil_gqjpqp.png'
+    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590570911/No%20Mess/tomato_kideom.png'
   },
   {
     name:       "Saumon",
