@@ -25,7 +25,7 @@ require("channels")
 // External imports
 import "bootstrap";
 import { initDate } from "../plugins/flatpickr";
-
+// import { openTabs } from "../components/tabs";
 // Internal imports, e.g:
 // import { initSelect2 } from '../components/init_select2';
 

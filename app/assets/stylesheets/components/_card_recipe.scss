@@ -34,6 +34,7 @@
   justify-content: space-around;
   text-align: center;
   flex-direction: row;
+  padding: 10px 0;
 }
 .recipe-infos-time-titre {
   display: block;
@@ -44,19 +45,64 @@
 .recipe-infos-level-titre {
   display: block;
 }
-.card-product {
+.card-ingredient {
   display: flex;
   align-items: center;
   margin: 10px 0;
 }
-.card-product img {
+.card-ingredient img {
   height: 48px;
   width: 64px;
 }
-.card-product p {
-  font-size: 12px;
+.card-ingredient p {
+  font-size: 16px;
   line-height: 1.4;
   opacity: .7;
   margin-bottom: 0;
   margin-top: 8px;
+  margin-left: 10px;
 }
+.card-preparation {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  margin: 10px 0;
+}
+.card-preparation p {
+  font-size: 16px;
+  line-height: 1.4;
+  opacity: .7;
+  margin-bottom: 0;
+}
+.card-product-infos {
+  align-self:center;
+}
+.recipe-infos-time-titre {
+  font-weight: 600px;
+}
+
+.number-preparation {
+  width: 35px;
+  color: #b6ead8;
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 50px;
+  line-height: 38px;
+  box-shadow: 1px 1px 12px 0 rgba(0, 0, 0, 0.07);
+}
+.list-inline-cercle{
+  list-style: none;
+  padding-left: 0px;
+  margin: 0;
+}
+.card-product-details .fa-circle {
+  color: orange;
+  font-size: 20px;
+}
+.nav-tabs {
+  justify-content: space-around;
+}
+// .card-product-details .fa-circle {
+//   color: rgba(239, 239, 239, 1);
+//   font-size: 20px;
+// }
