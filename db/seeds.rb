@@ -288,25 +288,115 @@ ingredients = [
     name:       "Petit pois",
     category:   '1',
     image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590574543/No%20Mess/harvest_jlu7ek.png'
-  },  {
+  },
+    {
     name:       "Poivron",
     category:   '3',
     image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590574543/No%20Mess/harvest_jlu7ek.png'
-  },  {
+  },
+    {
     name:       "Radis",
     category:   '1',
     image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590574543/No%20Mess/harvest_jlu7ek.png'
-  },  {
-    name:       "",
-    category:   '',
+  },
+    {
+    name:       "Abricot",
+    category:   '2',
     image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590574543/No%20Mess/harvest_jlu7ek.png'
-  },  {
-    name:       "",
-    category:   '',
+  },
+    {
+    name:       "Ananas",
+    category:   '2',
     image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590574543/No%20Mess/harvest_jlu7ek.png'
-  },  {
-    name:       "",
-    category:   '',
+  },
+    {
+    name:       "Avocat",
+    category:   '2',
+    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590574543/No%20Mess/harvest_jlu7ek.png'
+  },
+    {
+    name:       "Cerise",
+    category:   '1',
+    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590574543/No%20Mess/harvest_jlu7ek.png'
+  },
+    {
+    name:       "Citron",
+    category:   '4',
+    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590574543/No%20Mess/harvest_jlu7ek.png'
+  },
+    {
+    name:       "Datte",
+    category:   '7',
+    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590574543/No%20Mess/harvest_jlu7ek.png'
+  },
+    {
+    name:       "Figue",
+    category:   '1',
+    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590574543/No%20Mess/harvest_jlu7ek.png'
+  },
+    {
+    name:       "Framboise",
+    category:   '1',
+    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590574543/No%20Mess/harvest_jlu7ek.png'
+  },
+    {
+    name:       "Kaki",
+    category:   '3',
+    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590574543/No%20Mess/harvest_jlu7ek.png'
+  },
+    {
+    name:       "Goyave",
+    category:   '2',
+    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590574543/No%20Mess/harvest_jlu7ek.png'
+  },
+    {
+    name:       "Mangue",
+    category:   '2',
+    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590574543/No%20Mess/harvest_jlu7ek.png'
+  },
+    {
+    name:       "Litchi",
+    category:   '4',
+    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590574543/No%20Mess/harvest_jlu7ek.png'
+  },
+    {
+    name:       "Mirabelle",
+    category:   '2',
+    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590574543/No%20Mess/harvest_jlu7ek.png'
+  },
+    {
+    name:       "Mûre",
+    category:   '1',
+    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590574543/No%20Mess/harvest_jlu7ek.png'
+  },
+    {
+    name:       "Myrtille",
+    category:   '3',
+    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590574543/No%20Mess/harvest_jlu7ek.png'
+  },
+    {
+    name:       "Papaye",
+    category:   '1',
+    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590574543/No%20Mess/harvest_jlu7ek.png'
+  },
+    {
+    name:       "Pastèque",
+    category:   '3',
+    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590574543/No%20Mess/harvest_jlu7ek.png'
+  },
+    {
+    name:       "Nectarine",
+    category:   '1',
+    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590574543/No%20Mess/harvest_jlu7ek.png'
+  },
+    {
+    name:       "Prune",
+    category:   '2',
+    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590574543/No%20Mess/harvest_jlu7ek.png'
+  },
+    {
+    name:       "Rhubarbe",
+    category:   '1',
     image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590574543/No%20Mess/harvest_jlu7ek.png'
   },
 ]
