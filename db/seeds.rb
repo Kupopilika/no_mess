@@ -172,47 +172,47 @@ ingredients = [
     category:   '3',
     image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590591957/No%20Mess/grapes_jvuujr.png'
   },
-  # XXX
     {
     name:       "Pamplemousse",
     category:   '4',
-    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590574543/No%20Mess/harvest_jlu7ek.png'
+    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590592306/No%20Mess/diet_gz4nte.png'
   },
     {
     name:       "Kiwi",
     category:   '4',
-    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590574543/No%20Mess/harvest_jlu7ek.png'
+    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590592362/No%20Mess/kiwi_u0foyf.png'
   },
     {
     name:       "Fraise",
     category:   '2',
-    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590574543/No%20Mess/harvest_jlu7ek.png'
+    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590592402/No%20Mess/strawberry_fltwyd.png'
   },
     {
     name:       "Artichaut",
     category:   '1',
-    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590574543/No%20Mess/harvest_jlu7ek.png'
+    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590592504/No%20Mess/artichoke_ez9m5s.png'
   },
     {
     name:       "Asperge",
     category:   '2',
-    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590574543/No%20Mess/harvest_jlu7ek.png'
+    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590592580/No%20Mess/asparagus_wfxau0.png'
   },
   {
     name:       "Aubergine",
     category:   '2',
-    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590574543/No%20Mess/harvest_jlu7ek.png'
+    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590592610/No%20Mess/eggplant_l1kmnm.png'
   },
     {
     name:       "Betterave",
     category:   '2',
-    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590574543/No%20Mess/harvest_jlu7ek.png'
+    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590592781/No%20Mess/beetroot_jiobae.png'
   },
     {
     name:       "Blette",
     category:   '1',
-    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590574543/No%20Mess/harvest_jlu7ek.png'
+    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590594318/No%20Mess/chard_bv0hvh.png'
   },
+
     {
     name:       "Celeri Branche",
     category:   '2',
