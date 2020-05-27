@@ -65,7 +65,7 @@ ingredients = [
   {
     name:       "Poivre",
     category:   'Condiments',
-    image:      'https://res.cloudinary.com/dubgqyx31/image/upload/v1590489505/nomess/poivre_fkabwa_c07q58.png'
+    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590508083/No%20Mess/salt_mhnteo.png'
   },
    {
     name:       "Concombre",
