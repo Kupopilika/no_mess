@@ -2,6 +2,9 @@
   justify-content: space-between;
   background: #b6ead8;
   height: 70px;
+  -webkit-box-shadow: 1px -5px 7px -1px rgba(211,214,213,0.71);
+  -moz-box-shadow: 1px -5px 7px -1px rgba(211,214,213,0.71);
+  box-shadow: 1px -5px 7px -1px rgba(211,214,213,0.71);
 }
 
 .navbar-lewagon .navbar-collapse {
@@ -10,16 +13,19 @@
 
 .navbar-lewagon .navbar-brand img {
   width: 40px;
+  justify-content: center;
 }
 
 .navbar-title {
  font-size: 8px;
+ padding-top: 3px;
  padding-bottom: 10px;
  font-weight: bold;
+ text-align: center;
 }
 
 .content-wrapper {
-  height: calc(100vh - 50px);
+  height: calc(100vh - 70px);
 }
 
 .fixed-bottom-nav {
