@@ -6,10 +6,12 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 require "open-uri"
+require "json"
 
 puts "Start to add Ingredients in our seed"
 
 Ingredient.destroy_all
+Recipe.destroy_all
 
 ingredients = [
   {
@@ -213,10 +215,28 @@ ingredients.each do |data|
   # end
 end
 
+filepath = 'scrapresult.json'
+serialized_recipes = File.read(filepath)
 
-veloute_brocolis = Recipe.create(name: "Velouté de brocolis", instructions: "1) Nettoyez les bouquets de brocolis, raccourcissez les trognons de 5 cm et retirez les feuilles.", difficulty_level: "Très facile", preparation_time: "15 min", cooking_time: "30 min", image:"https://res.cloudinary.com/dc1jk4jut/image/upload/v1590507892/no_mess/veloute_brocolis_mooxso.png")
-tarte_saumon_brocolis = Recipe.create(name: "Tarte saumon brocolis", instructions: "Etaler la pâte dans un moule. Recouvrir des tranches de saumon. ", difficulty_level: "Très facile", preparation_time: "10 min", cooking_time: "30 min", image:"https://res.cloudinary.com/dc1jk4jut/image/upload/v1590507889/no_mess/tarte_brocolis_mdwa5m.png")
-puree_brocolis = Recipe.create(name: "Purée de brocolis", instructions: "1) Préparez les brocolis, lavez-les et détachez-les en bouquets.", difficulty_level: "Facile", preparation_time: "20 min", cooking_time: "20 min", image:"https://res.cloudinary.com/dc1jk4jut/image/upload/v1590507892/no_mess/puree_brocolis_ieieby.png")
+recipes = JSON.parse(serialized_recipes)
+
+
+i = 0
+while i <= recipes["recipes"].length - 1
+  Recipe.create(name: recipes["recipes"][i]["name"], preparation_time: recipes["recipes"][i]["preparation_time"], cooking_time: recipes["recipes"][i]["cooking_time"], difficulty_level: recipes["recipes"][i]["difficulty"], instructions: recipes["recipes"][i]["instructions"], ingredient_list: recipes["recipes"][i]["ingredients"], image: recipes["recipes"][i]["image"])
+  # puts recipes["recipes"][i]["name"]
+  # puts recipes["recipes"][i]["preparation_time"]
+  # puts recipes["recipes"][i]["cooking_time"]
+  # puts recipes["recipes"][i]["difficulty"]
+  # puts recipes["recipes"][i]["instructions"]
+  # puts recipes["recipes"][i]["ingredients"]
+  # puts recipes["recipes"][i]["image"]
+  i += 1
+end
+
+# veloute_brocolis = Recipe.create(name: "Velouté de brocolis", instructions: "1) Nettoyez les bouquets de brocolis, raccourcissez les trognons de 5 cm et retirez les feuilles.", difficulty_level: "Très facile", preparation_time: "15 min", cooking_time: "30 min", image:"https://res.cloudinary.com/dc1jk4jut/image/upload/v1590507892/no_mess/veloute_brocolis_mooxso.png")
+# tarte_saumon_brocolis = Recipe.create(name: "Tarte saumon brocolis", instructions: "Etaler la pâte dans un moule. Recouvrir des tranches de saumon. ", difficulty_level: "Très facile", preparation_time: "10 min", cooking_time: "30 min", image:"https://res.cloudinary.com/dc1jk4jut/image/upload/v1590507889/no_mess/tarte_brocolis_mdwa5m.png")
+# puree_brocolis = Recipe.create(name: "Purée de brocolis", instructions: "1) Préparez les brocolis, lavez-les et détachez-les en bouquets.", difficulty_level: "Facile", preparation_time: "20 min", cooking_time: "20 min", image:"https://res.cloudinary.com/dc1jk4jut/image/upload/v1590507892/no_mess/puree_brocolis_ieieby.png")
 
 
 puts 'Finished!'
