@@ -8,3 +8,24 @@
   display: flex;
   justify-content: space-between;
 }
+
+.main-title {
+  font-weight: bold;
+  font-size: 23px;
+  text-align: center;
+  font-family: Arial;
+  margin-bottom: 5px;
+}
+
+.card-recipe img {
+  max-width: 100%;
+  width: 100%;
+  object-fit: cover;
+  max-height: 414px;
+}
+
+.container-tab {
+  display: flex;
+  justify-content: space-between;
+  box-shadow: -1px 5px 8px 0 rgba(0,0,0,0.2);
+}
