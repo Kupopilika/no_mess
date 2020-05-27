@@ -193,6 +193,122 @@ ingredients = [
     category:   '1',
     image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590574543/No%20Mess/harvest_jlu7ek.png'
   },
+    {
+    name:       "Asperge",
+    category:   '2',
+    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590574543/No%20Mess/harvest_jlu7ek.png'
+  },
+  {
+    name:       "Aubergine",
+    category:   '2',
+    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590574543/No%20Mess/harvest_jlu7ek.png'
+  },
+    {
+    name:       "Betterave",
+    category:   '2',
+    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590574543/No%20Mess/harvest_jlu7ek.png'
+  },
+    {
+    name:       "Blette",
+    category:   '1',
+    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590574543/No%20Mess/harvest_jlu7ek.png'
+  },
+    {
+    name:       "Celeri Branche",
+    category:   '2',
+    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590574543/No%20Mess/harvest_jlu7ek.png'
+  },
+    {
+    name:       "Cèpe",
+    category:   '1',
+    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590574543/No%20Mess/harvest_jlu7ek.png'
+  },
+    {
+    name:       "Champignon de Paris",
+    category:   '1',
+    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590574543/No%20Mess/harvest_jlu7ek.png'
+  },
+    {
+    name:       "Chou Kale",
+    category:   '3',
+    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590574543/No%20Mess/harvest_jlu7ek.png'
+  },  {
+    name:       "Chou de Bruxelles",
+    category:   '3',
+    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590574543/No%20Mess/harvest_jlu7ek.png'
+  },  {
+    name:       "Courge Butternut",
+    category:   '7',
+    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590574543/No%20Mess/harvest_jlu7ek.png'
+  },  {
+    name:       "Potiron",
+    category:   '7',
+    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590574543/No%20Mess/harvest_jlu7ek.png'
+  },  {
+    name:       "Potimarron",
+    category:   '7',
+    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590574543/No%20Mess/harvest_jlu7ek.png'
+  },
+    {
+    name:       "Echalote",
+    category:   '5',
+    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590574543/No%20Mess/harvest_jlu7ek.png'
+  },  {
+    name:       "Epinard",
+    category:   '2',
+    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590574543/No%20Mess/harvest_jlu7ek.png'
+  },  {
+    name:       "Fenouil",
+    category:   '2',
+    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590574543/No%20Mess/harvest_jlu7ek.png'
+  },  {
+    name:       "Pousse de haricot mungo",
+    category:   '1',
+    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590574543/No%20Mess/harvest_jlu7ek.png'
+  },  {
+    name:       "Fève",
+    category:   '1',
+    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590574543/No%20Mess/harvest_jlu7ek.png'
+  },  {
+    name:       "Haricots verts",
+    category:   '1',
+    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590574543/No%20Mess/harvest_jlu7ek.png'
+  },
+    {
+    name:       "Navet",
+    category:   '3',
+    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590574543/No%20Mess/harvest_jlu7ek.png'
+  },
+    {
+    name:       "Panais",
+    category:   '3',
+    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590574543/No%20Mess/harvest_jlu7ek.png'
+  },
+    {
+    name:       "Petit pois",
+    category:   '1',
+    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590574543/No%20Mess/harvest_jlu7ek.png'
+  },  {
+    name:       "Poivron",
+    category:   '3',
+    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590574543/No%20Mess/harvest_jlu7ek.png'
+  },  {
+    name:       "Radis",
+    category:   '1',
+    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590574543/No%20Mess/harvest_jlu7ek.png'
+  },  {
+    name:       "",
+    category:   '',
+    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590574543/No%20Mess/harvest_jlu7ek.png'
+  },  {
+    name:       "",
+    category:   '',
+    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590574543/No%20Mess/harvest_jlu7ek.png'
+  },  {
+    name:       "",
+    category:   '',
+    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590574543/No%20Mess/harvest_jlu7ek.png'
+  },
 ]
 
 # user = User.create(email:"mess@gmail.com", password:"A12345", first_name: "master", last_name:"chief", address:"nintendoland", phone_number:"0123456789", avatar:"http://www.pngall.com/wp-content/uploads/2/Video-Game-PNG-Pic.png")
