@@ -10,8 +10,10 @@ require "json"
 
 puts "Start to add Ingredients in our seed"
 
+Favorite.destroy_all
 Ingredient.destroy_all
 Recipe.destroy_all
+
 
 ingredients = [
   {
@@ -255,7 +257,7 @@ ingredients = [
     category:   '5',
     image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590595373/No%20Mess/shallot_xhugi3.png'
   },  {
-    name:       "Epinard",
+    name:       "Épinard",
     category:   '2',
     image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590595422/No%20Mess/spinach_wkk7ku.png'
   },  {
