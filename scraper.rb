@@ -18,7 +18,7 @@ urllist = [
     "https://www.marmiton.org/recettes/recherche.aspx?type=all&aqt=artichaut",
     "https://www.marmiton.org/recettes/recherche.aspx?type=all&aqt=asperge",
     "https://www.marmiton.org/recettes/recherche.aspx?type=all&aqt=aubergine",
-    "https://www.marmiton.org/recettes/recherche.aspx?type=all&aqt=bettrave",
+    "https://www.marmiton.org/recettes/recherche.aspx?type=all&aqt=betterave",
     "https://www.marmiton.org/recettes/recherche.aspx?type=all&aqt=c%C3%A8pe",
     "https://www.marmiton.org/recettes/recherche.aspx?type=all&aqt=potiron",
     "https://www.marmiton.org/recettes/recherche.aspx?type=all&aqt=potimarron",
