@@ -1,5 +1,11 @@
 <div class="container-recipes">
-  <div class="title-recipes"> Recettes proposées </div>
+  <div class="title-recipes">
+  <% if @user_ingredients.count > 0 %>
+    <h2>Vos <%= @user_ingredients.first.ingredient.name %>s vont bientôt finir à la poubelle</h2>
+  <% else %>
+    <h2>Recettes sugéré </h2>
+  <% end %>
+   </div>
   <div class="card-recipes">
     <% @recipes.each do |recipe| %>
       <div class="card-recipe-content">
