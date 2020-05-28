@@ -12,6 +12,7 @@
 
 ActiveRecord::Schema.define(version: 2020_05_27_132929) do
 
+
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -73,6 +74,7 @@ ActiveRecord::Schema.define(version: 2020_05_27_132929) do
     t.string "image"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "ingredient_list"
   end
 
   create_table "user_ingredients", force: :cascade do |t|
