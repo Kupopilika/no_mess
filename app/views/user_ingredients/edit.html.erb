@@ -1,9 +1,13 @@
-<h2>Modifiez votre ingrédient !</h2>
+<div class="container">
+<h3 id="welcome" class="mt-5 mb-3">Modifiez votre ingrédient !</h3>
 
 <%= simple_form_for [@user_ingredient] do |f| %>
 <%= f.association :ingredient, label: "Ingrédient" %>
 <%= f.input :quantity, label: "Quantité" %>
 <%= f.input :purchase_date, label: "Date d'achat", as: :string, required: false, input_html: {class: "datepicker"} %>
 <%= f.input :expiration_date, label: "Date d'expiration", as: :string, required: false, input_html: {class: "datepicker"} %>
-<%= f.button :submit, "Modifiez l'ingrédient !", class: "btn btn-primary"%>
+<div class="mt-5">
+<%= f.button :submit, "Modifiez l'ingrédient !", class: "btn btn-primary center-button"%>
+</div>
 <% end %>
+</div>
