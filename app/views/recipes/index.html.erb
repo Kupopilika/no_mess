@@ -5,11 +5,15 @@
       <div class="card-recipe-content">
         <%= link_to recipe_path(recipe) do%>
           <div class="card-recipe">
-            <img class="img-recipe" src="https://res.cloudinary.com/dc1jk4jut/image/upload/v1590507892/no_mess/veloute_brocolis_mooxso.png">
+            <img class="img-recipe" src="<%= recipe.image %>">
             <div class="card-recipe-infos">
               <div>
-                <h2 class=""><%= recipe.name %></h2>
-                <p> Temps total : <%= recipe.preparation_time + recipe.cooking_time %> min </p>
+                <h2><%= recipe.name %></h2>
+                <% if recipe.cooking_time%>
+                  <p> Temps total : <%= recipe.preparation_time + recipe.cooking_time%> min </p>
+                <% else %>
+                  <p> Temps total : <%= recipe.preparation_time %> </p>
+                <% end %>
               </div>
             </div>
           </div>
