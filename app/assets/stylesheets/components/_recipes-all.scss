@@ -1,3 +1,9 @@
+.favorite-star img {
+  display: flex;
+  justify-content: right;
+  text-align: right;
+}
+
 .title-recipes {
   font-size: 20px;
   text-align: center;
@@ -76,11 +82,11 @@
     width: 230px !important;
 }
 
-// .no-ellipsis p{
-//     width: 100% !important;
-// }
+.no-ellipsis p{
+    width: 100% !important;
+}
 
-// .no-ellipsis h2{
-//     width: 100% !important;
-// }
+.no-ellipsis h2{
+    width: 100% !important;
+}
 
