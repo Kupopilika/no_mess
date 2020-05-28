@@ -10,8 +10,10 @@ require "json"
 
 puts "Start to add Ingredients in our seed"
 
+Favorite.destroy_all
 Ingredient.destroy_all
 Recipe.destroy_all
+
 
 ingredients = [
   {
