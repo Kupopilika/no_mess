@@ -25,7 +25,11 @@ require("channels")
 // External imports
 import "bootstrap";
 import { initDate } from "../plugins/flatpickr";
+
 // import { openTabs } from "../components/tabs";
+
+import { initSelect2 } from '../plugins/select2';
+
 // Internal imports, e.g:
 // import { initSelect2 } from '../components/init_select2';
 
@@ -33,4 +37,6 @@ document.addEventListener('turbolinks:load', () => {
   // Call your functions here, e.g:
   // initSelect2();
   initDate();
+  initSelect2();
+
 });
