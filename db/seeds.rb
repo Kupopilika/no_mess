@@ -313,57 +313,57 @@ ingredients = [
     {
     name:       "Ananas",
     category:   '2',
-    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590574543/No%20Mess/harvest_jlu7ek.png'
+    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590679483/No%20Mess/pineapple_fnyun8.png'
   },
     {
     name:       "Avocat",
     category:   '2',
-    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590574543/No%20Mess/harvest_jlu7ek.png'
+    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590679639/No%20Mess/avocado_uva1ur.png'
   },
     {
     name:       "Cerise",
     category:   '1',
-    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590574543/No%20Mess/harvest_jlu7ek.png'
+    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590679776/No%20Mess/cherry_mojgm1.png'
   },
     {
     name:       "Citron",
     category:   '4',
-    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590574543/No%20Mess/harvest_jlu7ek.png'
+    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590679912/No%20Mess/lemon_i1k6my.png'
   },
     {
     name:       "Datte",
     category:   '7',
-    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590574543/No%20Mess/harvest_jlu7ek.png'
+    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590680092/No%20Mess/date_wpwvft.png'
   },
     {
     name:       "Figue",
     category:   '1',
-    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590574543/No%20Mess/harvest_jlu7ek.png'
+    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590680161/No%20Mess/fig_nvxfss.png'
   },
     {
     name:       "Framboise",
     category:   '1',
-    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590574543/No%20Mess/harvest_jlu7ek.png'
+    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590680218/No%20Mess/raspberries_gkshjv.png'
   },
     {
     name:       "Kaki",
     category:   '3',
-    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590574543/No%20Mess/harvest_jlu7ek.png'
+    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590680325/No%20Mess/persimmon_oxapsa.png'
   },
     {
     name:       "Goyave",
     category:   '2',
-    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590574543/No%20Mess/harvest_jlu7ek.png'
+    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590680401/No%20Mess/guava_gp84gi.png'
   },
     {
     name:       "Mangue",
     category:   '2',
-    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590574543/No%20Mess/harvest_jlu7ek.png'
+    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590680491/No%20Mess/mango_drolqj.png'
   },
     {
     name:       "Litchi",
     category:   '4',
-    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590574543/No%20Mess/harvest_jlu7ek.png'
+    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590680649/No%20Mess/lychee_fmtnjk.png'
   },
     {
     name:       "Mirabelle",
