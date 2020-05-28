@@ -1,0 +1,106 @@
+<div class="container-recipe">
+  <div class="cards">
+    <div class="card-recipe">
+      <h6 class="main-title">Nom de la recette</h6>
+      <!--<img src="https://res.cloudinary.com/dubgqyx31/image/upload/w_375,h_243,c_scale/v1590506082/nomess/charfraise_dzpblg.jpg" />-->
+      <img src="https://assets.afcdn.com/recipe/20131009/63427_w648h414c1cx2592cy1728.jpg" />
+      <div class="recipe-infos">
+        <div class="recipe-infos-total-time">
+          <span class="recipe-infos-time-titre">Temps</span>
+          <span class="recipe-infos-time-value">50 min</span>
+        </div>
+        <div class="recipe-info-level">
+          <span class="recipe-infos-level-titre">Niveau</span>
+          <div class="card-product-details">
+            <div class="list-inline-cercle">
+              <i class="fas fa-circle"></i>
+              <i class="fas fa-circle"></i>
+              <i class="fas fa-circle"></i>
+              <i class="fas fa-circle"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Ingrédients</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Préparation</a>
+        </li>
+      </ul>
+      <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+          <div class="card-ingredient">
+            <img src="https://res.cloudinary.com/kupopilika/image/upload/v1590508506/No%20Mess/banana_ighpwd.png" />
+            <div class="card-product-infos">
+              <p>2 bananes</p>
+            </div>
+          </div>
+          <div class="card-ingredient">
+            <img src="https://res.cloudinary.com/kupopilika/image/upload/v1590508512/No%20Mess/yogurt_bnpfrp.png" />
+            <div class="card-product-infos">
+              <p>2 yaourts brassés</p>
+            </div>
+          </div>
+          <div class="card-ingredient">
+            <img src="https://res.cloudinary.com/kupopilika/image/upload/v1590508512/No%20Mess/yogurt_bnpfrp.png" />
+            <div class="card-product-infos">
+              <p>3 yaourts brassés</p>
+            </div>
+          </div>
+          <div class="card-ingredient">
+            <img src="https://res.cloudinary.com/kupopilika/image/upload/v1590508512/No%20Mess/yogurt_bnpfrp.png" />
+            <div class="card-product-infos">
+              <p>4 yaourts brassés</p>
+            </div>
+          </div>
+          <div class="card-ingredient">
+            <img src="https://res.cloudinary.com/kupopilika/image/upload/v1590508512/No%20Mess/yogurt_bnpfrp.png" />
+            <div class="card-product-infos">
+              <p>5 yaourts brassés</p>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+          <div class="card-preparation">
+            <div class="number-preparation">1</div>
+            <div class="card-product-infos">
+              <p>2 bananes</p>
+            </div>
+          </div>
+          <div class="card-preparation">
+            <div class="number-preparation">2</div>
+            <div class="card-product-infos">
+              <p>2 yaourts brassés</p>
+            </div>
+          </div>
+        </div>
+        <div class="button-line">
+          <%= link_to "Bon appétit", new_user_registration_path, class: "btn btn-flat" %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+<!-- <script>
+function openTabs(evt, tabsName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(tabsName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script> -->

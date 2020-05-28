@@ -1,5 +1,9 @@
 class RecipesController < ApplicationController
 
+  def show
+    # @recipe = Recipe.find(params[:id])
+  end
+
   def index
     @favorites = current_user.favorites
     @user_ingredients = UserIngredient.all.order(:expiration_date)
@@ -14,5 +18,4 @@ class RecipesController < ApplicationController
       @recipes = Recipe.all
     end
   end
-  
 end
