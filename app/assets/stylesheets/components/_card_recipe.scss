@@ -46,10 +46,12 @@
   display: block;
 }
 .card-ingredient {
-  display: flex;
-  align-items: center;
+  // display: flex;
+  // align-items: center;
   margin: 10px 0;
-  justify-content: normal;
+  // justify-content: normal;
+  display: grid;
+  grid-template-columns: 50px 1fr;
 }
 .card-ingredient img {
   height: 48px;
