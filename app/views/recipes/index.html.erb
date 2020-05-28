@@ -1,0 +1,38 @@
+<div class="container-recipes">
+  <div class="title-recipes"> Recettes proposées </div>
+  <div class="card-recipes">
+    <% @recipes.each do |recipe| %>
+      <div class="card-recipe-content">
+        <%= link_to recipe_path(recipe) do%>
+          <div class="card-recipe">
+            <img class="img-recipe" src="https://res.cloudinary.com/dc1jk4jut/image/upload/v1590507892/no_mess/veloute_brocolis_mooxso.png">
+            <div class="card-recipe-infos">
+              <div>
+                <h2 class=""><%= recipe.name %></h2>
+                <p> Temps total : <%= recipe.preparation_time + recipe.cooking_time %> min </p>
+              </div>
+            </div>
+          </div>
+        <%end%>
+      </div>
+
+      <div class="favorite-star">
+        <p> test div star</p>
+        <!-- à refactoriser si possible -->
+        <% if Favorite.find_by(user: current_user, recipe: recipe) %>
+          <%= link_to favorite_path(Favorite.find_by(user: current_user, recipe: recipe)), method: :delete do %>
+            <%= image_tag "star_filled.png", alt: "favorite_recipe" %>
+          <% end %>
+        <% else %>
+          <%= link_to favorites_path(recipe_id: recipe.id), method: :post do %>
+            <%= image_tag "star.png", alt: "no_favorite_recipe" %>
+          <% end %>
+        <% end %>
+      </div>
+
+
+
+    <%end%>
+  </div>
+</div>
+
