@@ -368,27 +368,27 @@ ingredients = [
     {
     name:       "Mirabelle",
     category:   '2',
-    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590574543/No%20Mess/harvest_jlu7ek.png'
+    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590680857/No%20Mess/plum-2_mf6rws.png'
   },
     {
     name:       "Mûre",
     category:   '1',
-    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590574543/No%20Mess/harvest_jlu7ek.png'
+    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590680927/No%20Mess/blackberry_i9ovxp.png'
   },
     {
     name:       "Myrtille",
     category:   '3',
-    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590574543/No%20Mess/harvest_jlu7ek.png'
+    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590681017/No%20Mess/blueberry_wd5cmm.png'
   },
     {
     name:       "Papaye",
     category:   '1',
-    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590574543/No%20Mess/harvest_jlu7ek.png'
+    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590681071/No%20Mess/papaya_sr4usk.png'
   },
     {
     name:       "Pastèque",
     category:   '3',
-    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590574543/No%20Mess/harvest_jlu7ek.png'
+    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590681140/No%20Mess/watermelon_ikbzij.png'
   },
     {
     name:       "Nectarine",
@@ -398,12 +398,12 @@ ingredients = [
     {
     name:       "Prune",
     category:   '2',
-    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590574543/No%20Mess/harvest_jlu7ek.png'
+    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590680857/No%20Mess/plum_zvacyg.png'
   },
     {
     name:       "Rhubarbe",
     category:   '1',
-    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590574543/No%20Mess/harvest_jlu7ek.png'
+    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590681700/No%20Mess/Rhubarbe_egycbz.png'
   },
 ]
 
