@@ -256,56 +256,59 @@ ingredients = [
     name:       "Echalote",
     category:   '5',
     image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590595373/No%20Mess/shallot_xhugi3.png'
-  },  {
+  },
+    {
     name:       "Épinard",
     category:   '2',
     image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590595422/No%20Mess/spinach_wkk7ku.png'
-  },  {
+  },
+    {
     name:       "Fenouil",
     category:   '2',
     image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590595917/No%20Mess/fennel_li7yfq.png'
-  },  {
+  },
+    {
     name:       "Pousse de haricot mungo",
     category:   '1',
-    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590574543/No%20Mess/harvest_jlu7ek.png'
+    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590678405/No%20Mess/haricotmungo_wgrkam.png'
   },  {
     name:       "Fève",
     category:   '1',
-    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590574543/No%20Mess/harvest_jlu7ek.png'
+    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590678565/No%20Mess/kisspng-computer-icons-bean-vegetarian-cuisine-clip-art-beans-vector-5adbeac24d3c30.0207747415243619223164_otvqbm.png'
   },  {
     name:       "Haricots verts",
     category:   '1',
-    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590574543/No%20Mess/harvest_jlu7ek.png'
+    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590678730/No%20Mess/haricotsverts_h77kc0.png'
   },
     {
     name:       "Navet",
     category:   '3',
-    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590574543/No%20Mess/harvest_jlu7ek.png'
+    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590678814/No%20Mess/turnip_vaqg1u.png'
   },
     {
     name:       "Panais",
     category:   '3',
-    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590574543/No%20Mess/harvest_jlu7ek.png'
+    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590678992/No%20Mess/carrot_rhft07.png'
   },
     {
     name:       "Petit pois",
     category:   '1',
-    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590574543/No%20Mess/harvest_jlu7ek.png'
+    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590679094/No%20Mess/peas_ixmvmc.png'
   },
     {
     name:       "Poivron",
     category:   '3',
-    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590574543/No%20Mess/harvest_jlu7ek.png'
+    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590679168/No%20Mess/bell-pepper_jmyntj.png'
   },
     {
     name:       "Radis",
     category:   '1',
-    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590574543/No%20Mess/harvest_jlu7ek.png'
+    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590679246/No%20Mess/radish_vhsfze.png'
   },
     {
     name:       "Abricot",
     category:   '2',
-    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590574543/No%20Mess/harvest_jlu7ek.png'
+    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590679314/No%20Mess/apricot_o3bx9q.png'
   },
     {
     name:       "Ananas",
