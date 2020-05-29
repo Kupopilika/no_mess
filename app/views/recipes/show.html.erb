@@ -31,23 +31,30 @@
       </ul>
       <div class="tab-content" id="myTabContent">
         <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-         <% JSON.parse(@recipe.ingredient_list).each do |ingredient| %>
-          <div class="card-ingredient-show">
-            <img src="https://res.cloudinary.com/kupopilika/image/upload/v1590574543/No%20Mess/harvest_jlu7ek.png" />
-            <div class="card-product-infos-show">
-             <p><%= ingredient.rstrip %></p>
+          <% if @recipe.ingredient_list.present? %>
+            <% JSON.parse(@recipe.ingredient_list).each do |ingredient| %>
+            <div class="card-ingredient-show">
+              <img src="https://res.cloudinary.com/kupopilika/image/upload/v1590574543/No%20Mess/harvest_jlu7ek.png" />
+              <div class="card-product-infos-show">
+                <p><%= ingredient.rstrip %></p>
+              </div>
             </div>
-          </div>
-         <% end %>
+            <% end %>
+          <% else %>
+          <% end %>
         </div>
         <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-          <% JSON.parse(@recipe.instructions).each_with_index do |instruction, index| %>
-          <div class="card-preparation-show">
-            <div class="number-preparation"><%= "#{index + 1}" %></div>
-            <div class="card-product-infos-show">
-              <p><%= instruction.rstrip %></p>
+          <% if @recipe.ingredient_list.present? %>
+            <% JSON.parse(@recipe.instructions).each_with_index do |instruction, index| %>
+            <div class="card-preparation-show">
+              <div class="number-preparation"><%= "#{index + 1}" %></div>
+                <div class="card-product-infos-show">
+                  <p><%= instruction.rstrip %></p>
+                </div>
+              </div>
             </div>
-          </div>
+            <% end %>
+          <% else %>
           <% end %>
         </div>
         <div class="button-line">
