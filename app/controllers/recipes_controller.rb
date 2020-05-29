@@ -1,5 +1,22 @@
 class RecipesController < ApplicationController
 
+  def show
+    @recipe = Recipe.find(params[:id])
+
+    if @recipe.difficulty_level == "très facile"
+      @difficulty_number = 1
+    elsif @recipe.difficulty_level == "facile"
+      @difficulty_number = 2
+    elsif @recipe.difficulty_level == "moyen"
+      @difficulty_number = 3
+    elsif @recipe.difficulty_level == "difficile"
+      @difficulty_number = 4
+    else
+      @difficulty_number = 0
+    end
+    @time_recipe = @recipe.preparation_time + @recipe.cooking_time
+  end
+
   def index
     @favorites = current_user.favorites
     @user_ingredients = UserIngredient.all.order(:expiration_date)
@@ -14,5 +31,4 @@ class RecipesController < ApplicationController
       @recipes = Recipe.all
     end
   end
-  
 end
