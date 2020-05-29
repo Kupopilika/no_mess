@@ -32,35 +32,33 @@
       <div class="tab-content" id="myTabContent">
         <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
           <% JSON.parse(@recipe.ingredient_list).each do |ingredient| %>
-          <div class="card-ingredient-show">
-            <img src="https://res.cloudinary.com/kupopilika/image/upload/v1590574543/No%20Mess/harvest_jlu7ek.png" />
-            <div class="card-product-ingredient-infos-show">
-              <p><%= ingredient.rstrip %></p>
+            <div class="card-ingredient-show">
+              <img src="https://res.cloudinary.com/kupopilika/image/upload/v1590574543/No%20Mess/harvest_jlu7ek.png" />
+              <div class="card-product-ingredient-infos-show">
+                <p><%= ingredient.rstrip %></p>
+              </div>
             </div>
-          </div>
           <% end %>
           <!--<div class="button-line">
-            <%= link_to "Mise à jour du garde manger", new_user_registration_path, class: "btn btn-flat" %>
+            <%#= link_to "Mise à jour du garde manger", new_user_registration_path, class: "btn btn-flat" %>
           </div> -->
         </div>
-      </div>
-      <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
         <% JSON.parse(@recipe.instructions).each_with_index do |instruction, index| %>
-        <div class="card-preparation-show">
-          <div class="number-preparation"><%= "#{index + 1}" %></div>
-            <div class="card-product-preparation-infos-show">
-              <p><%= instruction.rstrip %></p>
-            </div>
+          <div class="card-preparation-show">
+            <div class="number-preparation"><%= "#{index + 1}" %></div>
+            <div class="card-product-preparation-infos-show"><p><%= instruction.rstrip %></p></div>
           </div>
-        </div>
         <% end %>
         <!--<div class="button-line">
-          <%= link_to "Mise à jour du garde manger", new_user_registration_path, class: "btn btn-flat" %>
+          <%#= link_to "Mise à jour du garde manger", new_user_registration_path, class: "btn btn-flat" %>
         </div> -->
+        </div>
       </div>
       <div class="button-line">
-        <%= link_to "Bon appétit", new_user_registration_path, class: "btn btn-flat" %>
+        <%= link_to "Mise à jour du garde manger", new_user_registration_path, class: "btn btn-flat" %>
       </div>
+
     </div>
   </div>
 </div>
