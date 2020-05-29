@@ -1,4 +1,3 @@
-
 <div class="counter">
   <% user_ingredients = [] %>
     <% @user_ingredients.each do |user_ingredient| %>
@@ -12,7 +11,10 @@
         <p> Il te reste <%= uniq_user_ingredients.size %> aliments différents </p>
       <% end %>
   <% else %>
-      <p> 🥗 Rajoute des ingrédients dans ton garde-manger. Nous pourrons ainsi te faire des rappels avant qu'il ne soit trop tard 🙂</p>
+      <div class="msg-empty-basket">
+        <p> 🥗 Rajoute des ingrédients dans ton garde-manger.
+        Nous pourrons ainsi te faire des rappels avant qu'il ne soit trop tard 🙂</p>
+      </div>
   <% end %>
 </div>
 
