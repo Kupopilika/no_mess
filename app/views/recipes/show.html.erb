@@ -55,7 +55,8 @@
           </div>
         </div>
         <div class="button-line">
-          <%= link_to "Bon appétit", new_user_registration_path, class: "btn btn-flat" %>
+          <%= link_to "Bon appétit", user_ingredients_path, class: "btn btn-flat done" %>
+          <% @user_ingredients.first.quantity -= 1 %>
         </div>
       </div>
     </div>

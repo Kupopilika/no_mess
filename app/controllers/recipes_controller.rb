@@ -15,6 +15,7 @@ class RecipesController < ApplicationController
       @difficulty_number = 0
     end
     @time_recipe = @recipe.preparation_time + @recipe.cooking_time
+    @user_ingredients = current_user.user_ingredients.order(:expiration_date)
   end
 
   def index
