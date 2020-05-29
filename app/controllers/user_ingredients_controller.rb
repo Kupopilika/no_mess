@@ -3,7 +3,7 @@ class UserIngredientsController < ApplicationController
   before_action :set_user_ingredient, only: [:show, :edit, :update, :destroy]
 
   def index
-    @user_ingredients = UserIngredient.all.order(:expiration_date)
+    @user_ingredients = current_user.user_ingredients.order(:expiration_date)
     @ingredient = Ingredient.all
   end
 
