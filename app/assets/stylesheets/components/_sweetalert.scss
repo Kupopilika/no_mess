@@ -1,0 +1,38 @@
+.icons {
+
+}
+
+.fa-edit:before {
+  content: "\f044";
+  color: #197278;
+}
+
+.fa-trash:before {
+  content: "\f1f8";
+  color: #197278;
+}
+
+.swal-modal {
+  width: calc(100% - 60px);
+}
+
+.swal-button {
+  background-color: #197278;
+  color: #fff;
+  border: none;
+  box-shadow: none;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 10px 24px;
+  margin: 0;
+}
+
+.swal-footer {
+  text-align: center;
+  padding-top: 13px;
+  margin-top: 13px;
+  padding: 13px 16px;
+  border-radius: inherit;
+  border-top-left-radius: 0;
+}
