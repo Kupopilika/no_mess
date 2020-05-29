@@ -7,14 +7,18 @@ class RecipesController < ApplicationController
       @difficulty_number = 1
     elsif @recipe.difficulty_level == "facile"
       @difficulty_number = 2
-    elsif @recipe.difficulty_level == "moyen"
+    elsif @recipe.difficulty_level == "Niveau moyen"
       @difficulty_number = 3
     elsif @recipe.difficulty_level == "difficile"
       @difficulty_number = 4
     else
       @difficulty_number = 0
     end
-    @time_recipe = @recipe.preparation_time + @recipe.cooking_time
+    if @recipe.cooking_time
+      @time_recipe = @recipe.preparation_time + @recipe.cooking_time
+    else
+      @time_recipe = @recipe.preparation_time
+    end
   end
 
   def index

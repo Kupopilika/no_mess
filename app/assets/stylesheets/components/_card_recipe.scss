@@ -80,9 +80,11 @@
 .card-product-show-infos {
   align-self:center;
 }
-
-.card-product-infos-show p {
-  color: red;
+.card-product-ingredient-infos-show p {
+  color: #3E3232;
+}
+.card-product-preparation-infos-show p {
+  color: #3E3232;
 }
 .recipe-infos-show-time-titre {
   font-weight: 600px;
@@ -103,7 +105,7 @@
   padding-left: 0px;
   margin: 0;
 }
-.card-product-show-details .fa-circle {
+.fa-circle {
   color: orange;
   font-size: 20px;
 }

@@ -1,14 +1,14 @@
 <div class="navbar navbar-expand-sm navbar-light navbar-lewagon navbar fixed-bottom-nav">
 
-  <%= link_to user_ingredients_path, class: "navbar-brand" do %>
+  <%= link_to user_ingredients_path, :class => current_class?(user_ingredients_path) do %>
   <%= image_tag "https://res.cloudinary.com/dc1jk4jut/image/upload/v1590418562/no_mess/vegetable_64_fyxldx.png" %>
   <% end %>
 
-  <%= link_to recipes_path, class: "navbar-brand" do %>
+  <%= link_to recipes_path, :class => current_class?(recipes_path) do %>
     <%= image_tag "https://res.cloudinary.com/dc1jk4jut/image/upload/v1590418687/no_mess/recipe_1_qlgazn.png" %>
   <% end %>
 
-  <%= link_to root_path, class: "navbar-brand" do %>
+  <%= link_to root_path, :class => current_class?(favorites_path) do %>
     <%= image_tag "https://res.cloudinary.com/dc1jk4jut/image/upload/v1590418686/no_mess/cook_2_ecobni.png" %>
   <% end %>
 
