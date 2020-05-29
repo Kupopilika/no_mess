@@ -2,6 +2,7 @@
   display: flex;
   justify-content: right;
   text-align: right;
+  z-index: 3000;
 }
 
 .title-recipes {
@@ -63,11 +64,11 @@
 }
 
 .card-recipe h2 {
-    font-size: 20px;
+    font-size: 16px;
     font-weight: bold;
     margin: 0;
     text-overflow: ellipsis;
-    white-space: nowrap !important;
+    // white-space: nowrap !important;
     overflow: hidden;
     width: 270px !important;
 }

@@ -3,10 +3,31 @@ require "nokogiri"
 require 'json'
 
 # "a" à la place de "wb" pour le csv
-urllist = []
-urllist << "https://www.marmiton.org/recettes/recherche.aspx?type=all&aqt=p%C3%A2tes-brocolis%2C-parmesan"
-urllist << "https://www.marmiton.org/recettes/recherche.aspx?type=all&aqt=tomate-saumon"
-urllist << "https://www.marmiton.org/recettes/recherche.aspx?type=all&aqt=parmesan"
+urllist = [
+    "https://www.marmiton.org/recettes/recherche.aspx?type=all&aqt=p%C3%A2tes-brocolis%2C-parmesan",
+    "https://www.marmiton.org/recettes/recherche.aspx?type=all&aqt=tomate-saumon",
+    "https://www.marmiton.org/recettes/recherche.aspx?type=all&aqt=parmesan",
+    "https://www.marmiton.org/recettes/recherche.aspx?type=all&aqt=concombre",
+    "https://www.marmiton.org/recettes/recherche.aspx?type=all&aqt=carotte",
+    "https://www.marmiton.org/recettes/recherche.aspx?type=all&aqt=endive",
+    "https://www.marmiton.org/recettes/recherche.aspx?type=all&aqt=salade",
+    "https://www.marmiton.org/recettes/recherche.aspx?type=all&aqt=courgette",
+    "https://www.marmiton.org/recettes/recherche.aspx?type=all&aqt=oeuf",
+    "https://www.marmiton.org/recettes/recherche.aspx?type=all&aqt=chou-fleur",
+    "https://www.marmiton.org/recettes/recherche.aspx?type=all&aqt=pomme-de-terre",
+    "https://www.marmiton.org/recettes/recherche.aspx?type=all&aqt=artichaut",
+    "https://www.marmiton.org/recettes/recherche.aspx?type=all&aqt=asperge",
+    "https://www.marmiton.org/recettes/recherche.aspx?type=all&aqt=aubergine",
+    "https://www.marmiton.org/recettes/recherche.aspx?type=all&aqt=betterave",
+    "https://www.marmiton.org/recettes/recherche.aspx?type=all&aqt=c%C3%A8pe",
+    "https://www.marmiton.org/recettes/recherche.aspx?type=all&aqt=potiron",
+    "https://www.marmiton.org/recettes/recherche.aspx?type=all&aqt=potimarron",
+    "https://www.marmiton.org/recettes/recherche.aspx?type=all&aqt=haricot-vert",
+    "https://www.marmiton.org/recettes/recherche.aspx?type=all&aqt=%C3%A9pinard",
+    "https://www.marmiton.org/recettes/recherche.aspx?type=all&aqt=riz",
+    "https://www.marmiton.org/recettes/recherche.aspx?type=all&aqt=petit-pois",
+    "https://www.marmiton.org/recettes/recherche.aspx?type=all&aqt=avocat"
+]
 
 recipes = []
 
@@ -35,8 +56,13 @@ urllist.each do |url|
     
         name = html_doc.search('.main-title').first.text.strip
     
-        preparation = html_doc.search('.recipe-infos__timmings__preparation').first.text.gsub(/(\t|\n)/, "")
-        preparation = preparation.match( /\d+/ )
+        temppreparation = html_doc.search('.recipe-infos__timmings__preparation').first
+        if temppreparation
+            preparation = temppreparation.text.gsub(/(\t|\n)/, "")
+            preparation = preparation.match( /\d+/ )
+        else
+            preparation = nil
+        end
         
         tempcooking = html_doc.search('.recipe-infos__timmings__cooking').first
         if tempcooking
@@ -45,8 +71,13 @@ urllist.each do |url|
         else
             cooking = nil
         end
-    
-        difficulty = html_doc.search('.recipe-infos__level span').first.text.strip
+        
+        tempdifficulty = html_doc.search('.recipe-infos__level span').first
+        if tempdifficulty
+            difficulty = tempdifficulty.text.strip
+        else
+            difficulty = nil
+        end
     
         html_doc.search('.recipe-preparation__list__item').each do |element|
             instructions << element.text.gsub(/(\t|\n)/, "")
@@ -56,7 +87,12 @@ urllist.each do |url|
             ingredients << element.text.gsub(/(\t|\n)/, "") 
         end
     
-        image = html_doc.search('#af-diapo-desktop-0_img').first.attribute('src').value
+        tempimage = html_doc.search('#af-diapo-desktop-0_img').first
+        if tempimage
+            image = tempimage.attribute('src').value
+        else
+            image = nil
+        end
     
         puts name
         puts preparation

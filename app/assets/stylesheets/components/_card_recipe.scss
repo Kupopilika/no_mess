@@ -1,0 +1,116 @@
+.container-recipe {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.card-recipe-show-infos {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-title {
+  font-weight: bold;
+  font-size: 23px;
+  text-align: center;
+  font-family: Arial;
+  margin-bottom: 5px;
+}
+
+.card-recipe-show img {
+  max-width: 100%;
+  width: 100%;
+  object-fit: cover;
+  max-height: 414px;
+}
+
+.container-tab {
+  display: flex;
+  justify-content: space-between;
+  box-shadow: -1px 5px 8px 0 rgba(0,0,0,0.2);
+}
+.recipe-infos-show {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  flex-direction: row;
+  padding: 10px 0;
+}
+.recipe-infos-show-time-titre {
+  display: block;
+}
+.recipe-infos-show-quantity-titre {
+  display: block;
+}
+.recipe-infos-show-level-titre {
+  display: block;
+}
+.card-ingredient-show {
+  // display: flex;
+  // align-items: center;
+  margin: 10px 0;
+  // justify-content: normal;
+  display: grid;
+  grid-template-columns: 50px 1fr;
+}
+.card-ingredient-show img {
+  height: 48px;
+  width: 64px;
+  padding: 10px;
+}
+.card-ingredient-show p {
+  font-size: 16px;
+  line-height: 1.4;
+  opacity: .7;
+  margin-bottom: 0;
+  margin-top: 8px;
+  margin-left: 20px;
+}
+.card-preparation-show {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  margin: 10px 0;
+}
+.card-preparation-show p {
+  font-size: 16px;
+  line-height: 1.4;
+  opacity: .7;
+  margin-bottom: 0;
+}
+.card-product-show-infos {
+  align-self:center;
+}
+
+.card-product-infos-show p {
+  color: red;
+}
+.recipe-infos-show-time-titre {
+  font-weight: 600px;
+}
+
+.number-preparation {
+  width: 35px;
+  color: #b6ead8;
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 50px;
+  line-height: 38px;
+  box-shadow: 1px 1px 12px 0 rgba(0, 0, 0, 0.07);
+}
+.list-inline-show-cercle{
+  list-style: none;
+  padding-left: 0px;
+  margin: 0;
+}
+.card-product-show-details .fa-circle {
+  color: orange;
+  font-size: 20px;
+}
+.nav-tabs {
+  justify-content: space-around;
+}
+// .card-product-details .fa-circle {
+//   color: rgba(239, 239, 239, 1);
+//   font-size: 20px;
+// }
