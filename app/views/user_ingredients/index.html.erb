@@ -1,6 +1,24 @@
-<h1 id="welcome">Welcome to No Mess</h1>
+
+<div class="counter">
+  <% user_ingredients = [] %>
+    <% @user_ingredients.each do |user_ingredient| %>
+      <% user_ingredients << user_ingredient.ingredient.name %>
+    <% end %>
+  <% if user_ingredients.empty? == false %>
+    <% uniq_user_ingredients = user_ingredients.uniq %>
+      <% if uniq_user_ingredients.size == 1  %>
+        <p> Il te reste <%= uniq_user_ingredients.size %> aliment </p>
+      <% else %>
+        <p> Il te reste <%= uniq_user_ingredients.size %> aliments différents </p>
+      <% end %>
+  <% else %>
+      <p> 🥗 Rajoute des ingrédients dans ton garde-manger. Nous pourrons ainsi te faire des rappels avant qu'il ne soit trop tard 🙂</p>
+  <% end %>
+</div>
+
 <div class="container">
   <div class="cards">
+
     <% @user_ingredients.each do |ingredient| %>
       <div class="card-ingredient">
         <div class="card-ingredient-first">
