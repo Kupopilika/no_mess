@@ -4,7 +4,7 @@
   padding: 10px;
 }
 
-.card-recipe-infos {
+.card-recipe-show-infos {
   display: flex;
   justify-content: space-between;
 }
@@ -17,7 +17,7 @@
   margin-bottom: 5px;
 }
 
-.card-recipe img {
+.card-recipe-show img {
   max-width: 100%;
   width: 100%;
   object-fit: cover;
@@ -29,23 +29,23 @@
   justify-content: space-between;
   box-shadow: -1px 5px 8px 0 rgba(0,0,0,0.2);
 }
-.recipe-infos {
+.recipe-infos-show {
   display: flex;
   justify-content: space-around;
   text-align: center;
   flex-direction: row;
   padding: 10px 0;
 }
-.recipe-infos-time-titre {
+.recipe-infos-show-time-titre {
   display: block;
 }
-.recipe-infos-quantity-titre {
+.recipe-infos-show-quantity-titre {
   display: block;
 }
-.recipe-infos-level-titre {
+.recipe-infos-show-level-titre {
   display: block;
 }
-.card-ingredient {
+.card-ingredient-show {
   // display: flex;
   // align-items: center;
   margin: 10px 0;
@@ -53,12 +53,12 @@
   display: grid;
   grid-template-columns: 50px 1fr;
 }
-.card-ingredient img {
+.card-ingredient-show img {
   height: 48px;
   width: 64px;
   padding: 10px;
 }
-.card-ingredient p {
+.card-ingredient-show p {
   font-size: 16px;
   line-height: 1.4;
   opacity: .7;
@@ -66,25 +66,25 @@
   margin-top: 8px;
   margin-left: 20px;
 }
-.card-preparation {
+.card-preparation-show {
   display: grid;
   grid-template-columns: 50px 1fr;
   margin: 10px 0;
 }
-.card-preparation p {
+.card-preparation-show p {
   font-size: 16px;
   line-height: 1.4;
   opacity: .7;
   margin-bottom: 0;
 }
-.card-product-infos {
+.card-product-show-infos {
   align-self:center;
 }
 
-.card-product-infos p {
+.card-product-infos-show p {
   color: red;
 }
-.recipe-infos-time-titre {
+.recipe-infos-show-time-titre {
   font-weight: 600px;
 }
 
@@ -98,12 +98,12 @@
   line-height: 38px;
   box-shadow: 1px 1px 12px 0 rgba(0, 0, 0, 0.07);
 }
-.list-inline-cercle{
+.list-inline-show-cercle{
   list-style: none;
   padding-left: 0px;
   margin: 0;
 }
-.card-product-details .fa-circle {
+.card-product-show-details .fa-circle {
   color: orange;
   font-size: 20px;
 }
