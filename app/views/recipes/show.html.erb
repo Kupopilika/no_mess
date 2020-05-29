@@ -41,9 +41,9 @@
          <% end %>
         </div>
         <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-          <% JSON.parse(@recipe.instructions).each do |instruction| %>
+          <% JSON.parse(@recipe.instructions).each_with_index do |instruction, index| %>
           <div class="card-preparation-show">
-            <div class="number-preparation">1</div>
+            <div class="number-preparation"><%= "#{index + 1}" %></div>
             <div class="card-product-infos-show">
               <p><%= instruction.rstrip %></p>
             </div>
