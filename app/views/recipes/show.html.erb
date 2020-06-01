@@ -5,11 +5,11 @@
       <!--<img src="https://res.cloudinary.com/dubgqyx31/image/upload/w_375,h_243,c_scale/v1590506082/nomess/charfraise_dzpblg.jpg" />-->
       <%= image_tag @recipe.image, alt: "image recette" %>
       <!--<img src="https://assets.afcdn.com/recipe/20131009/63427_w648h414c1cx2592cy1728.jpg">-->
-      <h6 class="main-title"><%= @recipe.name %></h6>
+      <h6 class="main-title"><%= @recipe.name.capitalize %></h6>
       <div class="recipe-infos-show">
         <div class="recipe-infos-show-total-time">
           <span class="recipe-infos-show-time-titre">Temps</span>
-          <span class="recipe-infos-show-time-value"><%= @time_recipe %> min</span>
+          <span class="recipe-infos-show-time-value">⏲<%= @time_recipe %> min</span>
         </div>
         <div class="recipe-info-show-level">
           <span class="recipe-infos-show-level-titre"><%= @recipe.difficulty_level %></span>
@@ -55,7 +55,8 @@
               <% end %>
 
               <div class="card-product-ingredient-infos-show">
-                <p><%= ingredient.rstrip %></p>
+                <p><%= ingredient.capitalize.rstrip %></p>
+                <%#= .gsub(/\d+/, ' \0 ').squish %>
               </div>
             </div>
           <% end %>
