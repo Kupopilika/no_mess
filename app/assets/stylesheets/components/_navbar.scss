@@ -30,9 +30,11 @@
 // }
 
 .navbar-brand {
+  -webkit-filter: grayscale(1);
   opacity: 0.65;
 }
 
 .active-perso {
+  -webkit-filter: none;
   opacity: 1;
 }
