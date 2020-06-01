@@ -42,8 +42,11 @@
       <div class="tab-content" id="myTabContent">
         <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
           <% JSON.parse(@recipe.ingredient_list).each do |ingredient| %>
-            <% name = ingredient.split(" ").find{|ingredient|Ingredient.where("name ILIKE ?","#{ingredient.capitalize}%")!=[]} %>
-            <% ingre = Ingredient.where("name ILIKE ?", "#{name}%").first if name %>
+            <%# name = ingredient.split(" ").find{|ingredient|Ingredient.where("name ILIKE ?","#{ingredient.capitalize}%")!=[]} %>
+            <% name = ingredient.split(" ").find{|ingredient|Ingredient.pluck(:name).include?(ingredient.capitalize) || Ingredient.pluck(:name).include?(ingredient.capitalize[0..-2])} %>
+
+            <% ingre = Ingredient.where("name ILIKE ?", "%#{name.capitalize}%").first || Ingredient.where("name ILIKE ?", "%#{name.capitalize[0..-2]}%").first if name %>
+
             <div class="card-ingredient-show">
               <% if ingre %>
                 <%= image_tag ingre.photo %>
