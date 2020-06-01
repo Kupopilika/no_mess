@@ -42,8 +42,15 @@
       <div class="tab-content" id="myTabContent">
         <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
           <% JSON.parse(@recipe.ingredient_list).each do |ingredient| %>
+            <% name = ingredient.split(" ").find{|ingredient|Ingredient.where("name ILIKE ?","#{ingredient.capitalize}%")!=[]} %>
+            <% ingre = Ingredient.where("name ILIKE ?", "#{name}%").first if name %>
             <div class="card-ingredient-show">
-              <img src="https://res.cloudinary.com/kupopilika/image/upload/v1590574543/No%20Mess/harvest_jlu7ek.png" />
+              <% if ingre %>
+                <%= image_tag ingre.photo %>
+              <% else %>
+                <img src="https://res.cloudinary.com/kupopilika/image/upload/v1590574543/No%20Mess/harvest_jlu7ek.png" />
+              <% end %>
+
               <div class="card-product-ingredient-infos-show">
                 <p><%= ingredient.rstrip %></p>
               </div>
