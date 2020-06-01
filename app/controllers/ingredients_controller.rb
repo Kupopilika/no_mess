@@ -1,4 +1,6 @@
 class IngredientsController < ApplicationController
+  skip_before_action :authenticate_user!, only: :expiration
+
   def expiration
     render json: Ingredient.all.map { |ingredient| { ingredient.id => set_expiration(ingredient.category) } }
   end
