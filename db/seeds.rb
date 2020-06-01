@@ -17,7 +17,7 @@ Recipe.destroy_all
 
 ingredients = [
   {
-    name:       "Brocolis",
+    name:       "Brocoli",
     category:   '2',
     image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590508379/No%20Mess/broccoli_dal6im.png'
   },
