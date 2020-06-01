@@ -1,3 +1,4 @@
+
 <div class="navbar navbar-expand-sm navbar-light navbar-lewagon navbar fixed-bottom-nav">
 
   <%= link_to user_ingredients_path, :class => current_class?(user_ingredients_path) do %>
@@ -8,9 +9,28 @@
     <%= image_tag "https://res.cloudinary.com/dc1jk4jut/image/upload/v1590418687/no_mess/recipe_1_qlgazn.png" %>
   <% end %>
 
-  <%= link_to root_path, :class => current_class?(favorites_path) do %>
-    <%= image_tag "https://res.cloudinary.com/dc1jk4jut/image/upload/v1590418686/no_mess/cook_2_ecobni.png" %>
+  <% if (cookies[:last_recipe_id].nil?) %>
+      <%= link_to pages_message_show_empty_path, :class => current_class?(pages_message_show_empty_path) do %>
+      <%= image_tag "https://res.cloudinary.com/dc1jk4jut/image/upload/v1590418686/no_mess/cook_2_ecobni.png" %>
+    <% end %>
+  <% else %>
+    <%= link_to recipe_path(cookies[:last_recipe_id]), :class => current_class?(recipe_path(cookies[:last_recipe_id])) do %>
+      <%= image_tag "https://res.cloudinary.com/dc1jk4jut/image/upload/v1590418686/no_mess/cook_2_ecobni.png" %>
+    <% end %>
   <% end %>
 
-</div>
+  <%= link_to favorites_path, :class => current_class?(favorites_path) do %>
+    <%= image_tag "https://res.cloudinary.com/dc1jk4jut/image/upload/v1591000813/star_psgbyx.png" %>
+  <% end %>
 
+  <ul class="navbar-nav mr-auto">
+    <li class="nav-item active">
+      <% if user_signed_in? %>
+       <%= link_to "Log out", destroy_user_session_path, method: :delete, class: "nav-link" %>
+      <% else %>
+        <%= link_to "Login", user_session_path, class: "nav-link" %>
+      <% end %>
+    </li>
+  </ul>
+
+</div>
