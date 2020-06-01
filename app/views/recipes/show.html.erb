@@ -13,11 +13,20 @@
         <div class="recipe-info-show-level">
           <span class="recipe-infos-show-level-titre"><%= @recipe.difficulty_level %></span>
           <div class="card-product-show-details">
-            <div class="list-inline-show-cercle">
+            <ul class="list-inline-show-cercle">
               <% @difficulty_number.times do %>
-                <i class="fas fa-circle"></i>
+                <div class= "difficulty-level">
+                  <li><i class="fas fa-circle"></i></li>
+                </div>
               <% end %>
-            </div>
+              <div class="missing-circle">
+                <% @missing_circle.times do %>
+                  <div class="missing-circle-level">
+                    <li><i class="fas fa-circle"></i></li>
+                  </div>
+                <% end %>
+              </div>
+            </ul>
           </div>
         </div>
       </div>
@@ -55,10 +64,11 @@
         </div> -->
         </div>
       </div>
-      <div class="button-line">
-        <%= link_to "Mise à jour du garde manger", new_user_registration_path, class: "btn btn-flat" %>
+      <div class= position-button-up-to-navbar>
+        <div class="button-line">
+          <%= link_to "Mise à jour du garde manger", new_user_registration_path, class: "btn btn-flat" %>
+        </div>
       </div>
-
     </div>
   </div>
 </div>

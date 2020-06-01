@@ -4,15 +4,15 @@ class RecipesController < ApplicationController
     @recipe = Recipe.find(params[:id])
 
     if @recipe.difficulty_level == "très facile"
-      @difficulty_number = 1
+      (@difficulty_number = 1) && (@missing_circle = 3)
     elsif @recipe.difficulty_level == "facile"
-      @difficulty_number = 2
+      (@difficulty_number = 2) && (@missing_circle = 2)
     elsif @recipe.difficulty_level == "Niveau moyen"
-      @difficulty_number = 3
+      (@difficulty_number = 3) && (@missing_circle = 1)
     elsif @recipe.difficulty_level == "difficile"
-      @difficulty_number = 4
+      (@difficulty_number = 4) && (@missing_circle = 0)
     else
-      @difficulty_number = 0
+      (@difficulty_number = 0) && (@missing_circle = 0)
     end
     if @recipe.cooking_time
       @time_recipe = @recipe.preparation_time + @recipe.cooking_time

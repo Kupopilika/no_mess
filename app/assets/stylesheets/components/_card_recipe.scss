@@ -104,9 +104,31 @@
   list-style: none;
   padding-left: 0px;
   margin: 0;
+  display: inline-block;
+  display: flex;
+  justify-content: center;
 }
-.fa-circle {
+.missing-circle{
+  list-style: none;
+  padding-left: 0px;
+  margin: 0;
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+}
+
+// .list-inline-show-cercle li {
+//   display: inline-block;
+//   display: flex;
+//   justify-content: center;
+// }
+
+.difficulty-level {
   color: orange;
+  font-size: 20px;
+}
+.missing-circle-level {
+  color: #EBE5E3;
   font-size: 20px;
 }
 .nav-tabs {
@@ -116,3 +138,4 @@
 //   color: rgba(239, 239, 239, 1);
 //   font-size: 20px;
 // }
+
