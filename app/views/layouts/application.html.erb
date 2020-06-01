@@ -12,15 +12,15 @@
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload', defer: true %>
   </head>
 
-  <body>
+  <body class="fullscreen">
+
+<!--     <#%= render 'shared/flashes' %> -->
+
+    <div class="content-wrapper">
+      <%= yield %>
+    </div>
     <% if user_signed_in? %>
       <%= render 'shared/navbar' %>
     <% end %>
-<!--     <#%= render 'shared/flashes' %> -->
-
-  <div class="content-wrapper">
-    <%= yield %>
-  </div>
-
   </body>
 </html>

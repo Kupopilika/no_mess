@@ -14,3 +14,7 @@
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+
+body.fullscreen {
+  height: 100vh;
+}
