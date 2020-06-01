@@ -41,7 +41,7 @@
       </ul>
       <div class="tab-content" id="myTabContent">
         <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-          <% JSON.parse(@recipe.ingredient_list).each do |ingredient| %>
+          <% JSON.parse(@recipe.ingredient_list).uniq.each do |ingredient| %>
             <%# name = ingredient.split(" ").find{|ingredient|Ingredient.where("name ILIKE ?","#{ingredient.capitalize}%")!=[]} %>
             <% name = ingredient.split(" ").find{|ingredient|Ingredient.pluck(:name).include?(ingredient.capitalize) || Ingredient.pluck(:name).include?(ingredient.capitalize[0..-2])} %>
 
