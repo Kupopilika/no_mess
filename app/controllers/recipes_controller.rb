@@ -1,5 +1,21 @@
 class RecipesController < ApplicationController
 
+  def index
+    @favorites = current_user.favorites
+    @user_ingredients = UserIngredient.all.order(:expiration_date)
+    if UserIngredient.count > 0
+      @recipes = Recipe.where("name ILIKE ?", "%#{@user_ingredients.first.ingredient.name}%")
+      if @recipes.count != 0
+        @recipes = @recipes
+      else
+        @recipes = Recipe.all
+      end
+    else
+      @recipes = Recipe.all
+    end
+  end
+
+
   def show
     @recipe = Recipe.find(params[:id])
 
@@ -19,20 +35,8 @@ class RecipesController < ApplicationController
     else
       @time_recipe = @recipe.preparation_time
     end
+
+    cookies[:last_recipe_id] = @recipe.id
   end
 
-  def index
-    @favorites = current_user.favorites
-    @user_ingredients = UserIngredient.all.order(:expiration_date)
-    if UserIngredient.count > 0
-      @recipes = Recipe.where("name ILIKE ?", "%#{@user_ingredients.first.ingredient.name}%")
-      if @recipes.count != 0
-        @recipes = @recipes
-      else
-        @recipes = Recipe.all
-      end
-    else
-      @recipes = Recipe.all
-    end
-  end
 end
