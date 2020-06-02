@@ -21,7 +21,7 @@ const initSelect2 = () => {
   //       data.forEach
     //   },
     // });
-    fetch("https://www.no-mess.life/ingredients/expiration")
+    fetch("http://localhost:3000/ingredients/expiration")
       .then(response => response.json())
       .then((data) => {
         data.forEach((item) => {
