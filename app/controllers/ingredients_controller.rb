@@ -5,6 +5,10 @@ class IngredientsController < ApplicationController
     render json: Ingredient.all.map { |ingredient| { ingredient.id => set_expiration(ingredient.category) } }
   end
 
+  def units
+    render json: Ingredient.all.map { |ingredient| { ingredient.id => ingredient.unit } }
+  end
+
   private
 
   def set_expiration(ingredient)

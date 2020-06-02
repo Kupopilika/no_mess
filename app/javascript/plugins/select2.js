@@ -21,7 +21,23 @@ const initSelect2 = () => {
   //       data.forEach
     //   },
     // });
-    fetch("http://localhost:3000/ingredients/expiration")
+
+    // . innerText = 'Quantité (' + valeur + ')
+
+    fetch("/ingredients/units")
+      .then(response => response.json())
+      .then((data) => {
+        data.forEach((item) => {
+          if (Object.keys(item) == e.params.data.id) {
+            console.log(Object.values(item)[0]);
+            const quantity = document.getElementById("label_quantity");
+            quantity.innerText = 'Quantité (' + Object.values(item)[0] + ')';
+          }
+        });
+    });
+
+
+    fetch("/ingredients/expiration")
       .then(response => response.json())
       .then((data) => {
         data.forEach((item) => {
