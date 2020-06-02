@@ -47,7 +47,11 @@
           <% end %>
 
           <% result = Ingredient.find(ingredient.ingredient_id) %>
-          <%= cl_image_tag result.photo.key, class: "index-card-img"%>
+          <% if result.image %>
+            <%= image_tag result.image, class: "index-card-img"%>
+          <%else%>
+            <%= cl_image_tag result.photo.key, class: "index-card-img"%>
+          <%end%>
 
           <h2 class="card-ingredient-info-name"><%= result.name %></h2>
         </div>
@@ -75,6 +79,11 @@
   <%= link_to new_user_ingredient_path do %>
       <%= image_tag "https://image.flaticon.com/icons/png/512/148/148764.png", :class => "button-add" %>
   <% end %>
+  <%= link_to user_ingredients_product_path do %>
+      <%= image_tag "https://image.flaticon.com/icons/svg/3003/3003592.svg", :class => "button-add-barcode" %>
+  <% end %>
+
+  
 
 
 

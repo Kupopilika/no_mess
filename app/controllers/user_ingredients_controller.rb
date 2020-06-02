@@ -38,6 +38,10 @@ class UserIngredientsController < ApplicationController
     redirect_to user_ingredients_path
   end
 
+  def product
+    
+  end
+
   private
 
   def set_user_ingredient

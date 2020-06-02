@@ -1,4 +1,7 @@
 class IngredientsController < ApplicationController
+  require 'open-uri'
+  require 'json'
+
   skip_before_action :authenticate_user!, only: :expiration
 
   def expiration
@@ -7,6 +10,22 @@ class IngredientsController < ApplicationController
 
   def units
     render json: Ingredient.all.map { |ingredient| { ingredient.id => ingredient.unit } }
+  end
+
+  def create
+    all = Ingredient.all
+
+    code = params[:ean]
+    url = "https://world.openfoodfacts.org/api/v0/product/#{code}.json"
+    product_serialized = open(url).read
+    element = JSON.parse(product_serialized)
+    puts element["product"]["product_name"]
+    puts element["product"]["quantity"].match(/\d+/)
+    unit = element["product"]["quantity"].match(/\D+/).to_s.strip
+    puts unit
+    puts element["product"]["image_url"]
+    
+    Ingredient.create(name: element["product"]["product_name"], category: "all", image: element["product"]["image_url"], unit: unit)
   end
 
   private
