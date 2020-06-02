@@ -1,3 +1,74 @@
+
+.circle-expiration-date-4 {
+  color: white;
+  border-radius: 10px;
+  background-color: red;
+  width: 43px;
+  height: 25px;
+  text-align: center;
+  padding: 3px;
+}
+
+.circle-expiration-date-6{
+  color: white;
+  border-radius: 10px;
+  background-color: purple;
+  width: 43px;
+  height: 25px;
+  text-align: center;
+  padding: 3px;
+}
+
+.circle-expiration-date-8{
+  color: white;
+  border-radius: 10px;
+  background-color: pink;
+  width: 43px;
+  height: 25px;
+  text-align: center;
+  padding: 3px;
+}
+
+.circle-expiration-date-11{
+  color: white;
+  border-radius: 10px;
+  background-color: orange;
+  width: 43px;
+  height: 25px;
+  text-align: center;
+  padding: 3px;
+}
+
+.circle-expiration-date-15{
+  color: white;
+  border-radius: 10px;
+  background-color: pink;
+  width: 43px;
+  height: 25px;
+  text-align: center;
+  padding: 3px;
+}
+
+.circle-expiration-date-22{
+  color: white;
+  border-radius: 10px;
+  background-color: blue;
+  width: 43px;
+  height: 25px;
+  text-align: center;
+  padding: 3px;
+}
+
+.circle-expiration-date-31{
+  color: white;
+  border-radius: 10px;
+  background-color: violet;
+  width: 43px;
+  height: 25px;
+  text-align: center;
+  padding: 3px;
+}
+
 .counter{
   display: flex;
   justify-content: center;
@@ -27,15 +98,16 @@
   justify-content: space-between;
   width: 100%;
   align-items: center;
+  position: relative;
 }
 
 .index-card-img {
-    height: 15px;
-    width: 20px;
+    height: 20px;
+    width: 25px;
     background-size: cover;
     object-fit: cover;
-    position: absolute;
-    margin-left: 35px;
+    position: relative;
+    margin-left: 16px;
 }
 
 .card-ingredient-first {
@@ -48,13 +120,13 @@
 }
 
 .card-ingredient-info-name {
-    position: absolute;
-    padding-left: 70px;
+    // position: absolute;
+    padding-left: 15px;
     font-size: 1rem;
 }
 
 .card-ingredient-first h2 {
-    font-size: 1rem;
+    font-size: 18px;
     margin-bottom: 0;
 }
 
@@ -64,8 +136,9 @@
 }
 
 .card-ingredient-last h2 {
-    font-size: 1rem;
+    font-size: 18px;
     margin-bottom: 0;
+    margin-right: 60px;
 }
 
 #welcome {
@@ -77,18 +150,18 @@
 
 .card-ingredient-delete {
     position: absolute;
-    margin-left: 296px;
+    margin-left: 325px;
 }
-
 
 .card-ingredient-edit {
     position: absolute;
-    margin-left: 268px;
+    margin-left: 295px;
 }
 
 #separation {
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-top: 2px solid rgba(0, 0, 0, 0.1);
 }
 
 

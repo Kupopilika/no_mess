@@ -26,27 +26,45 @@
       <div class="card-ingredient">
         <div class="card-ingredient-first">
           <% date = ingredient.expiration_date - Date.today %>
-          <h2 class="card-ingredient-info-date"><%= date.to_i %>J</h2>
-           <% result = Ingredient.find(ingredient.ingredient_id) %>
-         <%= cl_image_tag result.photo.key, class: "index-card-img"%>
-        <h2 class="card-ingredient-info-name"><%= result.name %></h2>
+            <!-- <h2 class="card-ingredient-info-date"><%= date.to_i %>J</h2> -->
+
+          <% if date.to_i < 4 %>
+            <h2 class="circle-expiration-date-4"><%= date.to_i %>J</h2>
+          <% elsif date.to_i < 6 %>
+            <h2 class="circle-expiration-date-6"><%= date.to_i %>J</h2>
+          <% elsif date.to_i < 8 %>
+            <h2 class="circle-expiration-date-8"><%= date.to_i %>J</h2>
+          <% elsif date.to_i < 11 %>
+            <h2 class="circle-expiration-date-11"><%= date.to_i %>J</h2>
+          <% elsif date.to_i < 15 %>
+            <h2 class="circle-expiration-date-15"><%= date.to_i %>J</h2>
+          <% elsif date.to_i < 22 %>
+            <h2 class="circle-expiration-date-22"><%= date.to_i %>J</h2>
+          <% elsif date.to_i < 31 %>
+            <h2 class="circle-expiration-date-31"><%= date.to_i %>J</h2
+          <% else %>
+            <h2 class="card-ingredient-info-date"><%= date.to_i %>J</h2>
+          <% end %>
+
+          <% result = Ingredient.find(ingredient.ingredient_id) %>
+          <%= cl_image_tag result.photo.key, class: "index-card-img"%>
+
+          <h2 class="card-ingredient-info-name"><%= result.name %></h2>
         </div>
 
-
-          <div class="card-ingredient-edit">
-              <%= link_to edit_user_ingredient_path(ingredient) do %>
-                <i class="far fa-edit"></i>
-              <% end %>
-            </div>
-            <div class="card-ingredient-delete">
-
-                <i class="sweet-alert fas fa-trash" data-element-id="<%= ingredient.id %>"></i>
-  <!--               <button id="sweet-alert-demo" class="btn btn-danger"> Are you sure ? <#%= ingredient.ingredient.name %></button> -->
-                <%= link_to "", user_ingredient_path(ingredient), method: :delete, id: "delete-link-#{ingredient.id}", class: "hidden" %>
-
-            </div>
         <div class="card-ingredient-last">
           <h2><%= ingredient.quantity %></h2>
+        </div>
+
+        <div class="card-ingredient-edit">
+          <%= link_to edit_user_ingredient_path(ingredient) do %>
+            <i class="far fa-edit"></i>
+          <% end %>
+        </div>
+
+        <div class="card-ingredient-delete">
+          <i class="sweet-alert fas fa-trash" data-element-id="<%= ingredient.id %>"></i>
+          <%= link_to "", user_ingredient_path(ingredient), method: :delete, id: "delete-link-#{ingredient.id}", class: "hidden" %>
         </div>
       </div>
       <hr id="separation">
@@ -60,6 +78,9 @@
 
 
 
+
+
+  <!--               <button id="sweet-alert-demo" class="btn btn-danger"> Are you sure ? <#%= ingredient.ingredient.name %></button> -->
 
 
 

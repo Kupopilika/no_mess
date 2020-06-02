@@ -40,6 +40,5 @@ class RecipesController < ApplicationController
 
 
     cookies[:last_recipe_id] = @recipe.id
-  end
 
 end
