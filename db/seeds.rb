@@ -518,7 +518,7 @@ ingredients = [
     name:       "Poisson",
     category:   '1',
     unit:       'g',
-    image:      'https://res.cloudinary.com/dubgqyx31/image/upload/v1591107093/chicken_ympcbo.png'
+    image:      'https://res.cloudinary.com/dubgqyx31/image/upload/v1591109754/dolly-fish_tcmxaa.png'
   },
    {
     name:       "Salami",
@@ -549,6 +549,48 @@ ingredients = [
     category:   '2',
     unit:       'g',
     image:      'https://res.cloudinary.com/dubgqyx31/image/upload/v1591108650/butter_ufgmte.png'
+  },
+    {
+    name:       "Farine",
+    category:   '8',
+    unit:       'g',
+    image:      'https://res.cloudinary.com/dubgqyx31/image/upload/v1591110071/flour_lp9wmz.png'
+  },
+  {
+    name:       "Lait",
+    category:   '7',
+    unit:       'cl',
+    image:      'https://res.cloudinary.com/dubgqyx31/image/upload/v1591110445/milk_bimja6.png'
+  },
+  {
+    name:       "Basilic",
+    category:   '8',
+    unit:       'u',
+    image:      'https://res.cloudinary.com/dubgqyx31/image/upload/v1591112836/basil_2_ttzzxy.png'
+  },
+  {
+    name:       "Menthe",
+    category:   '8',
+    unit:       'u',
+    image:      'https://res.cloudinary.com/dubgqyx31/image/upload/v1591113318/mint_obljvw.png'
+  },
+  {
+    name:       "Tagliatelle",
+    category:   '8',
+    unit:       'u',
+    image:      'https://res.cloudinary.com/dubgqyx31/image/upload/v1591113463/pasta_1_q7xev0.png'
+  },
+  {
+    name:       "Bouillon",
+    category:   '8',
+    unit:       'u',
+    image:      'https://res.cloudinary.com/dubgqyx31/image/upload/v1591113592/3d-design_upheuc.png'
+  },
+  {
+    name:       "Burger",
+    category:   '2',
+    unit:       'u',
+    image:      'https://res.cloudinary.com/dubgqyx31/image/upload/v1591113824/burger_1_sd4rch.png'
   },
 ]
 
