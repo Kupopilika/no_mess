@@ -20,7 +20,7 @@
               <div class="favorite-star">
                 <!-- à refactoriser si possible -->
                 <% if Favorite.find_by(user: current_user, recipe: recipe) %>
-                  <%= link_to favorites_path(Favorite.find_by(user: current_user, recipe: recipe)), method: :delete do %>
+                  <%= link_to favorite_path(Favorite.find_by(user: current_user, recipe: recipe)), method: :delete do %>
                     <%= image_tag "star_filled.png", alt: "favorite_recipe" %>
                   <% end %>
                 <% else %>
