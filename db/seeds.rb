@@ -556,12 +556,12 @@ ingredients = [
     unit:       'g',
     image:      'https://res.cloudinary.com/dubgqyx31/image/upload/v1591110071/flour_lp9wmz.png'
   },
-  {
-    name:       "Lait",
-    category:   '7',
-    unit:       'cl',
-    image:      'https://res.cloudinary.com/dubgqyx31/image/upload/v1591110445/milk_bimja6.png'
-  },
+  # {
+  #   name:       "Lait",
+  #   category:   '7',
+  #   unit:       'cl',
+  #   image:      'https://res.cloudinary.com/dubgqyx31/image/upload/v1591122586/milk.png'
+  # },
   {
     name:       "Basilic",
     category:   '8',
@@ -580,17 +580,23 @@ ingredients = [
     unit:       'u',
     image:      'https://res.cloudinary.com/dubgqyx31/image/upload/v1591113463/pasta_1_q7xev0.png'
   },
-  {
-    name:       "Bouillon",
-    category:   '8',
-    unit:       'u',
-    image:      'https://res.cloudinary.com/dubgqyx31/image/upload/v1591113592/3d-design_upheuc.png'
-  },
+  # {
+  #   name:       "Bouillon",
+  #   category:   '8',
+  #   unit:       'u',
+  #   image:      'https://res.cloudinary.com/dubgqyx31/image/upload/v1591122635/bouillon.png'
+  # },
   {
     name:       "Burger",
     category:   '2',
     unit:       'u',
     image:      'https://res.cloudinary.com/dubgqyx31/image/upload/v1591113824/burger_1_sd4rch.png'
+  },
+  {
+    name:       "Crème",
+    category:   '2',
+    unit:       'g',
+    image:      'https://res.cloudinary.com/dubgqyx31/image/upload/v1591122150/skin_fgacgc.png'
   },
 ]
 
