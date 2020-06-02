@@ -19,390 +19,475 @@ ingredients = [
   {
     name:       "Brocoli",
     category:   '2',
+    unit:       'g',
     image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590508379/No%20Mess/broccoli_dal6im.png'
   },
   {
     name:       "Banane",
     category:   '3',
+    unit:       'g',
     image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590508506/No%20Mess/banana_ighpwd.png'
   },
   {
     name:       "Yaourt",
     category:   '4',
+    unit:       'u',
     image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590508512/No%20Mess/yogurt_bnpfrp.png'
   },
   {
     name:       "Parmesan",
     category:   '7',
+    unit:       'g',
     image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590569513/No%20Mess/grater_vsd481.png'
   },
   {
     name:       "Riz",
     category:   '8',
+    unit:       'g',
     image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590567441/No%20Mess/rice_orz34s.png'
   },
   {
     name:       "Vin blanc",
     category:   '8',
+    unit:       'cl',
     image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590570805/No%20Mess/white-wine_ab9gtu.png'
   },
   {
     name:       "Tomate",
     category:   '2',
+    unit:       'g',
     image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590570911/No%20Mess/tomato_kideom.png'
   },
   {
     name:       "Saumon",
     category:   '1',
+    unit:       'g',
     image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590567717/No%20Mess/fish_cimslg.png'
   },
   {
     name:       "Pâtes",
     category:   '8',
+    unit:       'g',
     image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590567884/No%20Mess/spaghetti_lygb7l.png'
   },
   {
     name:       "Huile d'olive",
     category:   '8',
+    unit:       'cl',
     image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590567947/No%20Mess/olive-oil_gqjpqp.png'
   },
   {
     name:       "Poivre",
     category:   '8',
+    unit:       'g',
     image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590572409/No%20Mess/salt_bvwpix.png'
   },
    {
     name:       "Concombre",
     category:   '2',
+    unit:       'u',
     image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590508083/No%20Mess/cucumber_ucgtun_o3ccx9.png'
   },
   {
     name:       "Carotte",
     category:   '5',
+    unit:       'g',
     image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590588555/No%20Mess/carrot_p21kbg.png'
   },
     {
     name:       "Melon",
     category:   '2',
+    unit:       'g',
     image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590588840/No%20Mess/melon_rrrh6n.png'
   },
     {
     name:       "Endive",
     category:   '2',
+    unit:       'g',
     image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590588982/No%20Mess/endive_zqf9sv.png'
   },
     {
     name:       "Salade",
     category:   '1',
+    unit:       'g',
     image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590589058/No%20Mess/lettuce_iahhor.png'
   },
     {
     name:       "Courgette",
     category:   '3',
+    unit:       'g',
     image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590589183/No%20Mess/zucchini_yg4otu.png'
   },
     {
     name:       "Oignons",
     category:   '6',
+    unit:       'g',
     image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590589448/No%20Mess/onion_qjgfzy.png'
   },
     {
     name:       "Ail",
     category:   '6',
+    unit:       'g',
     image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590589738/No%20Mess/garlic_vv0kld.png'
   },
     {
     name:       "Oeuf",
     category:   '6',
+    unit:       'u',
     image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590589791/No%20Mess/eggs_pspyoe.png'
   },
     {
     name:       "Poireau",
     category:   '6',
+    unit:       'g',
     image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590589856/No%20Mess/leek_f5foyp.png'
   },
     {
     name:       "Chou-fleur",
     category:   '2',
+    unit:       'g',
     image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590590074/No%20Mess/cauliflower_qwjutp.png'
   },
     {
     name:       "Pomme de terre",
     category:   '7',
+    unit:       'g',
     image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590590633/No%20Mess/potatoes_q4v3dp.png'
   },
     {
     name:       "Patate douce",
     category:   '7',
+    unit:       'g',
     image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590591073/No%20Mess/potato_srckc5.png'
   },
     {
     name:       "Ciboulette",
     category:   '1',
+    unit:       'u',
     image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590591146/No%20Mess/chives_tl67p4.png'
   },
     {
     name:       "Persil",
     category:   '1',
+    unit:       'u',
     image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590591267/No%20Mess/parsley_tthu3x.png'
   },
     {
     name:       "Pomme",
     category:   '6',
+    unit:       'g',
     image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590591322/No%20Mess/apple_fnytpi.png'
   },
     {
     name:       "Orange",
     category:   '5',
+    unit:       'u',
     image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590591384/No%20Mess/orange_ekj95g.png'
   },
     {
     name:       "Clémentine",
     category:   '5',
+    unit:       'u',
     image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590591384/No%20Mess/orange_ekj95g.png'
   },
     {
     name:       "Pêche",
     category:   '3',
+    unit:       'g',
     image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590591520/No%20Mess/peach-2_bdlbwf.png'
   },
     {
     name:       "Poire",
     category:   '4',
+    unit:       'g',
     image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590591615/No%20Mess/pear_duotkp.png'
   },
     {
     name:       "Raisin",
     category:   '3',
+    unit:       'g',
     image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590591957/No%20Mess/grapes_jvuujr.png'
   },
     {
     name:       "Pamplemousse",
     category:   '4',
+    unit:       'u',
     image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590592306/No%20Mess/diet_gz4nte.png'
   },
     {
     name:       "Kiwi",
     category:   '4',
+    unit:       'u',
     image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590592362/No%20Mess/kiwi_u0foyf.png'
   },
     {
     name:       "Fraise",
     category:   '2',
+    unit:       'g',
     image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590592402/No%20Mess/strawberry_fltwyd.png'
   },
     {
     name:       "Artichaut",
     category:   '1',
+    unit:       'u',
     image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590592504/No%20Mess/artichoke_ez9m5s.png'
   },
     {
     name:       "Asperge",
     category:   '2',
+    unit:       'g',
     image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590592580/No%20Mess/asparagus_wfxau0.png'
   },
   {
     name:       "Aubergine",
     category:   '2',
+    unit:       'g',
     image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590592610/No%20Mess/eggplant_l1kmnm.png'
   },
     {
     name:       "Betterave",
     category:   '2',
+    unit:       'g',
     image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590592781/No%20Mess/beetroot_jiobae.png'
   },
     {
     name:       "Blette",
     category:   '1',
+    unit:       'g',
     image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590594318/No%20Mess/chard_bv0hvh.png'
   },
     {
     name:       "Celeri Branche",
     category:   '2',
+    unit:       'g',
     image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590594688/No%20Mess/celery_fljynw.png'
   },
     {
     name:       "Cèpe",
     category:   '1',
+    unit:       'g',
     image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590594884/No%20Mess/mushroom_cgfyxo.png'
   },
     {
     name:       "Champignon de Paris",
     category:   '1',
+    unit:       'g',
     image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590594996/No%20Mess/mushroom-2_uraqrn.png'
   },
     {
     name:       "Chou Kale",
     category:   '3',
+    unit:       'g',
     image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590595044/No%20Mess/kale_wt0qhw.png'
-  },  {
+  },
+  {
     name:       "Chou de Bruxelles",
     category:   '3',
+    unit:       'g',
     image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590595092/No%20Mess/brussels-sprouts_ryknsp.png'
-  },  {
+  },
+  {
     name:       "Courge Butternut",
     category:   '7',
+    unit:       'g',
     image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590595160/No%20Mess/butternut_rqudh3.png'
-  },  {
+  },
+  {
     name:       "Potiron",
     category:   '7',
+    unit:       'g',
     image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590595241/No%20Mess/pumpkin_wwh93x.png'
-  },  {
+  },
+  {
     name:       "Potimarron",
     category:   '7',
+    unit:       'g',
     image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590595241/No%20Mess/pumpkin_wwh93x.png'
   },
     {
     name:       "Echalote",
     category:   '5',
+    unit:       'u',
     image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590595373/No%20Mess/shallot_xhugi3.png'
   },
     {
     name:       "Épinard",
     category:   '2',
+    unit:       'g',
     image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590595422/No%20Mess/spinach_wkk7ku.png'
   },
     {
     name:       "Fenouil",
     category:   '2',
+    unit:       'g',
     image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590595917/No%20Mess/fennel_li7yfq.png'
   },
     {
     name:       "Pousse de haricot mungo",
     category:   '1',
+    unit:       'g',
     image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590678405/No%20Mess/haricotmungo_wgrkam.png'
-  },  {
+  },
+  {
     name:       "Fève",
     category:   '1',
+    unit:       'g',
     image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590678565/No%20Mess/kisspng-computer-icons-bean-vegetarian-cuisine-clip-art-beans-vector-5adbeac24d3c30.0207747415243619223164_otvqbm.png'
-  },  {
+  },
+  {
     name:       "Haricots verts",
     category:   '1',
+    unit:       'g',
     image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590678730/No%20Mess/haricotsverts_h77kc0.png'
   },
     {
     name:       "Navet",
     category:   '3',
+    unit:       'g',
     image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590678814/No%20Mess/turnip_vaqg1u.png'
   },
     {
     name:       "Panais",
     category:   '3',
+    unit:       'g',
     image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590678992/No%20Mess/carrot_rhft07.png'
   },
     {
     name:       "Petit pois",
     category:   '1',
+    unit:       'g',
     image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590679094/No%20Mess/peas_ixmvmc.png'
   },
     {
     name:       "Poivron",
     category:   '3',
+    unit:       'g',
     image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590679168/No%20Mess/bell-pepper_jmyntj.png'
   },
     {
     name:       "Radis",
     category:   '1',
+    unit:       'g',
     image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590679246/No%20Mess/radish_vhsfze.png'
   },
     {
     name:       "Abricot",
     category:   '2',
+    unit:       'g',
     image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590679314/No%20Mess/apricot_o3bx9q.png'
   },
     {
     name:       "Ananas",
     category:   '2',
+    unit:       'g',
     image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590679483/No%20Mess/pineapple_fnyun8.png'
   },
     {
     name:       "Avocat",
     category:   '2',
+    unit:       'u',
     image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590679639/No%20Mess/avocado_uva1ur.png'
   },
     {
     name:       "Cerise",
     category:   '1',
+    unit:       'g',
     image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590679776/No%20Mess/cherry_mojgm1.png'
   },
     {
     name:       "Citron",
     category:   '4',
+    unit:       'u',
     image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590679912/No%20Mess/lemon_i1k6my.png'
   },
     {
     name:       "Datte",
     category:   '7',
+    unit:       'g',
     image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590680092/No%20Mess/date_wpwvft.png'
   },
     {
     name:       "Figue",
     category:   '1',
+    unit:       'g',
     image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590680161/No%20Mess/fig_nvxfss.png'
   },
     {
     name:       "Framboise",
     category:   '1',
+    unit:       'g',
     image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590680218/No%20Mess/raspberries_gkshjv.png'
   },
     {
     name:       "Kaki",
     category:   '3',
+    unit:       'g',
     image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590680325/No%20Mess/persimmon_oxapsa.png'
   },
     {
     name:       "Goyave",
     category:   '2',
+    unit:       'g',
     image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590680401/No%20Mess/guava_gp84gi.png'
   },
     {
     name:       "Mangue",
     category:   '2',
+    unit:       'g',
     image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590680491/No%20Mess/mango_drolqj.png'
   },
     {
     name:       "Litchi",
     category:   '4',
+    unit:       'g',
     image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590680649/No%20Mess/lychee_fmtnjk.png'
   },
     {
     name:       "Mirabelle",
     category:   '2',
+    unit:       'g',
     image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590680857/No%20Mess/plum-2_mf6rws.png'
   },
     {
     name:       "Mûre",
     category:   '1',
+    unit:       'g',
     image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590680927/No%20Mess/blackberry_i9ovxp.png'
   },
     {
     name:       "Myrtille",
     category:   '3',
+    unit:       'g',
     image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590681017/No%20Mess/blueberry_wd5cmm.png'
   },
     {
     name:       "Papaye",
     category:   '1',
+    unit:       'g',
     image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590681071/No%20Mess/papaya_sr4usk.png'
   },
     {
     name:       "Pastèque",
     category:   '3',
+    unit:       'u',
     image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590681140/No%20Mess/watermelon_ikbzij.png'
   },
     {
     name:       "Nectarine",
     category:   '1',
+    unit:       'g',
     image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590591520/No%20Mess/peach_xxhxzb.png'
   },
     {
     name:       "Prune",
     category:   '2',
+    unit:       'g',
     image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590680857/No%20Mess/plum_zvacyg.png'
   },
     {
     name:       "Rhubarbe",
     category:   '1',
+    unit:       'g',
     image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590681700/No%20Mess/Rhubarbe_egycbz.png'
   },
 ]
@@ -416,7 +501,7 @@ ingredients = [
 
 ingredients.each do |data|
   file = URI.open(data[:image])
-  ingredient = Ingredient.new(name: data[:name], category: data[:category])
+  ingredient = Ingredient.new(name: data[:name], category: data[:category], unit: data[:unit])
   ingredient.photo.attach(io: file, filename: "#{ingredient.name}.png", content_type: 'image/png')
   # if ingredient.photo.attached?
     ingredient.save!
