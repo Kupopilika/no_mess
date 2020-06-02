@@ -71,7 +71,7 @@ ingredients = [
     image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590567884/No%20Mess/spaghetti_lygb7l.png'
   },
   {
-    name:       "Huile d'olive",
+    name:       "Huile olive",
     category:   '8',
     unit:       'cl',
     image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590567947/No%20Mess/olive-oil_gqjpqp.png'
