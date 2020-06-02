@@ -20,8 +20,9 @@
 
 <div class="container">
   <div class="cards">
-
+    
     <% @user_ingredients.each do |ingredient| %>
+      
       <div class="card-ingredient">
         <div class="card-ingredient-first">
           <% date = ingredient.expiration_date - Date.today %>
@@ -67,6 +68,7 @@
         </div>
       </div>
       <hr id="separation">
+      
     <%end%>
   </div>
 </div>

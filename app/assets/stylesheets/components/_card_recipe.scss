@@ -15,6 +15,7 @@
   text-align: center;
   font-family: Arial;
   margin-bottom: 5px;
+  padding: 10px 0 0 0;
 }
 
 .card-recipe-show img {
@@ -56,14 +57,14 @@
 .card-ingredient-show img {
   height: 48px;
   width: 64px;
-  padding: 10px;
+  padding: 5px;
 }
 .card-ingredient-show p {
   font-size: 16px;
   line-height: 1.4;
   opacity: .7;
   margin-bottom: 0;
-  margin-top: 8px;
+  margin-top: 12px;
   margin-left: 20px;
 }
 .card-preparation-show {
@@ -92,7 +93,9 @@
 
 .number-preparation {
   width: 35px;
-  color: #b6ead8;
+  height: 35px;
+  // color: b6ead8;
+  color:#66d9e1;
   font-size: 20px;
   text-align: center;
   font-weight: bold;
@@ -139,3 +142,22 @@
 //   font-size: 20px;
 // }
 
+.tabs-underlined {
+  display: flex;
+  align-items: center;
+}
+
+.tabs-underlined .tab-underlined {
+  color: black;
+  padding: 8px;
+  margin: 8px 16px;
+  opacity: .4;
+  cursor: pointer;
+  text-decoration: none;
+  border-bottom: 4px solid transparent;
+}
+
+.tabs-underlined .tab-underlined.active {
+  opacity: 1;
+  border-bottom: 3px solid #555555;
+}

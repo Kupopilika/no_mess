@@ -1,17 +1,18 @@
 <div class="container-recipe">
   <div class="cards">
     <div class="card-recipe-show">
-      <h6 class="main-title"><%= @recipe.name %></h6>
+      <!-- <h6 class="main-title"><%#= @recipe.name %></h6> -->
       <!--<img src="https://res.cloudinary.com/dubgqyx31/image/upload/w_375,h_243,c_scale/v1590506082/nomess/charfraise_dzpblg.jpg" />-->
       <%= image_tag @recipe.image, alt: "image recette" %>
       <!--<img src="https://assets.afcdn.com/recipe/20131009/63427_w648h414c1cx2592cy1728.jpg">-->
+      <h6 class="main-title"><%= @recipe.name.capitalize %></h6>
       <div class="recipe-infos-show">
         <div class="recipe-infos-show-total-time">
           <span class="recipe-infos-show-time-titre">Temps</span>
-          <span class="recipe-infos-show-time-value"><%= @time_recipe %> min</span>
+          <span class="recipe-infos-show-time-value">⏲<%= @time_recipe %> min</span>
         </div>
         <div class="recipe-info-show-level">
-          <span class="recipe-infos-show-level-titre"><%= @recipe.difficulty_level %></span>
+          <span class="recipe-infos-show-level-titre"><%= @recipe.difficulty_level.capitalize %></span>
           <div class="card-product-show-details">
             <ul class="list-inline-show-cercle">
               <% @difficulty_number.times do %>
@@ -40,11 +41,22 @@
       </ul>
       <div class="tab-content" id="myTabContent">
         <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-          <% JSON.parse(@recipe.ingredient_list).each do |ingredient| %>
+          <% JSON.parse(@recipe.ingredient_list).uniq.each do |ingredient| %>
+            <%# name = ingredient.split(" ").find{|ingredient|Ingredient.where("name ILIKE ?","#{ingredient.capitalize}%")!=[]} %>
+            <% name = ingredient.split(" ").find{|ingredient|Ingredient.pluck(:name).include?(ingredient.capitalize) || Ingredient.pluck(:name).include?(ingredient.capitalize[0..-2])} %>
+
+            <% ingre = Ingredient.where("name ILIKE ?", "%#{name.capitalize}%").first || Ingredient.where("name ILIKE ?", "%#{name.capitalize[0..-2]}%").first if name %>
+
             <div class="card-ingredient-show">
-              <img src="https://res.cloudinary.com/kupopilika/image/upload/v1590574543/No%20Mess/harvest_jlu7ek.png" />
+              <% if ingre %>
+                <%= image_tag ingre.photo %>
+              <% else %>
+                <img src="https://res.cloudinary.com/kupopilika/image/upload/v1590574543/No%20Mess/harvest_jlu7ek.png" />
+              <% end %>
+
               <div class="card-product-ingredient-infos-show">
-                <p><%= ingredient.rstrip %></p>
+                <p><%= ingredient.capitalize.rstrip.gsub(/\d+/, ' \0 ').squish %></p>
+                <%#= .gsub(/\d+/, ' \0 ').squish %>
               </div>
             </div>
           <% end %>
@@ -64,10 +76,25 @@
         </div> -->
         </div>
       </div>
-      <div class= position-button-up-to-navbar>
-        <div class="button-line">
-          <%= link_to "Mise à jour du garde manger", new_user_registration_path, class: "btn btn-flat" %>
-        </div>
+      <div class="button-line">
+        <% all_ingredient =  JSON.parse(@recipe.ingredient_list) %>
+        <% result = "" %>
+        <% ingredient_find = Ingredient.find(@user_ingredients.first.ingredient_id) %>
+        <% all_ingredient.each do |element| %>
+          <% result = element if element.include?(ingredient_find.name.downcase) %>
+        <%end%>
+        <% number = result.match(/\d+/).to_s.to_i %>
+        <!-- <%# @user_ingredients.first.update(:quantity = @user_ingredients.first.quantity -= first_list) %> -->
+        <%if @user_ingredients.first.quantity >= number%>
+          <%= simple_form_for [@user_ingredients.first] do |f| %>
+            <%= f.input :quantity, as: :hidden, input_html: { value: @user_ingredients.first.quantity - number } %>
+            <%= f.submit "mise à jour", class: "btn btn-flat" %>
+          <%end%>
+        <% else %>
+          <h2>Tu n'as pas assez de <%= ingredient_find.name %></h2>
+        <%end%>
+        <%#= link_to "Mise à jour du garde manger", user_ingredient_path(@user_ingredients.first, quantity: first_list), class: "btn btn-flat maj-garde-manger" %> 
+
       </div>
     </div>
   </div>
