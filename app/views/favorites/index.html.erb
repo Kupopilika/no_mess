@@ -1,0 +1,46 @@
+
+<div class="container-recipes">
+  <div class="title-recipes"> Recettes favorites </div>
+    <div class ="mr-4 ml-4 mt-3">
+      <%= form_tag favorites_index_path, method: :get do %>
+      <%= text_field_tag :query,
+        params[:query],
+        class: "form-control",
+        placeholder: "Trouve ta recette !"%>
+      <% end %>
+    </div>
+  <div class="card-recipes">
+    <% @favorites.each do |favorite| %>
+      <div class="card-recipe-content">
+        <%= link_to recipe_path(favorite.recipe) do%>
+          <div class="card-recipe">
+            <img class="img-recipe" src="<%= favorite.recipe.image %>">
+            <div class="card-recipe-infos">
+              <div>
+                <h2 class=""><%= favorite.recipe.name %></h2>
+                <% if favorite.recipe.cooking_time %>
+                  <p> Temps total : <%= favorite.recipe.preparation_time + favorite.recipe.cooking_time %> min </p>
+                <% else %>
+                  <p> Temps total : <%= favorite.recipe.preparation_time %> min </p>
+                <% end %>
+              </div>
+              <div class="favorite-star">
+                <!-- à refactoriser si possible -->
+                <% if favorite %>
+                  <%= link_to favorite_path(favorite), method: :delete do %>
+                    <%= image_tag "star_filled.png", alt: "favorite_recipe" %>
+                  <% end %>
+                <% else %>
+                  <%= link_to favorites_path(recipe_id: favorite.recipe.id), method: :post do %>
+                    <%= image_tag "star.png", alt: "no_favorite_recipe" %>
+                  <% end %>
+                <% end %>
+              </div>
+            </div>
+          </div>
+        <%end%>
+      </div>
+    <%end%>
+  </div>
+</div>
+

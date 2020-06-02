@@ -1,7 +1,11 @@
 class FavoritesController < ApplicationController
 
   def index
-    @favorites = Favorite.all
+    if params[:query].present?
+      @favorites = Favorite.joins(:recipe).where("recipes.name ILIKE ? AND user_id = #{current_user.id}", "%#{params[:query]}%")
+    else
+      @favorites = current_user.favorites
+    end
   end
 
   def create
