@@ -2,6 +2,7 @@ Rails.application.routes.draw do
 
   get 'favorites/index'
   get 'ingredients/expiration', to: 'ingredients#expiration', :defaults => { :format => 'json' }
+  get 'ingredients/units', to: 'ingredients#units', :defaults => { :format => 'json' }
 
   devise_for :users
   root to: 'pages#home'

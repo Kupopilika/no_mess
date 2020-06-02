@@ -1,4 +1,5 @@
 class RecipesController < ApplicationController
+  before_action :set_last_recipe, only: :show
 
   def index
     @favorites = current_user.favorites
@@ -17,7 +18,6 @@ class RecipesController < ApplicationController
 
 
   def show
-    @recipe = Recipe.find(params[:id])
 
     if @recipe.difficulty_level == "très facile"
       (@difficulty_number = 1) && (@missing_circle = 3)
@@ -38,7 +38,11 @@ class RecipesController < ApplicationController
 
     @user_ingredients = current_user.user_ingredients.order(:expiration_date)
 
+  private
 
+  def set_last_recipe
+    @recipe = Recipe.find(params[:id])
     cookies[:last_recipe_id] = @recipe.id
+  end
 
 end
