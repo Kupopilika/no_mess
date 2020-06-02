@@ -49,24 +49,31 @@
             <div class="number-preparation"><%= "#{index + 1}" %></div>
             <div class="card-product-preparation-infos-show"><p><%= instruction.rstrip %></p></div>
           </div>
-<<<<<<< HEAD
-          <% end %>
-        </div>
-        <div class="button-line">
-          <%= link_to "Bon appétit", user_ingredients_path, class: "btn btn-flat done" %>
-          <% @user_ingredients.first.quantity -= 1 %>
-=======
         <% end %>
         <!--<div class="button-line">
           <%#= link_to "Mise à jour du garde manger", new_user_registration_path, class: "btn btn-flat" %>
         </div> -->
->>>>>>> 986b003d235739b087a697943774591580032a09
         </div>
       </div>
       <div class="button-line">
-        <%= link_to "Mise à jour du garde manger", new_user_registration_path, class: "btn btn-flat" %>
+        <% all_ingredient =  JSON.parse(@recipe.ingredient_list) %>
+        <% result = "" %>
+        <% ingredient_find = Ingredient.find(@user_ingredients.first.ingredient_id) %>
+        <% all_ingredient.each do |element| %>
+          <% result = element if element.include?(ingredient_find.name.downcase) %>
+        <%end%>
+        <% number = result.match(/\d+/).to_s.to_i %>
+        <!-- <%# @user_ingredients.first.update(:quantity = @user_ingredients.first.quantity -= first_list) %> -->
+        <%if @user_ingredients.first.quantity >= number%>
+          <%= simple_form_for [@user_ingredients.first] do |f| %>
+            <%= f.input :quantity, as: :hidden, input_html: { value: @user_ingredients.first.quantity - number } %>
+            <%= f.submit "mise à jour", class: "btn btn-flat" %>
+          <%end%>
+        <% else %>
+          <h2>Tu n'as pas assez de <%= ingredient_find.name %></h2>
+        <%end%>
+        <%#= link_to "Mise à jour du garde manger", user_ingredient_path(@user_ingredients.first, quantity: first_list), class: "btn btn-flat maj-garde-manger" %> 
       </div>
-
     </div>
   </div>
 </div>

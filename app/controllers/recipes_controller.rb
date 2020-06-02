@@ -19,6 +19,8 @@ class RecipesController < ApplicationController
     else
       @time_recipe = @recipe.preparation_time
     end
+
+    @user_ingredients = current_user.user_ingredients.order(:expiration_date)
   end
 
   def index
