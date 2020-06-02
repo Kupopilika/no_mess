@@ -30,6 +30,7 @@ class RecipesController < ApplicationController
     else
       (@difficulty_number = 0) && (@missing_circle = 0)
     end
+
     if @recipe.cooking_time
       @time_recipe = @recipe.preparation_time + @recipe.cooking_time
     else
@@ -37,6 +38,8 @@ class RecipesController < ApplicationController
     end
 
     @user_ingredients = current_user.user_ingredients.order(:expiration_date)
+
+  end
 
   private
 
