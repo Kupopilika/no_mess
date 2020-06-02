@@ -23,14 +23,12 @@
     <%= image_tag "https://res.cloudinary.com/dc1jk4jut/image/upload/v1591000813/star_psgbyx.png" %>
   <% end %>
 
-  <ul class="navbar-nav mr-auto">
-    <li class="nav-item active">
-      <% if user_signed_in? %>
-       <%= link_to "Log out", destroy_user_session_path, method: :delete, class: "nav-link" %>
-      <% else %>
-        <%= link_to "Login", user_session_path, class: "nav-link" %>
-      <% end %>
-    </li>
-  </ul>
+  <% if user_signed_in? %>
+    <%= link_to destroy_user_session_path, method: :delete, :class => current_class?(destroy_user_session_path) do %>
+      <%= image_tag "https://res.cloudinary.com/dc1jk4jut/image/upload/v1591019216/login_qemjek.png" %>
+    <% end %>
+  <% else %>
+    <%= link_to "Login", user_session_path, :class => current_class?(user_session_path) %>
+  <% end %>
 
 </div>
