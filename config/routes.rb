@@ -8,7 +8,11 @@ Rails.application.routes.draw do
   root to: 'pages#home'
   get 'pages/message_show_empty'
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  get 'user_ingredients/product', to: 'user_ingredients#product'
   resources :user_ingredients
+
+
+  resources :ingredients, only: :create
 
   resources :recipes do
     resources :recipe_ingredients

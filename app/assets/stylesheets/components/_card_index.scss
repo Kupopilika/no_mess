@@ -123,6 +123,10 @@
     // position: absolute;
     padding-left: 15px;
     font-size: 1rem;
+    text-overflow: ellipsis;
+    white-space: nowrap !important;
+    overflow: hidden;
+    width: 150px !important;
 }
 
 .card-ingredient-first h2 {
