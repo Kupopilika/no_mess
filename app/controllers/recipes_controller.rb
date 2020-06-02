@@ -37,7 +37,6 @@ class RecipesController < ApplicationController
     end
 
     @user_ingredients = current_user.user_ingredients.order(:expiration_date)
-  end
 
 
     cookies[:last_recipe_id] = @recipe.id
