@@ -119,7 +119,7 @@ ingredients = [
     image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590589183/No%20Mess/zucchini_yg4otu.png'
   },
     {
-    name:       "Oignons",
+    name:       "Oignon",
     category:   '6',
     unit:       'g',
     image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590589448/No%20Mess/onion_qjgfzy.png'
@@ -269,7 +269,7 @@ ingredients = [
     image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590594884/No%20Mess/mushroom_cgfyxo.png'
   },
     {
-    name:       "Champignon de Paris",
+    name:       "Champignon",
     category:   '1',
     unit:       'g',
     image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590594996/No%20Mess/mushroom-2_uraqrn.png'
@@ -489,6 +489,66 @@ ingredients = [
     category:   '1',
     unit:       'g',
     image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590681700/No%20Mess/Rhubarbe_egycbz.png'
+  },
+     {
+    name:       "Viande rouge",
+    category:   '2',
+    unit:       'g',
+    image:      'https://res.cloudinary.com/dubgqyx31/image/upload/v1591105757/meat_dtndtr.png'
+  },
+    {
+    name:       "Poulet",
+    category:   '1',
+    unit:       'g',
+    image:      'https://res.cloudinary.com/dubgqyx31/image/upload/v1591107093/chicken_ympcbo.png'
+  },
+   {
+    name:       "Fromage",
+    category:   '7',
+    unit:       'g',
+    image:      'https://res.cloudinary.com/dubgqyx31/image/upload/v1591100857/cheese_ackrkl.png'
+  },
+   {
+    name:       "Charcuterie",
+    category:   '2',
+    unit:       'g',
+    image:      'https://res.cloudinary.com/dubgqyx31/image/upload/v1591107093/chicken_ympcbo.png'
+  },
+   {
+    name:       "Poisson",
+    category:   '1',
+    unit:       'g',
+    image:      'https://res.cloudinary.com/dubgqyx31/image/upload/v1591107093/chicken_ympcbo.png'
+  },
+   {
+    name:       "Salami",
+    category:   '2',
+    unit:       'g',
+    image:      'https://res.cloudinary.com/dubgqyx31/image/upload/v1591107093/chicken_ympcbo.png'
+  },
+   {
+    name:       "Fêta",
+    category:   '7',
+    unit:       'g',
+    image:      'https://res.cloudinary.com/dubgqyx31/image/upload/v1591100857/cheese_ackrkl.png'
+  },
+  {
+    name:       "Sel",
+    category:   '8',
+    unit:       'g',
+    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590572409/No%20Mess/salt_bvwpix.png'
+  },
+  {
+    name:       "Sauce Soja",
+    category:   '8',
+    unit:       'cl',
+    image:      'https://res.cloudinary.com/dubgqyx31/image/upload/v1591108798/soy_vkxqor.png'
+  },
+    {
+    name:       "Beurre",
+    category:   '2',
+    unit:       'g',
+    image:      'https://res.cloudinary.com/dubgqyx31/image/upload/v1591108650/butter_ufgmte.png'
   },
 ]
 
