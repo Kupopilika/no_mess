@@ -12,7 +12,7 @@
 .circle-expiration-date-6{
   color: white;
   border-radius: 10px;
-  background-color: purple;
+  background-color: #E04000;
   width: 43px;
   height: 25px;
   text-align: center;
@@ -22,7 +22,7 @@
 .circle-expiration-date-8{
   color: white;
   border-radius: 10px;
-  background-color: pink;
+  background-color: #FF6D00;
   width: 43px;
   height: 25px;
   text-align: center;
@@ -32,7 +32,7 @@
 .circle-expiration-date-11{
   color: white;
   border-radius: 10px;
-  background-color: orange;
+  background-color: #FF8500;
   width: 43px;
   height: 25px;
   text-align: center;
@@ -42,7 +42,7 @@
 .circle-expiration-date-15{
   color: white;
   border-radius: 10px;
-  background-color: pink;
+  background-color: #FF9E00;
   width: 43px;
   height: 25px;
   text-align: center;
@@ -52,7 +52,7 @@
 .circle-expiration-date-22{
   color: white;
   border-radius: 10px;
-  background-color: blue;
+  background-color: #FFB600;
   width: 43px;
   height: 25px;
   text-align: center;
@@ -62,7 +62,7 @@
 .circle-expiration-date-31{
   color: white;
   border-radius: 10px;
-  background-color: violet;
+  background-color: #f2cc8f;
   width: 43px;
   height: 25px;
   text-align: center;
@@ -107,7 +107,7 @@
     background-size: cover;
     object-fit: cover;
     position: relative;
-    margin-left: 16px;
+    margin-left: 10px;
 }
 
 .card-ingredient-first {
@@ -121,7 +121,7 @@
 
 .card-ingredient-info-name {
     // position: absolute;
-    padding-left: 15px;
+    padding-left: 10px;
     font-size: 1rem;
 }
 
