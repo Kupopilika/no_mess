@@ -1,6 +1,15 @@
 
 <div class="container-recipes">
   <div class="title-recipes"> Recettes favorites </div>
+
+  <%= form_tag favorites_index_path, method: :get do %>
+  <%= text_field_tag :query,
+    params[:query],
+    class: "form-control",
+    placeholder: "Trouve ta recette !"%>
+  <%= submit_tag "Search", class: "btn btn-success" %>
+<% end %>
+
   <div class="card-recipes">
     <% @favorites.each do |favorite| %>
       <div class="card-recipe-content">
