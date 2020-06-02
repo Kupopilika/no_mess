@@ -16,12 +16,12 @@ const initSelect2 = () => {
   // $.ajax({
   //     type: "GET",
   //     dataType: 'json',
-  //     url: "http://localhost:3000/ingredients/expiration",
+  //     url: "http://localhost:3000/ingredients/expiration", // https://www.no-mess.life/ingredients/expiration
   //     success: function(data) {
   //       data.forEach
     //   },
     // });
-    fetch("https://www.no-mess.life/ingredients/expiration")
+    fetch("http://localhost:3000/ingredients/expiration")
       .then(response => response.json())
       .then((data) => {
         data.forEach((item) => {
