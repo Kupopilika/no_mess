@@ -512,7 +512,7 @@ ingredients = [
     name:       "Charcuterie",
     category:   '2',
     unit:       'g',
-    image:      'https://res.cloudinary.com/dubgqyx31/image/upload/v1591107093/chicken_ympcbo.png'
+    image:      'https://res.cloudinary.com/dubgqyx31/image/upload/v1591109012/sausage_vcv2hj.png'
   },
    {
     name:       "Poisson",
@@ -524,7 +524,7 @@ ingredients = [
     name:       "Salami",
     category:   '2',
     unit:       'g',
-    image:      'https://res.cloudinary.com/dubgqyx31/image/upload/v1591107093/chicken_ympcbo.png'
+    image:      'https://res.cloudinary.com/dubgqyx31/image/upload/v1591109012/sausage_vcv2hj.png'
   },
    {
     name:       "Fêta",
