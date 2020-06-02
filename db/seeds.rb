@@ -119,7 +119,7 @@ ingredients = [
     image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590589183/No%20Mess/zucchini_yg4otu.png'
   },
     {
-    name:       "Oignons",
+    name:       "Oignon",
     category:   '6',
     unit:       'g',
     image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590589448/No%20Mess/onion_qjgfzy.png'
@@ -269,7 +269,7 @@ ingredients = [
     image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590594884/No%20Mess/mushroom_cgfyxo.png'
   },
     {
-    name:       "Champignon de Paris",
+    name:       "Champignon",
     category:   '1',
     unit:       'g',
     image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590594996/No%20Mess/mushroom-2_uraqrn.png'
@@ -489,6 +489,114 @@ ingredients = [
     category:   '1',
     unit:       'g',
     image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590681700/No%20Mess/Rhubarbe_egycbz.png'
+  },
+     {
+    name:       "Viande rouge",
+    category:   '2',
+    unit:       'g',
+    image:      'https://res.cloudinary.com/dubgqyx31/image/upload/v1591105757/meat_dtndtr.png'
+  },
+    {
+    name:       "Poulet",
+    category:   '1',
+    unit:       'g',
+    image:      'https://res.cloudinary.com/dubgqyx31/image/upload/v1591107093/chicken_ympcbo.png'
+  },
+   {
+    name:       "Fromage",
+    category:   '7',
+    unit:       'g',
+    image:      'https://res.cloudinary.com/dubgqyx31/image/upload/v1591100857/cheese_ackrkl.png'
+  },
+   {
+    name:       "Charcuterie",
+    category:   '2',
+    unit:       'g',
+    image:      'https://res.cloudinary.com/dubgqyx31/image/upload/v1591109012/sausage_vcv2hj.png'
+  },
+   {
+    name:       "Poisson",
+    category:   '1',
+    unit:       'g',
+    image:      'https://res.cloudinary.com/dubgqyx31/image/upload/v1591109754/dolly-fish_tcmxaa.png'
+  },
+   {
+    name:       "Salami",
+    category:   '2',
+    unit:       'g',
+    image:      'https://res.cloudinary.com/dubgqyx31/image/upload/v1591109012/sausage_vcv2hj.png'
+  },
+   {
+    name:       "Fêta",
+    category:   '7',
+    unit:       'g',
+    image:      'https://res.cloudinary.com/dubgqyx31/image/upload/v1591100857/cheese_ackrkl.png'
+  },
+  {
+    name:       "Sel",
+    category:   '8',
+    unit:       'g',
+    image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590572409/No%20Mess/salt_bvwpix.png'
+  },
+  {
+    name:       "Sauce Soja",
+    category:   '8',
+    unit:       'cl',
+    image:      'https://res.cloudinary.com/dubgqyx31/image/upload/v1591108798/soy_vkxqor.png'
+  },
+    {
+    name:       "Beurre",
+    category:   '2',
+    unit:       'g',
+    image:      'https://res.cloudinary.com/dubgqyx31/image/upload/v1591108650/butter_ufgmte.png'
+  },
+    {
+    name:       "Farine",
+    category:   '8',
+    unit:       'g',
+    image:      'https://res.cloudinary.com/dubgqyx31/image/upload/v1591110071/flour_lp9wmz.png'
+  },
+  # {
+  #   name:       "Lait",
+  #   category:   '7',
+  #   unit:       'cl',
+  #   image:      'https://res.cloudinary.com/dubgqyx31/image/upload/v1591122586/milk.png'
+  # },
+  {
+    name:       "Basilic",
+    category:   '8',
+    unit:       'u',
+    image:      'https://res.cloudinary.com/dubgqyx31/image/upload/v1591112836/basil_2_ttzzxy.png'
+  },
+  {
+    name:       "Menthe",
+    category:   '8',
+    unit:       'u',
+    image:      'https://res.cloudinary.com/dubgqyx31/image/upload/v1591113318/mint_obljvw.png'
+  },
+  {
+    name:       "Tagliatelle",
+    category:   '8',
+    unit:       'u',
+    image:      'https://res.cloudinary.com/dubgqyx31/image/upload/v1591113463/pasta_1_q7xev0.png'
+  },
+  # {
+  #   name:       "Bouillon",
+  #   category:   '8',
+  #   unit:       'u',
+  #   image:      'https://res.cloudinary.com/dubgqyx31/image/upload/v1591122635/bouillon.png'
+  # },
+  {
+    name:       "Burger",
+    category:   '2',
+    unit:       'u',
+    image:      'https://res.cloudinary.com/dubgqyx31/image/upload/v1591113824/burger_1_sd4rch.png'
+  },
+  {
+    name:       "Crème",
+    category:   '2',
+    unit:       'g',
+    image:      'https://res.cloudinary.com/dubgqyx31/image/upload/v1591122150/skin_fgacgc.png'
   },
 ]
 
