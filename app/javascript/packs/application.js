@@ -27,7 +27,6 @@ import "bootstrap";
 import { initDate } from "../plugins/flatpickr";
 import { initSelect2 } from '../plugins/select2';
 import { initSweetAlertOnUserIngredient } from '../plugins/sweetalert';
-
 // import { openTabs } from "../components/tabs";
 
 

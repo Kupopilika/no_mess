@@ -3,7 +3,7 @@ class UserIngredientsController < ApplicationController
   before_action :set_user_ingredient, only: [:show, :edit, :update, :destroy]
 
   def index
-    @user_ingredients = current_user.user_ingredients.order(:expiration_date)
+    @user_ingredients = current_user.user_ingredients.where("quantity > 0").order(:expiration_date)
     @ingredient = Ingredient.all
   end
 
@@ -29,6 +29,7 @@ class UserIngredientsController < ApplicationController
 
   def update
     @user_ingredient.update(user_ingredients_params)
+    @user_ingredient.destroy if @user_ingredient.quantity <= 0
     redirect_to user_ingredients_path
   end
 
