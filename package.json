@@ -1,7 +1,7 @@
 {
   "name": "no_mess",
   "private": true,
-  "engines" : { "node": "10.18" },
+  "engines" : { "node": "11.x" },
   "dependencies": {
     "@rails/actioncable": "^6.0.0",
     "@rails/activestorage": "^6.0.0",
