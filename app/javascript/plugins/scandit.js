@@ -36,7 +36,7 @@ const initScandit = () => {
         }).then(response => response.json())
           .then((data) => {
             console.log(data)
-            window.location = '/user_ingredients/new?'
+            window.location = '/user_ingredients/new?ingredient_id=?'
           });
 
 
