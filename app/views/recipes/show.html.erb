@@ -91,7 +91,7 @@
             <%= f.submit "Mise à jour", class: "btn btn-flat" %>
           <%end%>
         <% else %>
-          <h2>Tu n'as pas assez de <%= ingredient_find.name %></h2>
+          <h5>Tu n'as pas assez de <%= ingredient_find.name %></h5>
         <%end%>
         <%#= link_to "Mise à jour du garde manger", user_ingredient_path(@user_ingredients.first, quantity: first_list), class: "btn btn-flat maj-garde-manger" %>
 
