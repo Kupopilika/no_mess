@@ -45,7 +45,7 @@
           <% elsif date.to_i < 31 %>
             <h2 class="circle-expiration-date-31"><%= date.to_i %>J</h2
           <% else %>
-            <h2 class="card-ingredient-info-date"><%= date.to_i %>J</h2>
+            <h2 class="circle-expiration-date"><%= date.to_i %>J</h2>
           <% end %>
 
           <% result = Ingredient.find(ingredient.ingredient_id) %>
@@ -85,7 +85,7 @@
       <%= image_tag "https://image.flaticon.com/icons/svg/3003/3003592.svg", :class => "button-add-barcode" %>
   <% end %>
 
-  
+
 
 
 
