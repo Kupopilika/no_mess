@@ -1,0 +1,7 @@
+# config/meta.yml
+
+meta_product_name: "No Mess"
+meta_title: "No Mess - Product tagline"
+meta_description: "Relevant description"
+meta_image: "nomess.png" # should exist in `app/assets/images/`
+twitter_account: "@nomess16"   # required for Twitter Cards
