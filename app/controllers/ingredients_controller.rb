@@ -14,9 +14,8 @@ class IngredientsController < ApplicationController
 
   def create
       codebar = params[:ean].to_s
-      ingredients = Ingredient.all
-      result = ingredients.where(code: codebar)
-      if result != []
+      result = Ingredient.find_by(code: codebar)
+      if result.present?
         ingredient = result
 
       else

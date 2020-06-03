@@ -35,8 +35,7 @@ const initScandit = () => {
           body: JSON.stringify({ ean: result})
         }).then(response => response.json())
           .then((data) => {
-            console.log(data)
-            window.location = '/user_ingredients/new?ingredient_id=?'
+            window.location = `/user_ingredients/new?ingredient_id=${data.id}`
           });
 
 
