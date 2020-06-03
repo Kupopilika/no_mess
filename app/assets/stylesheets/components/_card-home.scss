@@ -42,8 +42,22 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 18px;
-  margin-bottom: 10px;
-  margin-top: 10px;
+  font-size: 22px;
+  padding-bottom: 10px;
+  padding-top: 10px;
   font-family: arial;
+  background-color: #22A1AA;
+  box-shadow: 1px -5px 7px -1px rgba(211, 214, 213, 0.71);
+  color: white;
+  text-shadow: 1px 1px 2px pink;
 }
+
+.title-app-no {
+  font-weight: bold;
+}
+
+.title-app-mess {
+  font-style: italic;
+}
+
+

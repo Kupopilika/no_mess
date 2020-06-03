@@ -1,0 +1,23 @@
+.index-card-img-big {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    object-fit: cover;
+    position: relative;
+  }
+  
+  .mt-5 {
+    margin-top: 1.5rem !important;
+  } 
+
+.image-new {
+    margin: 0 auto;
+    width: 35%;
+}
+
+.element-flex {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 20px;
+    padding-bottom: 15px;
+}

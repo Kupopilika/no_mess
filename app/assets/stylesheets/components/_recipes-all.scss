@@ -41,7 +41,7 @@
 
 .card-recipe-content a{
   text-decoration: none;
-  color: #82a89b;
+  color: #606060;
 }
 
 .card-recipe-content h2 {
@@ -83,13 +83,14 @@
 }
 
 .card-recipe p {
-    font-size: 12px;
+    font-size: 13px;
     opacity: .7;
     margin: 0;
     text-overflow: ellipsis;
     white-space: nowrap !important;
     overflow: hidden;
     width: 230px !important;
+    font-weight: 600;
 }
 
 .no-ellipsis p{

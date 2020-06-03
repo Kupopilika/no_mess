@@ -1,6 +1,6 @@
 
 <div class="container-recipes">
-  <div class="title-recipes"> Recettes favorites </div>
+  <div class="title-app"> Recettes favorites </div>
     <div class ="mr-4 ml-4 mt-3">
       <%= form_tag favorites_index_path, method: :get do %>
       <%= text_field_tag :query,
@@ -31,7 +31,7 @@
                     <%= image_tag "star_filled.png", alt: "favorite_recipe" %>
                   <% end %>
                 <% else %>
-                  <%= link_to favorites_path(recipe_id: favorite.recipe.id), method: :post do %>
+                  <%= link_to favorite_path(recipe_id: favorite.recipe.id), method: :post do %>
                     <%= image_tag "star.png", alt: "no_favorite_recipe" %>
                   <% end %>
                 <% end %>

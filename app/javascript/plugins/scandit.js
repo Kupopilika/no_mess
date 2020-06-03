@@ -33,7 +33,11 @@ const initScandit = () => {
             "Content-Type": "application/json"
           },
           body: JSON.stringify({ ean: result})
-        });
+        }).then(response => response.json())
+          .then((data) => {
+            window.location = `/user_ingredients/new?ingredient_id=${data.id}&quantity=${data.quantity}`
+          });
+
 
         // const url = `https://world.openfoodfacts.org/api/v0/product/${result}.json`;
         // console.log(url);
