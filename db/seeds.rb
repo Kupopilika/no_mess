@@ -577,7 +577,7 @@ ingredients = [
   {
     name:       "Tagliatelle",
     category:   '8',
-    unit:       'u',
+    unit:       'g',
     image:      'https://res.cloudinary.com/dubgqyx31/image/upload/v1591113463/pasta_1_q7xev0.png'
   },
   # {
@@ -595,7 +595,7 @@ ingredients = [
   {
     name:       "Crème",
     category:   '2',
-    unit:       'g',
+    unit:       'cl',
     image:      'https://res.cloudinary.com/dubgqyx31/image/upload/v1591122150/skin_fgacgc.png'
   },
 ]
