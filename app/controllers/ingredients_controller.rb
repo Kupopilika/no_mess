@@ -13,19 +13,20 @@ class IngredientsController < ApplicationController
   end
 
   def create
-    all = Ingredient.all
+      codebar = params[:ean].to_s
+      result = Ingredient.find_by(code: codebar)
+      if result.present?
+        ingredient = result
 
-    code = params[:ean]
-    url = "https://world.openfoodfacts.org/api/v0/product/#{code}.json"
-    product_serialized = open(url).read
-    element = JSON.parse(product_serialized)
-    puts element["product"]["product_name"]
-    puts element["product"]["quantity"].match(/\d+/)
-    unit = element["product"]["quantity"].match(/\D+/).to_s.strip
-    puts unit
-    puts element["product"]["image_url"]
-    
-    Ingredient.create(name: element["product"]["product_name"], category: "all", image: element["product"]["image_url"], unit: unit)
+      else
+        url = "https://world.openfoodfacts.org/api/v0/product/#{codebar}.json"
+        product_serialized = open(url).read
+        element = JSON.parse(product_serialized)
+        unit = element["product"]["quantity"].match(/\D+/).to_s.strip
+        ingredient = Ingredient.create(name: element["product"]["product_name"], category: "all", image: element["product"]["image_url"], unit: unit, code: codebar)
+
+      end
+      render json: ingredient
   end
 
   private

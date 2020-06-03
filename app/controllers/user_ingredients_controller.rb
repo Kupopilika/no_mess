@@ -11,6 +11,7 @@ class UserIngredientsController < ApplicationController
   end
 
   def new
+    @ingredient = Ingredient.find(params[:ingredient_id]) if params[:ingredient_id].present?
     @user_ingredient = UserIngredient.new
   end
 
@@ -39,7 +40,7 @@ class UserIngredientsController < ApplicationController
   end
 
   def product
-    
+
   end
 
   private
