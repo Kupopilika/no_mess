@@ -45,7 +45,7 @@
           <% elsif date.to_i < 31 %>
             <h2 class="circle-expiration-date-31"><%= date.to_i %>J</h2
           <% else %>
-            <h2 class="card-ingredient-info-date"><%= date.to_i %>J</h2>
+            <h2 class="circle-expiration-date"><%= date.to_i %>J</h2>
           <% end %>
 
           <% result = Ingredient.find(ingredient.ingredient_id) %>
@@ -86,7 +86,7 @@
       <%= image_tag "https://res.cloudinary.com/kupopilika/image/upload/v1591172038/No%20Mess/barcode_6_k9cwpd.png", :class => "button-add-barcode" %>
   <% end %>
 
-  
+
 
 
 
