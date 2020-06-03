@@ -23,7 +23,8 @@ class IngredientsController < ApplicationController
         product_serialized = open(url).read
         element = JSON.parse(product_serialized)
         unit = element["product"]["quantity"].match(/\D+/).to_s.strip
-        ingredient = Ingredient.create(name: element["product"]["product_name"], category: "all", image: element["product"]["image_url"], unit: unit, code: codebar)
+        quantity = element["product"]["quantity"].match(/\d+/).to_s.strip
+        ingredient = Ingredient.create(name: element["product"]["product_name"], category: "all", image: element["product"]["image_url"], unit: unit, code: codebar, quantity: quantity)
 
       end
       render json: ingredient
