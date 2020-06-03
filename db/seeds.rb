@@ -31,7 +31,7 @@ ingredients = [
   {
     name:       "Yaourt",
     category:   '4',
-    unit:       'u',
+    unit:       'unité',
     image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590508512/No%20Mess/yogurt_bnpfrp.png'
   },
   {
@@ -85,7 +85,7 @@ ingredients = [
    {
     name:       "Concombre",
     category:   '2',
-    unit:       'u',
+    unit:       'unité',
     image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590508083/No%20Mess/cucumber_ucgtun_o3ccx9.png'
   },
   {
@@ -133,7 +133,7 @@ ingredients = [
     {
     name:       "Oeuf",
     category:   '6',
-    unit:       'u',
+    unit:       'unité',
     image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590589791/No%20Mess/eggs_pspyoe.png'
   },
     {
@@ -163,13 +163,13 @@ ingredients = [
     {
     name:       "Ciboulette",
     category:   '1',
-    unit:       'u',
+    unit:       'unité',
     image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590591146/No%20Mess/chives_tl67p4.png'
   },
     {
     name:       "Persil",
     category:   '1',
-    unit:       'u',
+    unit:       'unité',
     image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590591267/No%20Mess/parsley_tthu3x.png'
   },
     {
@@ -181,7 +181,7 @@ ingredients = [
     {
     name:       "Orange",
     category:   '5',
-    unit:       'u',
+    unit:       'unité',
     image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590591384/No%20Mess/orange_ekj95g.png'
   },
     {
@@ -211,13 +211,13 @@ ingredients = [
     {
     name:       "Pamplemousse",
     category:   '4',
-    unit:       'u',
+    unit:       'unité',
     image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590592306/No%20Mess/diet_gz4nte.png'
   },
     {
     name:       "Kiwi",
     category:   '4',
-    unit:       'u',
+    unit:       'unité',
     image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590592362/No%20Mess/kiwi_u0foyf.png'
   },
     {
@@ -229,7 +229,7 @@ ingredients = [
     {
     name:       "Artichaut",
     category:   '1',
-    unit:       'u',
+    unit:       'unité',
     image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590592504/No%20Mess/artichoke_ez9m5s.png'
   },
     {
@@ -307,7 +307,7 @@ ingredients = [
     {
     name:       "Echalote",
     category:   '5',
-    unit:       'u',
+    unit:       'unité',
     image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590595373/No%20Mess/shallot_xhugi3.png'
   },
     {
@@ -385,7 +385,7 @@ ingredients = [
     {
     name:       "Avocat",
     category:   '2',
-    unit:       'u',
+    unit:       'unité',
     image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590679639/No%20Mess/avocado_uva1ur.png'
   },
     {
@@ -397,7 +397,7 @@ ingredients = [
     {
     name:       "Citron",
     category:   '4',
-    unit:       'u',
+    unit:       'unité',
     image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590679912/No%20Mess/lemon_i1k6my.png'
   },
     {
@@ -469,7 +469,7 @@ ingredients = [
     {
     name:       "Pastèque",
     category:   '3',
-    unit:       'u',
+    unit:       'unité',
     image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590681140/No%20Mess/watermelon_ikbzij.png'
   },
     {
@@ -491,7 +491,7 @@ ingredients = [
     image:      'https://res.cloudinary.com/kupopilika/image/upload/v1590681700/No%20Mess/Rhubarbe_egycbz.png'
   },
      {
-    name:       "Viande rouge",
+    name:       "Viande",
     category:   '2',
     unit:       'g',
     image:      'https://res.cloudinary.com/dubgqyx31/image/upload/v1591105757/meat_dtndtr.png'
@@ -565,13 +565,13 @@ ingredients = [
   {
     name:       "Basilic",
     category:   '8',
-    unit:       'u',
+    unit:       'unité',
     image:      'https://res.cloudinary.com/dubgqyx31/image/upload/v1591112836/basil_2_ttzzxy.png'
   },
   {
     name:       "Menthe",
     category:   '8',
-    unit:       'u',
+    unit:       'unité',
     image:      'https://res.cloudinary.com/dubgqyx31/image/upload/v1591113318/mint_obljvw.png'
   },
   {
@@ -589,7 +589,7 @@ ingredients = [
   {
     name:       "Burger",
     category:   '2',
-    unit:       'u',
+    unit:       'unité',
     image:      'https://res.cloudinary.com/dubgqyx31/image/upload/v1591113824/burger_1_sd4rch.png'
   },
   {
@@ -597,6 +597,24 @@ ingredients = [
     category:   '2',
     unit:       'cl',
     image:      'https://res.cloudinary.com/dubgqyx31/image/upload/v1591122150/skin_fgacgc.png'
+  },
+   {
+    name:       "Olive",
+    category:   '8',
+    unit:       'unité',
+    image:      'https://res.cloudinary.com/dubgqyx31/image/upload/v1591205264/olive_lxgrq6.png'
+  },
+     {
+    name:       "Pignon",
+    category:   '8',
+    unit:       'unité',
+    image:      'https://res.cloudinary.com/dubgqyx31/image/upload/v1591204347/seeds_udgux5.png'
+  },
+  {
+    name:       "Herbe",
+    category:   '8',
+    unit:       'unité',
+    image:      'https://res.cloudinary.com/dubgqyx31/image/upload/v1591193943/ojzkx34h5yduux0s463vods5egrk.png'
   },
 ]
 
