@@ -1,67 +1,294 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>The page you were looking for doesn't exist (404)</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <style>
-  .rails-default-error-page {
-    background-color: #EFEFEF;
-    color: #2E2F30;
-    text-align: center;
-    font-family: arial, sans-serif;
-    margin: 0;
-  }
+  $white: #EDEDED;
+$gray: #BFC0C0;
+$dark: #585959;
+$light: #D3DEEA;
 
-  .rails-default-error-page div.dialog {
-    width: 95%;
-    max-width: 33em;
-    margin: 4em auto 0;
-  }
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Lato');
 
-  .rails-default-error-page div.dialog > div {
-    border: 1px solid #CCC;
-    border-right-color: #999;
-    border-left-color: #999;
-    border-bottom-color: #BBB;
-    border-top: #B00100 solid 4px;
-    border-top-left-radius: 9px;
-    border-top-right-radius: 9px;
-    background-color: white;
-    padding: 7px 12% 0;
-    box-shadow: 0 3px 8px rgba(50, 50, 50, 0.17);
-  }
+$big: 'Abril Fatface', serif;
+$body: 'Lato', sans-serif;
 
-  .rails-default-error-page h1 {
-    font-size: 100%;
-    color: #730E15;
-    line-height: 1.5em;
-  }
+body {
+  background: $light;
+}
 
-  .rails-default-error-page div.dialog > p {
-    margin: 0 0 1em;
-    padding: 1em;
-    background-color: #F7F7F7;
-    border: 1px solid #CCC;
-    border-right-color: #999;
-    border-left-color: #999;
-    border-bottom-color: #999;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
-    border-top-color: #DADADA;
-    color: #666;
-    box-shadow: 0 3px 8px rgba(50, 50, 50, 0.17);
+.top {
+  margin-top: 30px;
+}
+
+.container {
+  margin: 0 auto;
+  position: relative;
+  width: 250px;
+  height: 250px;
+  margin-top: -40px;
+}
+
+.ghost {
+  width: 50%;
+  height: 53%;
+  left: 25%;
+  top: 10%;
+  position: absolute;
+  border-radius: 50% 50% 0 0;
+  background: $white;
+  border: 1px solid $gray;
+  border-bottom: none;
+  animation: float 2s ease-out infinite;
+}
+
+.ghost-copy {
+  width: 50%;
+  height: 53%;
+  left: 25%;
+  top: 10%;
+  position: absolute;
+  border-radius: 50% 50% 0 0;
+  background: $white;
+  border: 1px solid $gray;
+  border-bottom: none;
+  animation: float 2s ease-out infinite;
+  z-index: 0;
+}
+
+
+.face {
+  position: absolute;
+  width: 100%;
+  height: 60%;
+  top: 20%;
+}
+.eye, .eye-right {
+  position: absolute;
+  background: $dark;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  top: 40%;
+}
+
+.eye {
+  left: 25%;
+}
+.eye-right {
+  right: 25%;
+}
+
+.mouth {
+  position:absolute;
+  top: 50%;
+  left: 45%;
+  width: 10px;
+  height: 10px;
+  border: 3px solid;
+  border-radius: 50%;
+  border-color: transparent $dark $dark transparent;
+  transform: rotate(45deg);
+}
+
+.one, .two, .three, .four {
+  position: absolute;
+  background: $white;
+  top: 85%;
+  width: 25%;
+  height: 23%;
+  border: 1px solid $gray;
+  z-index: 0;
+}
+
+.one {
+  border-radius: 0 0 100% 30%;
+  left: -1px;
+}
+
+.two {
+  left: 23%;
+  border-radius: 0 0 50% 50%;
+}
+
+.three {
+  left: 50%;
+  border-radius: 0 0 50% 50%;
+}
+
+.four {
+  left: 74.5%;
+  border-radius: 0 0 30% 100%;
+}
+
+.shadow {
+  position: absolute;
+  width: 30%;
+  height: 7%;
+  background: $gray;
+  left: 35%;
+  top: 80%;
+  border-radius: 50%;
+  animation: scale 2s infinite;
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(1);
   }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes float {
+  50% {
+     transform: translateY(15px);
+  }
+}
+
+.bottom {
+  margin-top: 10px;
+}
+
+/*text styling*/
+h1 {
+  font-family: $big;
+  color: $white;
+  text-align: center;
+  font-size: 9em;
+  margin: 0;
+  text-shadow: -1px 0 $gray, 0 1px $gray, 1px 0 $gray, 0 -1px $gray;
+}
+h3 {
+  font-family: $body;
+  font-size: 2em;
+  text-transform: uppercase;
+  text-align: center;
+  color: $gray;
+  margin-top: -20px;
+  font-weight: 900;
+}
+p {
+  text-align: center;
+  font-family: $body;
+  color: $dark;
+  font-size: .6em;
+  margin-top: -20px;
+  text-transform: uppercase;
+}
+
+.search {
+  text-align: center;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+/*search style*/
+
+.search-bar {
+  border: 1px solid $gray;
+  padding: 5px;
+  height: 20px;
+  margin-left: -30px;
+  width: 200px;
+  outline: none;
+  &:focus {
+    border: 1px solid $light;
+  }
+}
+
+.search-btn {
+  position: absolute;
+  width: 30px;
+  height: 32px;
+  border: 1px solid $gray;
+  background: $gray;
+  text-align: center;
+  color: $white;
+  cursor: pointer;
+  font-size: 1em;
+  outline: none;
+  &:hover {
+    background: $white;
+    border: 1px solid $white;
+    color: $gray;
+    transition: all .2s ease;
+  }
+}
+
+.btn {
+  background: $white;
+  padding: 15px 20px;
+  margin: 5px;
+  color: $dark;
+  font-family: $body;
+  text-transform: uppercase;
+  font-size: .6em;
+  letter-spacing: 1px;
+  border: 0;
+  &:hover {
+    background: $gray;
+    transition: all .4s ease-out;
+  }
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  text-align: center;
+  font-size: 0.8em;
+  text-transform: uppercase;
+  padding: 10px;
+  color: #EA7996;
+  letter-spacing: 3px;
+  font-family: $body;
+  a {
+    color: #ffffff;
+    text-decoration: none;
+    &:hover {
+      color: #7d7d7d;
+    }
+  }
+}
   </style>
 </head>
-
-<body class="rails-default-error-page">
-  <!-- This file lives in public/404.html -->
-  <div class="dialog">
-    <div>
-      <h1>The page you were looking for doesn't exist.</h1>
-      <p>You may have mistyped the address or the page may have moved.</p>
-    </div>
-    <p>If you are the application owner check the logs for more information.</p>
+<body>
+  <div id="background"></div>
+<div class="top">
+  <h1>404</h1>
+  <h3>Page not found</h3>
+</div>
+<div class="container">
+  <div class="ghost-copy">
+    <div class="one"></div>
+    <div class="two"></div>
+    <div class="three"></div>
+    <div class="four"></div>
   </div>
-</body>
-</html>
+  <div class="ghost">
+    <div class="face">
+      <div class="eye"></div>
+      <div class="eye-right"></div>
+      <div class="mouth"></div>
+    </div>
+  </div>
+  <div class="shadow"></div>
+</div>
+<div class="bottom">
+  <p>Boo, looks like a ghost stole this page!</p>
+  <div class="buttons">
+    <a href="/"><button class="btn">Home</button></a>
+  </div>
+</div>
+
+  </body>
