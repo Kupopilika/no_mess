@@ -17,7 +17,7 @@
   <%= f.association :ingredient, label: "Ingrédient", input_html: { class: "select2" } %>
   <%= f.input :quantity, label: "Quantité", required: true, label_html: { id:"label_quantity" }  %>
 <% end %>
-<%= f.input :purchase_date, label: "Date d'achat", as: :string, required: true, input_html: {placeholder: Date.today.strftime("%d/%m/%Y") , class: "datepicker" } %>
+<%= f.input :purchase_date, label: "Date d'achat", as: :string, required: true, input_html: {value: Date.today.strftime("%d/%m/%Y") , class: "datepicker" } %>
 <%= f.input :expiration_date, label: "Date d'expiration", as: :string, required: true, input_html: {class: "datepicker"} %>
 <div class="mt-5">
 <%= f.button :submit, "Ajouter l'ingrédient !", class: "btn btn-success center-button"%>
