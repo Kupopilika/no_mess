@@ -4,7 +4,7 @@ class RecipesController < ApplicationController
   def index
     @favorites = current_user.favorites
     @user_ingredients = current_user.user_ingredients.all.order(:expiration_date)
-    if UserIngredient.count > 0
+    if @user_ingredients.count > 0
       @recipes = Recipe.where("name ILIKE ?", "%#{@user_ingredients.first.ingredient.name}%")
       if @recipes.count != 0
         @recipes = @recipes
