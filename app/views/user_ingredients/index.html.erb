@@ -8,9 +8,9 @@
   <% if user_ingredients.empty? == false %>
     <% uniq_user_ingredients = user_ingredients.uniq %>
       <% if uniq_user_ingredients.size == 1  %>
-        <p> Il te reste <%= uniq_user_ingredients.size %> aliment </p>
+        <p> Il te reste <%= uniq_user_ingredients.size %> aliment en réserve </p>
       <% else %>
-        <p> Il te reste <%= uniq_user_ingredients.size %> aliments différents </p>
+        <p> Il te reste <%= uniq_user_ingredients.size %> aliments en réserve </p>
       <% end %>
   <% else %>
       <div class="msg-empty-basket">
@@ -80,7 +80,7 @@
   </div>
 </div>
   <%= link_to new_user_ingredient_path do %>
-      <%= image_tag "https://image.flaticon.com/icons/png/512/148/148764.png", :class => "button-add" %>
+      <%= image_tag "https://res.cloudinary.com/dc1jk4jut/image/upload/v1591260873/plus_2_uhktek.png", :class => "button-add" %>
   <% end %>
   <%= link_to user_ingredients_product_path do %>
       <%= image_tag "https://res.cloudinary.com/kupopilika/image/upload/v1591172038/No%20Mess/barcode_6_k9cwpd.png", :class => "button-add-barcode" %>

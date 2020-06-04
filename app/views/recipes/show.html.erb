@@ -89,7 +89,7 @@
         <%if @user_ingredients.first.quantity >= number%>
           <%= simple_form_for [@user_ingredients.first] do |f| %>
             <%= f.input :quantity, as: :hidden, input_html: { value: @user_ingredients.first.quantity - number } %>
-            <%= f.submit "Mise à jour", class: "btn btn-flat" %>
+            <%= f.submit "J'ai cuisiné !", class: "btn btn-flat" %>
           <%end%>
         <% else %>
           <h5>Tu n'as pas assez de <%= ingredient_find.name %></h5>
