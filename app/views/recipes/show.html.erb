@@ -86,9 +86,10 @@
         <%end%>
         <% number = result.match(/\d+/).to_s.to_i %>
         <!-- <%# @user_ingredients.first.update(:quantity = @user_ingredients.first.quantity -= first_list) %> -->
+        <% raise %>
         <%if @user_ingredients.first.quantity >= number%>
-          <%= simple_form_for [@user_ingredients.first] do |f| %>
-            <%= f.input :quantity, as: :hidden, input_html: { value: @user_ingredients.first.quantity - number } %>
+          <%= simple_form_for [@recipe], url: recipe_user_ingredients_update_path(@recipe) do |f| %>
+            <%#= hidden_field_tag :user_ingredient_ids %>
             <%= f.submit "Mise à jour", class: "btn btn-flat" %>
           <%end%>
         <% else %>

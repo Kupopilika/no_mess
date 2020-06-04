@@ -16,6 +16,7 @@ Rails.application.routes.draw do
 
   resources :recipes do
     resources :recipe_ingredients
+    patch 'user_ingredients_update', to: 'recipes#user_ingredients_update'
   end
 
   resources :favorites, only: [:index, :create, :destroy]
