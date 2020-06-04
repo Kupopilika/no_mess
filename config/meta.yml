@@ -1,7 +1,7 @@
 # config/meta.yml
 
 meta_product_name: "No Mess"
-meta_title: "No Mess - Mange tout ce qui te reste"
+meta_title: "No Mess - Mange tout ce qu'il te reste"
 meta_description: "Application qui permet de mieux gérer ses courses et d’éviter le gaspillage alimentaire en proposant des recettes qui correspondent au garde-manger"
 meta_image: "nomesscoverupdatea" # should exist in `app/assets/images/`
 twitter_account: "@nomess16"   # required for Twitter Cards
