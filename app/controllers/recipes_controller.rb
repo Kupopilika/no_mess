@@ -51,6 +51,7 @@ class RecipesController < ApplicationController
       user_ingredient.save
       user_ingredient.destroy if user_ingredient.quantity <= 0
     end
+
     redirect_to user_ingredients_path
   end
 
