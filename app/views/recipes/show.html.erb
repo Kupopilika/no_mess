@@ -1,109 +1,114 @@
 <div class="container-recipe">
   <div class="cards">
-    <div class="card-recipe-show">
-      <!-- <h6 class="main-title"><%#= @recipe.name %></h6> -->
-      <!--<img src="https://res.cloudinary.com/dubgqyx31/image/upload/w_375,h_243,c_scale/v1590506082/nomess/charfraise_dzpblg.jpg" />-->
-      <%= image_tag @recipe.image, alt: "image recette" %>
-      <!--<img src="https://assets.afcdn.com/recipe/20131009/63427_w648h414c1cx2592cy1728.jpg">-->
-      <h6 class="main-title"><%= @recipe.name.capitalize %></h6>
-      <div class="recipe-infos-show">
-        <div class="recipe-infos-show-total-time">
-          <span class="recipe-infos-show-time-titre">Temps</span>
-          <span class="recipe-infos-show-time-value">⏲<%= @time_recipe %> min</span>
-        </div>
-        <div class="recipe-info-show-level">
-          <span class="recipe-infos-show-level-titre">Niveau</span>
-          <div class="card-product-show-details">
-            <ul class="list-inline-show-cercle">
-              <% @difficulty_number.times do %>
-                <div class= "difficulty-level">
-                  <li><i class="fas fa-circle"></i></li>
-                </div>
-              <% end %>
-              <div class="missing-circle">
-                <% @missing_circle.times do %>
-                  <div class="missing-circle-level">
+    <% if @user_ingredients.empty? %>
+        <p> 😉 Jette un oeil aux recettes suggérées. Grâce à ce bouton, tu pourras revenir facilement sur la dernière recette sélectionnée 🌮 </p>
+    <% else %>
+      <div class="card-recipe-show">
+        <!-- <h6 class="main-title"><%#= @recipe.name %></h6> -->
+        <!--<img src="https://res.cloudinary.com/dubgqyx31/image/upload/w_375,h_243,c_scale/v1590506082/nomess/charfraise_dzpblg.jpg" />-->
+        <%= image_tag @recipe.image, alt: "image recette" %>
+        <!--<img src="https://assets.afcdn.com/recipe/20131009/63427_w648h414c1cx2592cy1728.jpg">-->
+        <h6 class="main-title"><%= @recipe.name.capitalize %></h6>
+        <div class="recipe-infos-show">
+          <div class="recipe-infos-show-total-time">
+            <span class="recipe-infos-show-time-titre">Temps</span>
+            <span class="recipe-infos-show-time-value">⏲<%= @time_recipe %> min</span>
+          </div>
+          <div class="recipe-info-show-level">
+            <span class="recipe-infos-show-level-titre">Niveau</span>
+            <div class="card-product-show-details">
+              <ul class="list-inline-show-cercle">
+                <% @difficulty_number.times do %>
+                  <div class= "difficulty-level">
                     <li><i class="fas fa-circle"></i></li>
                   </div>
                 <% end %>
-              </div>
-            </ul>
+                <div class="missing-circle">
+                  <% @missing_circle.times do %>
+                    <div class="missing-circle-level">
+                      <li><i class="fas fa-circle"></i></li>
+                    </div>
+                  <% end %>
+                </div>
+              </ul>
+            </div>
           </div>
         </div>
-      </div>
-      <ul class="nav nav-tabs" id="myTab" role="tablist">
-        <li class="nav-item">
-          <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Ingrédients</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Préparation</a>
-        </li>
-      </ul>
-      <div class="tab-content" id="myTabContent">
-        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-          <!-- HERE -->
-          <%# @recipe.recipe_ingredients.each do |recipe_ingredient| %>
-          <!-- HERE -->
-          <% JSON.parse(@recipe.ingredient_list).uniq.each do |ingredient| %>
-            <%# name = ingredient.split(" ").find{|ingredient|Ingredient.where("name ILIKE ?","#{ingredient.capitalize}%")!=[]} %>
-            <% name = ingredient.gsub("d'", "").split(" ").find{|ingredient|Ingredient.pluck(:name).include?(ingredient.capitalize) || Ingredient.pluck(:name).include?(ingredient.capitalize[0..-2])} %>
-            <% name = ingredient.gsub("d'","").capitalize.strip if name.nil? %>
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Ingrédients</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Préparation</a>
+          </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+            <!-- HERE -->
+            <%# @recipe.recipe_ingredients.each do |recipe_ingredient| %>
+            <!-- HERE -->
+            <% JSON.parse(@recipe.ingredient_list).uniq.each do |ingredient| %>
+              <%# name = ingredient.split(" ").find{|ingredient|Ingredient.where("name ILIKE ?","#{ingredient.capitalize}%")!=[]} %>
+              <% name = ingredient.gsub("d'", "").split(" ").find{|ingredient|Ingredient.pluck(:name).include?(ingredient.capitalize) || Ingredient.pluck(:name).include?(ingredient.capitalize[0..-2])} %>
+              <% name = ingredient.gsub("d'","").capitalize.strip if name.nil? %>
 
-            <% ingre = Ingredient.where("name ILIKE ?", "%#{name.capitalize}%").first || Ingredient.where("name ILIKE ?", "%#{name.capitalize[0..-2]}%").first if name %>
+              <% ingre = Ingredient.where("name ILIKE ?", "%#{name.capitalize}%").first || Ingredient.where("name ILIKE ?", "%#{name.capitalize[0..-2]}%").first if name %>
 
-            <div class="card-ingredient-show">
-              <% if ingre %>
-                <%= image_tag ingre.photo %>
-              <% else %>
-                <img src="https://res.cloudinary.com/kupopilika/image/upload/v1590574543/No%20Mess/harvest_jlu7ek.png" />
-              <% end %>
+              <div class="card-ingredient-show">
+                <% if ingre %>
+                  <%= image_tag ingre.photo %>
+                <% else %>
+                  <img src="https://res.cloudinary.com/kupopilika/image/upload/v1590574543/No%20Mess/harvest_jlu7ek.png" />
+                <% end %>
 
-              <div class="card-product-ingredient-infos-show">
-                <p><%= ingredient.capitalize.rstrip.gsub(/\d+/, ' \0 ').squish %></p>
-                <%#= .gsub(/\d+/, ' \0 ').squish %>
+                <div class="card-product-ingredient-infos-show">
+                  <p><%= ingredient.capitalize.rstrip.gsub(/\d+/, ' \0 ').squish %></p>
+                  <%#= .gsub(/\d+/, ' \0 ').squish %>
+                </div>
               </div>
+            <% end %>
+            <!--<div class="button-line">
+              <%#= link_to "Mise à jour du garde manger", new_user_registration_path, class: "btn btn-flat" %>
+            </div> -->
+          </div>
+          <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+          <% JSON.parse(@recipe.instructions).each_with_index do |instruction, index| %>
+            <div class="card-preparation-show">
+              <div class="number-preparation"><%= "#{index + 1}" %></div>
+              <div class="card-product-preparation-infos-show"><p><%= instruction.rstrip %></p></div>
             </div>
           <% end %>
           <!--<div class="button-line">
             <%#= link_to "Mise à jour du garde manger", new_user_registration_path, class: "btn btn-flat" %>
           </div> -->
-        </div>
-        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-        <% JSON.parse(@recipe.instructions).each_with_index do |instruction, index| %>
-          <div class="card-preparation-show">
-            <div class="number-preparation"><%= "#{index + 1}" %></div>
-            <div class="card-product-preparation-infos-show"><p><%= instruction.rstrip %></p></div>
           </div>
-        <% end %>
-        <!--<div class="button-line">
-          <%#= link_to "Mise à jour du garde manger", new_user_registration_path, class: "btn btn-flat" %>
-        </div> -->
+        </div>
+        <div class="button-line">
+          <% all_ingredient =  JSON.parse(@recipe.ingredient_list) %>
+          <% result = "" %>
+            <% ingredient_find = Ingredient.find(@user_ingredients.first.ingredient_id) %>
+            <% all_ingredient.each do |element| %>
+              <% result = element if element.include?(ingredient_find.name.downcase) %>
+            <%end%>
+            <% number = result.match(/\d+/).to_s.to_i %>
+            <!-- <%# @user_ingredients.first.update(:quantity = @user_ingredients.first.quantity -= first_list) %> -->
+
+            <% if @user_ingredients.first.quantity >= number %>
+              <%#= simple_form_for [@recipe], url: recipe_user_ingredients_update_path(@recipe) do |f| %>
+                <%#= hidden_field_tag :user_ingredient_ids %>
+                <%#= f.submit "Mise à jour", class: "btn btn-flat" %>
+              <%#end%>
+              <%= link_to "J'ai cuisiné", recipe_user_ingredients_update_path(@recipe), method: :patch, class: "btn btn-flat" %>
+
+            <% else %>
+              <h5>Tu n'as pas assez de <%= ingredient_find.name %></h5>
+            <%end%>
+
+          <%#= link_to "Mise à jour du garde manger", user_ingredient_path(@user_ingredients.first, quantity: first_list), class: "btn btn-flat maj-garde-manger" %>
+
         </div>
       </div>
-      <div class="button-line">
-        <% all_ingredient =  JSON.parse(@recipe.ingredient_list) %>
-        <% result = "" %>
-        <% ingredient_find = Ingredient.find(@user_ingredients.first.ingredient_id) %>
-        <% all_ingredient.each do |element| %>
-          <% result = element if element.include?(ingredient_find.name.downcase) %>
-        <%end%>
-        <% number = result.match(/\d+/).to_s.to_i %>
-        <!-- <%# @user_ingredients.first.update(:quantity = @user_ingredients.first.quantity -= first_list) %> -->
-
-        <% if @user_ingredients.first.quantity >= number %>
-          <%#= simple_form_for [@recipe], url: recipe_user_ingredients_update_path(@recipe) do |f| %>
-            <%#= hidden_field_tag :user_ingredient_ids %>
-            <%#= f.submit "Mise à jour", class: "btn btn-flat" %>
-          <%#end%>
-          <%= link_to "J'ai cuisiné", recipe_user_ingredients_update_path(@recipe), method: :patch, class: "btn btn-flat" %>
-
-        <% else %>
-          <h5>Tu n'as pas assez de <%= ingredient_find.name %></h5>
-        <%end%>
-        <%#= link_to "Mise à jour du garde manger", user_ingredient_path(@user_ingredients.first, quantity: first_list), class: "btn btn-flat maj-garde-manger" %>
-
-      </div>
-    </div>
+    <% end %>
   </div>
 </div>
 
