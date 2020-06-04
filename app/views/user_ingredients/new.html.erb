@@ -2,9 +2,22 @@
 <h3 id="welcome" class="mt-5 mb-3">Ajoutez vos ingrédients !</h3>
 
 <%= simple_form_for [@user_ingredient] do |f| %>
-<%= f.association :ingredient, label: "Ingrédient", input_html: {id: "ing", class: "select2" } %>
-<%= f.input :quantity, label: "Quantité", required: true, label_html: { id:"label_quantity" }  %>
-<%= f.input :purchase_date, label: "Date d'achat", as: :string, required: true, input_html: {placeholder: Date.today.strftime("%d/%m/%Y") , class: "datepicker" } %>
+<% if @ingredient.present? %>
+  <!-- nom+photo -->
+  <%= f.input :ingredient_id, input_html: { value: @ingredient.id }, as: :hidden %>
+  <%= f.input :quantity, required: true, label_html: { id:"label_quantity" }, input_html: { value: @ingredient.quantity }, as: :hidden %>
+  <div class="image-new">
+    <%= image_tag @ingredient.image, class: "index-card-img-big"%>
+  </div>
+  <div class="element-flex">
+    <h5><%= @ingredient.name %></h1>
+    <h5><%= "#{@ingredient.quantity} #{@ingredient.unit}" %></h2>
+  </div>
+<% else  %>
+  <%= f.association :ingredient, label: "Ingrédient", input_html: { class: "select2" } %>
+  <%= f.input :quantity, label: "Quantité", required: true, label_html: { id:"label_quantity" }  %>
+<% end %>
+<%= f.input :purchase_date, label: "Date d'achat", as: :string, required: true, input_html: {value: Date.today.strftime("%d/%m/%Y") , class: "datepicker" } %>
 <%= f.input :expiration_date, label: "Date d'expiration", as: :string, required: true, input_html: {class: "datepicker"} %>
 <div class="mt-5">
 <%= f.button :submit, "Ajouter l'ingrédient !", class: "btn btn-success center-button"%>

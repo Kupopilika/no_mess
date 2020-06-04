@@ -8,9 +8,9 @@
   <% if user_ingredients.empty? == false %>
     <% uniq_user_ingredients = user_ingredients.uniq %>
       <% if uniq_user_ingredients.size == 1  %>
-        <p> Il te reste <%= uniq_user_ingredients.size %> aliment </p>
+        <p> Il te reste <%= uniq_user_ingredients.size %> aliment en réserve </p>
       <% else %>
-        <p> Il te reste <%= uniq_user_ingredients.size %> aliments différents </p>
+        <p> Il te reste <%= uniq_user_ingredients.size %> aliments en réserve </p>
       <% end %>
   <% else %>
       <div class="msg-empty-basket">
@@ -45,7 +45,7 @@
           <% elsif date.to_i < 31 %>
             <h2 class="circle-expiration-date-31"><%= date.to_i %>J</h2
           <% else %>
-            <h2 class="card-ingredient-info-date"><%= date.to_i %>J</h2>
+            <h2 class="circle-expiration-date"><%= date.to_i %>J</h2>
           <% end %>
 
           <% result = Ingredient.find(ingredient.ingredient_id) %>
@@ -59,7 +59,11 @@
         </div>
 
         <div class="card-ingredient-last">
-          <h2><%= "#{ingredient.quantity} #{ingredient.ingredient.unit}" %></h2>
+          <% if ingredient.ingredient.unit == "unité" && ingredient.quantity > 1 %>
+            <h2><%= "#{ingredient.quantity} #{ingredient.ingredient.unit.pluralize}" %></h2>
+          <% else %>
+            <h2><%= "#{ingredient.quantity} #{ingredient.ingredient.unit}" %></h2>
+          <% end %>
         </div>
 
         <div class="card-ingredient-edit">
@@ -73,19 +77,20 @@
           <%= link_to "", user_ingredient_path(ingredient), method: :delete, id: "delete-link-#{ingredient.id}", class: "hidden" %>
         </div>
       </div>
+
       <hr id="separation">
 
     <%end%>
   </div>
 </div>
   <%= link_to new_user_ingredient_path do %>
-      <%= image_tag "https://image.flaticon.com/icons/png/512/148/148764.png", :class => "button-add" %>
+      <%= image_tag "https://res.cloudinary.com/dc1jk4jut/image/upload/v1591260873/plus_2_uhktek.png", :class => "button-add" %>
   <% end %>
   <%= link_to user_ingredients_product_path do %>
-      <%= image_tag "https://image.flaticon.com/icons/svg/3003/3003592.svg", :class => "button-add-barcode" %>
+      <%= image_tag "https://res.cloudinary.com/kupopilika/image/upload/v1591172038/No%20Mess/barcode_6_k9cwpd.png", :class => "button-add-barcode" %>
   <% end %>
 
-  
+
 
 
 

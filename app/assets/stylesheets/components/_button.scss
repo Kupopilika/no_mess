@@ -13,7 +13,7 @@
 }
 
 .btn-flat {
-  color: #82a89b;
+  color: #212529;
   padding: 8px 24px;
   border-radius: 4px;
   background: #b6ead8;
@@ -23,8 +23,9 @@
 }
 
 .btn-flat:hover {
-  background: #1BCB7F;
-  color: white;
+  background: #b6ead8;
+  color: #212529;
+  opacity: 1;
 }
 
 .btn-gradient {
