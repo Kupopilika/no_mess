@@ -1,7 +1,7 @@
 <div class="container-recipe">
   <div class="cards">
     <% if @user_ingredients.empty? %>
-        <p> 😉 Jette un oeil aux recettes suggérées. Grâce à ce bouton, tu pourras revenir facilement sur la dernière recette sélectionnée 🌮 </p>
+        <p class="msg-empty-recipe"> 😉 Jette un oeil aux recettes suggérées. Grâce à ce bouton, tu pourras revenir facilement sur la dernière recette sélectionnée 🌮 </p>
     <% else %>
       <div class="card-recipe-show">
         <!-- <h6 class="main-title"><%#= @recipe.name %></h6> -->
