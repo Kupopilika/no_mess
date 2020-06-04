@@ -628,7 +628,12 @@ recipes = JSON.parse(serialized_recipes)
 
 i = 0
 while i <= recipes["recipes"].length - 1
-  Recipe.create(name: recipes["recipes"][i]["name"], preparation_time: recipes["recipes"][i]["preparation_time"], cooking_time: recipes["recipes"][i]["cooking_time"], difficulty_level: recipes["recipes"][i]["difficulty"], instructions: recipes["recipes"][i]["instructions"], ingredient_list: recipes["recipes"][i]["ingredients"], image: recipes["recipes"][i]["image"])
+  recipe = Recipe.create(name: recipes["recipes"][i]["name"], preparation_time: recipes["recipes"][i]["preparation_time"], cooking_time: recipes["recipes"][i]["cooking_time"], difficulty_level: recipes["recipes"][i]["difficulty"], instructions: recipes["recipes"][i]["instructions"], ingredient_list: recipes["recipes"][i]["ingredients"], image: recipes["recipes"][i]["image"])
+  recipes["recipes"][i]["ingredients"].each do |scraped_ingredient|
+    ingredient = Ingredient.all.find { |ingredient| scraped_ingredient.include?(ingredient.name.downcase) }
+    quantity = scraped_ingredient.match(/\d+/).to_s.to_i
+    RecipeIngredient.create(ingredient: ingredient, recipe: recipe, quantity: quantity)
+  end
   # puts recipes["recipes"][i]["name"]
   # puts recipes["recipes"][i]["preparation_time"]
   # puts recipes["recipes"][i]["cooking_time"]

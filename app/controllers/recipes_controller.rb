@@ -41,6 +41,19 @@ class RecipesController < ApplicationController
 
   end
 
+  def user_ingredients_update
+    @recipe = Recipe.find(params[:recipe_id])
+    user_current_ingredient_ids = current_user.user_ingredients.pluck(:ingredient_id) # array d'ids d'ingredient
+    matching_recipe_ingredients = @recipe.recipe_ingredients.where(ingredient_id: user_current_ingredient_ids)
+    matching_recipe_ingredients.each do |recipe_ingredient|
+      user_ingredient = current_user.user_ingredients.find_by(ingredient_id: recipe_ingredient.ingredient_id)
+      user_ingredient.quantity = user_ingredient.quantity - recipe_ingredient.quantity
+      user_ingredient.save
+    end
+    user_ingredient.destroy if user_ingredient.quantity <= 0
+    redirect_to user_ingredients_path
+  end
+
   private
 
   def set_last_recipe

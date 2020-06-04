@@ -41,6 +41,9 @@
       </ul>
       <div class="tab-content" id="myTabContent">
         <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+          <!-- HERE -->
+          <%# @recipe.recipe_ingredients.each do |recipe_ingredient| %>
+          <!-- HERE -->
           <% JSON.parse(@recipe.ingredient_list).uniq.each do |ingredient| %>
             <%# name = ingredient.split(" ").find{|ingredient|Ingredient.where("name ILIKE ?","#{ingredient.capitalize}%")!=[]} %>
             <% name = ingredient.gsub("d'", "").split(" ").find{|ingredient|Ingredient.pluck(:name).include?(ingredient.capitalize) || Ingredient.pluck(:name).include?(ingredient.capitalize[0..-2])} %>
@@ -86,12 +89,12 @@
         <%end%>
         <% number = result.match(/\d+/).to_s.to_i %>
         <!-- <%# @user_ingredients.first.update(:quantity = @user_ingredients.first.quantity -= first_list) %> -->
-        <% raise %>
-        <%if @user_ingredients.first.quantity >= number%>
-          <%= simple_form_for [@recipe], url: recipe_user_ingredients_update_path(@recipe) do |f| %>
+        <% if @user_ingredients.first.quantity >= number %>
+          <%#= simple_form_for [@recipe], url: recipe_user_ingredients_update_path(@recipe) do |f| %>
             <%#= hidden_field_tag :user_ingredient_ids %>
-            <%= f.submit "Mise à jour", class: "btn btn-flat" %>
-          <%end%>
+            <%#= f.submit "Mise à jour", class: "btn btn-flat" %>
+          <%#end%>
+          <%= link_to "Mise à jour", recipe_user_ingredients_update_path(@recipe), method: :patch, class: "btn btn-flat" %>
         <% else %>
           <h5>Tu n'as pas assez de <%= ingredient_find.name %></h5>
         <%end%>
