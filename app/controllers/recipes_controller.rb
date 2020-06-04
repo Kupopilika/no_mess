@@ -49,8 +49,9 @@ class RecipesController < ApplicationController
       user_ingredient = current_user.user_ingredients.find_by(ingredient_id: recipe_ingredient.ingredient_id)
       user_ingredient.quantity = user_ingredient.quantity - recipe_ingredient.quantity
       user_ingredient.save
+      user_ingredient.destroy if user_ingredient.quantity <= 0
     end
-    user_ingredient.destroy if user_ingredient.quantity <= 0
+
     redirect_to user_ingredients_path
   end
 
