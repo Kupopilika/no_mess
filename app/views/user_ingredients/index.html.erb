@@ -59,7 +59,11 @@
         </div>
 
         <div class="card-ingredient-last">
-          <h2><%= "#{ingredient.quantity} #{ingredient.ingredient.unit}" %></h2>
+          <% if ingredient.ingredient.unit == "unité" && ingredient.quantity > 1 %>
+            <h2><%= "#{ingredient.quantity} #{ingredient.ingredient.unit.pluralize}" %></h2>
+          <% else %>
+            <h2><%= "#{ingredient.quantity} #{ingredient.ingredient.unit}" %></h2>
+          <% end %>
         </div>
 
         <div class="card-ingredient-edit">
@@ -73,7 +77,7 @@
           <%= link_to "", user_ingredient_path(ingredient), method: :delete, id: "delete-link-#{ingredient.id}", class: "hidden" %>
         </div>
       </div>
-      
+
       <hr id="separation">
 
     <%end%>
